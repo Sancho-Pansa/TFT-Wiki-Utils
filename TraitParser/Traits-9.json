@@ -1,0 +1,1065 @@
+[
+    {
+        "apiName": "Set9_Bastion",
+        "desc": "Несокрушимые чемпионы получают броню и сопротивление магии. В первые @Duration@ сек. боя эти прибавки увеличены на @BonusPercent*100@%.<br><br><expandRow>(@MinUnits@) +@BonusArmor@ %i:scaleArmor%, +@BonusArmor@ %i:scaleMR%</expandRow>",
+        "effects": [
+            {
+                "maxUnits": 3,
+                "minUnits": 2,
+                "style": 1,
+                "variables": {
+                    "BonusArmor": 20.0,
+                    "BonusMR": 20.0,
+                    "Duration": 10.0,
+                    "{09b7d38c}": 2.0,
+                    "{b44c0eed}": 1.0
+                }
+            },
+            {
+                "maxUnits": 5,
+                "minUnits": 4,
+                "style": 3,
+                "variables": {
+                    "BonusArmor": 50.0,
+                    "BonusMR": 50.0,
+                    "Duration": 10.0,
+                    "{09b7d38c}": 2.0,
+                    "{b44c0eed}": 1.0
+                }
+            },
+            {
+                "maxUnits": 7,
+                "minUnits": 6,
+                "style": 4,
+                "variables": {
+                    "BonusArmor": 100.0,
+                    "BonusMR": 100.0,
+                    "Duration": 10.0,
+                    "{09b7d38c}": 2.0,
+                    "{b44c0eed}": 1.0
+                }
+            },
+            {
+                "maxUnits": 25000,
+                "minUnits": 8,
+                "style": 5,
+                "variables": {
+                    "BonusArmor": 240.0,
+                    "BonusMR": 240.0,
+                    "Duration": 10.0,
+                    "{09b7d38c}": 2.0,
+                    "{b44c0eed}": 1.0
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/Trait_Icon_9_Bastion.TFT_Set9.tex",
+        "name": "Несокрушимый"
+    },
+    {
+        "apiName": "Set9_Sorcerer",
+        "desc": "Чародеи получают дополнительную силу умений.<br><br>Когда погибает враг, которому чародей нанес урон, другие противники получают урон в размере части от максимального запаса здоровья погибшего.<br><br><row>(@MinUnits@) @BonusAP@ %i:scaleAP%; урон в размере @HealthPct*100@% от макс. %i:scaleHealth%</row><br><row>(@MinUnits@) @BonusAP@ %i:scaleAP%; урон в размере @HealthPct*100@% от макс. %i:scaleHealth%</row><br><row>(@MinUnits@) @BonusAP@ %i:scaleAP%; урон в размере @HealthPct*100@% от макс. %i:scaleHealth% @TargetNum@ врагам</row><br><row>(@MinUnits@) @BonusAP@ %i:scaleAP%; урон в размере @HealthPct*100@% от макс. %i:scaleHealth% @TargetNum@ врагам</row>",
+        "effects": [
+            {
+                "maxUnits": 3,
+                "minUnits": 2,
+                "style": 1,
+                "variables": {
+                    "{08335318}": 1.0,
+                    "{6266505a}": 0.10000000149011612,
+                    "{a34f32df}": 3.0,
+                    "{d49caf5d}": 25.0
+                }
+            },
+            {
+                "maxUnits": 5,
+                "minUnits": 4,
+                "style": 3,
+                "variables": {
+                    "{08335318}": 1.0,
+                    "{6266505a}": 0.10000000149011612,
+                    "{a34f32df}": 3.0,
+                    "{d49caf5d}": 50.0
+                }
+            },
+            {
+                "maxUnits": 7,
+                "minUnits": 6,
+                "style": 4,
+                "variables": {
+                    "{08335318}": 2.0,
+                    "{6266505a}": 0.11999999731779099,
+                    "{a34f32df}": 3.0,
+                    "{d49caf5d}": 80.0
+                }
+            },
+            {
+                "maxUnits": 25000,
+                "minUnits": 8,
+                "style": 5,
+                "variables": {
+                    "{08335318}": 2.0,
+                    "{6266505a}": 0.20000000298023224,
+                    "{a34f32df}": 3.0,
+                    "{d49caf5d}": 120.0
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/Trait_Icon_3_Sorcerer.tex",
+        "name": "Чародей"
+    },
+    {
+        "apiName": "Set9_BandleCity",
+        "desc": "Ваши бойцы получают @BonusAttackSpeed*100@% скорости атаки за каждую звезду.<br><br>Если у вас есть 3 чемпиона с 3 звездами, йордлы могут стать 4-звездочными, улучшив свои умения!<br><br><row>(@MinUnits@) Сильнейший 3-звездочный йордл</row><br><row>(@MinUnits@) Два 3-звездочных йордла</row><br><br><rules>Если есть несколько кандидатов на улучшение, из них выбирается тот, который был выставлен последним.</rules>",
+        "effects": [
+            {
+                "maxUnits": 4,
+                "minUnits": 3,
+                "style": 1,
+                "variables": {
+                    "BonusAttackSpeed": 0.10000000149011612,
+                    "{25ec78e1}": 1.0,
+                    "{7ccd3647}": 15.0,
+                    "{852a9a90}": 2.0,
+                    "{c235f1f1}": 0.5,
+                    "{c4b5579c}": 100.0,
+                    "{eae1472b}": 1.0
+                }
+            },
+            {
+                "maxUnits": 25000,
+                "minUnits": 5,
+                "style": 4,
+                "variables": {
+                    "BonusAttackSpeed": 0.10000000149011612,
+                    "{25ec78e1}": 2.0,
+                    "{7ccd3647}": 15.0,
+                    "{852a9a90}": 2.0,
+                    "{c235f1f1}": 0.5,
+                    "{c4b5579c}": 100.0,
+                    "{eae1472b}": 2.0
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/Trait_Icon_6_Yordle.tex",
+        "name": "Йордл"
+    },
+    {
+        "apiName": "Set9_Deadeye",
+        "desc": "<spellPassive>Действует всегда:</spellPassive> +@BonusRange@ дальности атаки<br><br>Раз в @ShotFrequency@ сек. зоркие глаза атакуют врага с наивысшим уровнем здоровья и наносят дополнительный урон.<br><br><expandRow>(@MinUnits@) +@DamageAmp*100@% урона</expandRow>",
+        "effects": [
+            {
+                "maxUnits": 3,
+                "minUnits": 2,
+                "style": 1,
+                "variables": {
+                    "DamageAmp": 0.20000000298023224,
+                    "{428a4c11}": 3.0
+                }
+            },
+            {
+                "maxUnits": 5,
+                "minUnits": 4,
+                "style": 4,
+                "variables": {
+                    "DamageAmp": 0.6499999761581421,
+                    "{428a4c11}": 3.0
+                }
+            },
+            {
+                "maxUnits": 25000,
+                "minUnits": 6,
+                "style": 5,
+                "variables": {
+                    "DamageAmp": 1.399999976158142,
+                    "{428a4c11}": 3.0
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/Trait_Icon_9_Deadeye.TFT_Set9.tex",
+        "name": "Зоркий глаз"
+    },
+    {
+        "apiName": "Set9_Void",
+        "desc": "Вы получаете яйцо Бездны, которое можно выставить на поле боя. В начале боя из него вылупляется ужасное чудовище, которое подбрасывает примыкающих врагов.<br><br>Каждая звезда бойцов из Бездны увеличивает запас здоровья и силу умений чудовища на @PercentHealthAPPerStarLevel*100@%. <br><br><row>(@MinUnits@) Ремора Бездны</row><br><row>(@MinUnits@) Герольд Бездны</row><br><row>(@MinUnits@) Барон Нашор</row>",
+        "effects": [
+            {
+                "maxUnits": 5,
+                "minUnits": 3,
+                "style": 1,
+                "variables": {
+                    "{1eb1d2ae}": 0.25,
+                    "{a4dcb3da}": 0.4000000059604645
+                }
+            },
+            {
+                "maxUnits": 7,
+                "minUnits": 6,
+                "style": 4,
+                "variables": {
+                    "{1eb1d2ae}": 0.25,
+                    "{a4dcb3da}": 0.4000000059604645
+                }
+            },
+            {
+                "maxUnits": 25000,
+                "minUnits": 8,
+                "style": 5,
+                "variables": {
+                    "{1eb1d2ae}": 0.25,
+                    "{a4dcb3da}": 0.4000000059604645
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/Trait_Icon_9_Void.TFT_Set9.tex",
+        "name": "Бездна"
+    },
+    {
+        "apiName": "Set9_Demacia",
+        "desc": "Каждый бой ваши сильнейшие бойцы из Демасии становятся элитными и получают случайный лучезарный предмет. Элитные бойцы дают броню и сопротивление магии себе и примыкающим союзникам (прибавки не суммируются).<br><br><row>(@MinUnits@) @NumElites@ элитный боец, +@BonusDefenses@ %i:scaleArmor%, +@BonusDefenses@ %i:scaleMR%</row><br><row>(@MinUnits@) @NumElites@ элитных бойца, +@BonusDefenses@ %i:scaleArmor%, +@BonusDefenses@ %i:scaleMR%</row><br><row>(@MinUnits@) @NumElites@ элитных бойца, +@BonusDefenses@ %i:scaleArmor%, +@BonusDefenses@ %i:scaleMR%</row><br><row>(@MinUnits@) @NumElites@ элитных бойцов, +@BonusDefenses@ %i:scaleArmor%, +@BonusDefenses@ %i:scaleMR%</row><br><br><rules>Лучезарные предметы – это более мощные версии полноценных предметов.</rules>",
+        "effects": [
+            {
+                "maxUnits": 4,
+                "minUnits": 3,
+                "style": 1,
+                "variables": {
+                    "{a750b59f}": 1.0,
+                    "{bd072701}": 5.0
+                }
+            },
+            {
+                "maxUnits": 6,
+                "minUnits": 5,
+                "style": 3,
+                "variables": {
+                    "{a750b59f}": 2.0,
+                    "{bd072701}": 20.0
+                }
+            },
+            {
+                "maxUnits": 8,
+                "minUnits": 7,
+                "style": 4,
+                "variables": {
+                    "{a750b59f}": 3.0,
+                    "{bd072701}": 50.0
+                }
+            },
+            {
+                "maxUnits": 25000,
+                "minUnits": 9,
+                "style": 5,
+                "variables": {
+                    "{a750b59f}": 5.0,
+                    "{bd072701}": 100.0
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/Trait_Icon_9_Demacia.TFT_Set9.tex",
+        "name": "Демасия"
+    },
+    {
+        "apiName": "Set9_Rogue",
+        "desc": "<row>(@MinUnits@) Когда у головорезов остается менее @HealthThreshold*100@% здоровья, они ненадолго становятся недосягаемыми и совершают рывок к врагу в пределах @HexRange@ яч. (приоритет отдается врагам на задней линии).</row><br><row>(@MinUnits@) Кроме того, первая атака головореза вызывает у цели кровотечение, которое наносит магический урон в размере @BleedMaxHealthPct*100@% от ее максимального запаса здоровья в течение @BleedDuration@ сек.</row>",
+        "effects": [
+            {
+                "maxUnits": 3,
+                "minUnits": 2,
+                "style": 1,
+                "variables": {
+                    "DamageReduction": 100.0,
+                    "HealthThreshold": 0.5,
+                    "{0bc5955f}": "null",
+                    "{77df45b0}": "null",
+                    "{9b1e8f37}": 4.0,
+                    "{b1442c34}": 1.5
+                }
+            },
+            {
+                "maxUnits": 25000,
+                "minUnits": 4,
+                "style": 4,
+                "variables": {
+                    "DamageReduction": 100.0,
+                    "HealthThreshold": 0.5,
+                    "{0bc5955f}": 5.0,
+                    "{77df45b0}": 0.30000001192092896,
+                    "{9b1e8f37}": 4.0,
+                    "{b1442c34}": 1.5
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/Trait_Icon_9_Rogue.TFT_Set9.tex",
+        "name": "Головорез"
+    },
+    {
+        "apiName": "Set9_Slayer",
+        "desc": "Душегубы получают @Omnivamp@% всестороннего вытягивания жизни.<br><br>Душегубы наносят дополнительный урон, который удваивается, если у цели осталось менее @HealthThreshold*100@% здоровья.<br><br><expandRow>(@MinUnits@) +@BonusDamageBase@% дополнительного урона</expandRow>",
+        "effects": [
+            {
+                "maxUnits": 2,
+                "minUnits": 2,
+                "style": 1,
+                "variables": {
+                    "BonusDamageBase": 5.0,
+                    "HealthThreshold": 0.75,
+                    "{ad16f688}": 15.0
+                }
+            },
+            {
+                "maxUnits": 3,
+                "minUnits": 3,
+                "style": 3,
+                "variables": {
+                    "BonusDamageBase": 10.0,
+                    "HealthThreshold": 0.75,
+                    "{ad16f688}": 15.0
+                }
+            },
+            {
+                "maxUnits": 4,
+                "minUnits": 4,
+                "style": 3,
+                "variables": {
+                    "BonusDamageBase": 20.0,
+                    "HealthThreshold": 0.75,
+                    "{ad16f688}": 15.0
+                }
+            },
+            {
+                "maxUnits": 5,
+                "minUnits": 5,
+                "style": 4,
+                "variables": {
+                    "BonusDamageBase": 30.0,
+                    "HealthThreshold": 0.75,
+                    "{ad16f688}": 15.0
+                }
+            },
+            {
+                "maxUnits": 25000,
+                "minUnits": 6,
+                "style": 5,
+                "variables": {
+                    "BonusDamageBase": 40.0,
+                    "HealthThreshold": 0.75,
+                    "{ad16f688}": 15.0
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/Trait_Icon_4_Slayer.tex",
+        "name": "Душегуб"
+    },
+    {
+        "apiName": "Set9_Preserver",
+        "desc": "Раз в @TickRate@ сек. ваши бойцы восстанавливают ману.<br><br><row>(@MinUnits@) @TeamMana@ %i:scaleMana%</row><br><row>(@MinUnits@) Дополнительно @SelfBonusMana@ для колдунов</row><br><row>(@MinUnits@) @TeamMana@ %i:scaleMana% для всех, дополнительно @SelfBonusMana@ для колдунов</row><br>",
+        "effects": [
+            {
+                "maxUnits": 3,
+                "minUnits": 2,
+                "style": 1,
+                "variables": {
+                    "{2af5ed55}": "null",
+                    "{471b1a16}": 3.0,
+                    "{dd3e2f2b}": 5.0
+                }
+            },
+            {
+                "maxUnits": 5,
+                "minUnits": 4,
+                "style": 3,
+                "variables": {
+                    "{2af5ed55}": 15.0,
+                    "{471b1a16}": 3.0,
+                    "{dd3e2f2b}": 5.0
+                }
+            },
+            {
+                "maxUnits": 25000,
+                "minUnits": 6,
+                "style": 4,
+                "variables": {
+                    "{2af5ed55}": 15.0,
+                    "{471b1a16}": 3.0,
+                    "{dd3e2f2b}": 20.0
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/Trait_Icon_9_Preserver.TFT_Set9.tex",
+        "name": "Колдун"
+    },
+    {
+        "apiName": "Set9_Bruiser",
+        "desc": "Ваши бойцы получают @TeamFlatHealth@ здоровья. Громилы получают прибавку к максимальному запасу здоровья.<br><br><expandRow>(@MinUnits@) +@BonusPercentHealth*100@% макс. %i:scaleHealth%</expandRow>",
+        "effects": [
+            {
+                "maxUnits": 3,
+                "minUnits": 2,
+                "style": 1,
+                "variables": {
+                    "{392edb65}": 100.0,
+                    "{a92bb347}": 0.10000000149011612
+                }
+            },
+            {
+                "maxUnits": 5,
+                "minUnits": 4,
+                "style": 3,
+                "variables": {
+                    "{392edb65}": 100.0,
+                    "{a92bb347}": 0.3499999940395355
+                }
+            },
+            {
+                "maxUnits": 25000,
+                "minUnits": 6,
+                "style": 4,
+                "variables": {
+                    "{392edb65}": 100.0,
+                    "{a92bb347}": 0.699999988079071
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/Trait_Icon_6_Bruiser.tex",
+        "name": "Громила"
+    },
+    {
+        "apiName": "Set9_Noxus",
+        "desc": "Чемпионы из Ноксуса получают здоровье, силу умений и силу атаки. Прибавки увеличиваются на @BonusRatio*100@% за каждого уникального оппонента, которого вы одолели в бою или который выбыл.<br><br><expandRow>(@MinUnits@) @Health@ %i:scaleHealth%, @AP@ %i:scaleAP%, @AD@% %i:scaleAD%</expandRow><br><br><TFTTrackerLabel>Бонус за побежденных оппонентов: @TFTUnitProperty.trait:TFT9_Trait_ConquerorBonus@/@BonusRatio*700@%</TFTTrackerLabel>",
+        "effects": [
+            {
+                "maxUnits": 5,
+                "minUnits": 3,
+                "style": 1,
+                "variables": {
+                    "AD": 16.0,
+                    "AP": 16.0,
+                    "Health": 160.0,
+                    "{d04ae9af}": 0.10000000149011612
+                }
+            },
+            {
+                "maxUnits": 8,
+                "minUnits": 6,
+                "style": 4,
+                "variables": {
+                    "AD": 28.0,
+                    "AP": 28.0,
+                    "Health": 300.0,
+                    "{d04ae9af}": 0.10000000149011612
+                }
+            },
+            {
+                "maxUnits": 25000,
+                "minUnits": 9,
+                "style": 5,
+                "variables": {
+                    "AD": 45.0,
+                    "AP": 45.0,
+                    "Health": 500.0,
+                    "{d04ae9af}": 0.10000000149011612
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/Trait_Icon_9_Noxus.TFT_Set9.tex",
+        "name": "Ноксус"
+    },
+    {
+        "apiName": "Set9_Shurima",
+        "desc": "Раз в @PulsePeriod@ сек. бойцы из Шуримы восстанавливают себе @HealthRegen*100@% от максимального запаса здоровья. Через @SecondsToAscend@ сек. бойцы из Шуримы возносятся: их максимальный запас здоровья увеличивается на @BonusHealthPercent*100@%, а скорость атаки – на @BonusASPercent*100@%.<br><br><row>(@MinUnits@) Возносится сильнейший боец из Шуримы</row><br><row>(@MinUnits@) Возносятся все бойцы из Шуримы</row><br><row>(@MinUnits@) Вознесение происходит в начале боя; прибавки увеличиваются на @AscensionStrengthBoost*100@%</row><br><row>(@MinUnits@) Вознесение происходит дважды: в начале боя и через @SecondsToAscend@ сек.; прибавки увеличиваются на @AscensionStrengthBoost*100@%</row>",
+        "effects": [
+            {
+                "maxUnits": 4,
+                "minUnits": 3,
+                "style": 1,
+                "variables": {
+                    "HealthRegen": 0.05000000074505806,
+                    "{255e11cd}": 0.44999998807907104,
+                    "{31128603}": 0.30000001192092896,
+                    "{473e51f7}": 4.0,
+                    "{975a6fed}": 8.0,
+                    "{98193878}": "null",
+                    "{e3dc0fc2}": 2.0
+                }
+            },
+            {
+                "maxUnits": 6,
+                "minUnits": 5,
+                "style": 3,
+                "variables": {
+                    "HealthRegen": 0.05000000074505806,
+                    "{255e11cd}": 0.44999998807907104,
+                    "{31128603}": 0.30000001192092896,
+                    "{473e51f7}": 4.0,
+                    "{975a6fed}": 8.0,
+                    "{98193878}": "null",
+                    "{e3dc0fc2}": 2.0
+                }
+            },
+            {
+                "maxUnits": 8,
+                "minUnits": 7,
+                "style": 4,
+                "variables": {
+                    "HealthRegen": 0.05000000074505806,
+                    "{255e11cd}": 0.44999998807907104,
+                    "{31128603}": 0.30000001192092896,
+                    "{473e51f7}": 4.0,
+                    "{975a6fed}": 8.0,
+                    "{98193878}": 0.20000000298023224,
+                    "{e3dc0fc2}": 2.0
+                }
+            },
+            {
+                "maxUnits": 25000,
+                "minUnits": 9,
+                "style": 5,
+                "variables": {
+                    "HealthRegen": 0.05000000074505806,
+                    "{255e11cd}": 0.44999998807907104,
+                    "{31128603}": 0.30000001192092896,
+                    "{473e51f7}": 4.0,
+                    "{975a6fed}": 8.0,
+                    "{98193878}": 0.25,
+                    "{e3dc0fc2}": 2.0
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/Trait_Icon_9_Shurima.TFT_Set9.tex",
+        "name": "Шурима"
+    },
+    {
+        "apiName": "Set9_Strategist",
+        "desc": "<spellPassive>Начало боя:</spellPassive> союзники в первых 2 рядах получают щит на @ShieldDuration@ сек. Союзники в последних 2 рядах получают силу умений.<br><br><expandRow>(@MinUnits@) Прочность щита: @ShieldHP@; @BonusAP@ %i:scaleAP%</expandRow><br>",
+        "effects": [
+            {
+                "maxUnits": 2,
+                "minUnits": 2,
+                "style": 1,
+                "variables": {
+                    "ShieldDuration": 15.0,
+                    "{9d0939e8}": 200.0,
+                    "{d49caf5d}": 20.0
+                }
+            },
+            {
+                "maxUnits": 3,
+                "minUnits": 3,
+                "style": 3,
+                "variables": {
+                    "ShieldDuration": 15.0,
+                    "{9d0939e8}": 350.0,
+                    "{d49caf5d}": 30.0
+                }
+            },
+            {
+                "maxUnits": 4,
+                "minUnits": 4,
+                "style": 4,
+                "variables": {
+                    "ShieldDuration": 15.0,
+                    "{9d0939e8}": 500.0,
+                    "{d49caf5d}": 50.0
+                }
+            },
+            {
+                "maxUnits": 25000,
+                "minUnits": 5,
+                "style": 5,
+                "variables": {
+                    "ShieldDuration": 15.0,
+                    "{9d0939e8}": 800.0,
+                    "{d49caf5d}": 70.0
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/Trait_Icon_9_Strategist.TFT_Set9.tex",
+        "name": "Стратег"
+    },
+    {
+        "apiName": "Set9_Redeemer",
+        "desc": "Когда союзник получает щит, Сенна дает ему @AttackSpeed*100@% скорости атаки (прибавки суммируются) до конца боя.",
+        "effects": [
+            {
+                "maxUnits": 25000,
+                "minUnits": 1,
+                "style": 4,
+                "variables": {
+                    "AttackSpeed": 0.07999999821186066
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/Trait_Icon_9_Mistwalker.TFT_Set9.tex",
+        "name": "Освободительница"
+    },
+    {
+        "apiName": "Set9_Piltover",
+        "desc": "Вы получаете хекстек-рекса. Каждый раз, когда вы проигрываете бой против игрока, хекстек-рекс получает заряды. Выиграв бой, вы превращаете накопленные заряды в энергию для хекстек-рекса.<br><br>Если у хекстек-рекса есть энергия, вы можете продать его, превратив энергию в добычу. После этого накопление энергии начинается заново.<br><br><row>(@MinUnits@) Вы получаете хекстек-рекса.</row><br><row>(@MinUnits@) Вы получаете дополнительную добычу каждый раунд. Каждое поражение считается за 2.</row>",
+        "effects": [
+            {
+                "maxUnits": 5,
+                "minUnits": 3,
+                "style": 4,
+                "variables": {
+                    "{7714a401}": "null",
+                    "{af532c9d}": 1.0
+                }
+            },
+            {
+                "maxUnits": 25000,
+                "minUnits": 6,
+                "style": 5,
+                "variables": {
+                    "{7714a401}": 1.0,
+                    "{af532c9d}": 1.0
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/Trait_Icon_9_Piltover.TFT_Set9.tex",
+        "name": "Пилтовер"
+    },
+    {
+        "apiName": "Set9_Multicaster",
+        "desc": "Искусники применяют свои умения несколько раз. Эффективность повторных применений составляет @DamageReduction*100@%.<br><br><row>(@MinUnits@) повторное применение: @BonusCasts@ </row><br><row>(@MinUnits@) повторные применения: @BonusCasts@</row>",
+        "effects": [
+            {
+                "maxUnits": 3,
+                "minUnits": 2,
+                "style": 1,
+                "variables": {
+                    "DamageReduction": 0.6000000238418579,
+                    "{b99088b8}": 1.0
+                }
+            },
+            {
+                "maxUnits": 25000,
+                "minUnits": 4,
+                "style": 4,
+                "variables": {
+                    "DamageReduction": 0.5,
+                    "{b99088b8}": 2.0
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/Trait_Icon_9_Multicaster.TFT_Set9.tex",
+        "name": "Искусник"
+    },
+    {
+        "apiName": "Set9_Marksman",
+        "desc": "Когда стрелки атакуют, они получают прибавку к силе атаки (суммируется до @MaxStacks@ раз).<br><br><expandRow>(@MinUnits@) @PercentAD@% %i:scaleAD% за заряд</expandRow>",
+        "effects": [
+            {
+                "maxUnits": 3,
+                "minUnits": 2,
+                "style": 1,
+                "variables": {
+                    "MaxStacks": 8.0,
+                    "{df3d2f5f}": 6.0
+                }
+            },
+            {
+                "maxUnits": 5,
+                "minUnits": 4,
+                "style": 4,
+                "variables": {
+                    "MaxStacks": 8.0,
+                    "{df3d2f5f}": 11.0
+                }
+            },
+            {
+                "maxUnits": 25000,
+                "minUnits": 6,
+                "style": 5,
+                "variables": {
+                    "MaxStacks": 8.0,
+                    "{df3d2f5f}": 20.0
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/Trait_Icon_9_Gunner.TFT_Set9.tex",
+        "name": "Стрелок"
+    },
+    {
+        "apiName": "Set9_Empress",
+        "desc": "Когда Бел'Вет убивает врага, на его месте появляется коралл Бездны, который она поглощает. Первый коралл увеличивает ее максимальный запас здоровья на @PercentBonusMaxHealth*100@%, а все последующие восстанавливают ей @PercentHealthHeal*100@% от максимального запаса здоровья.<br><br>Когда Бел'Вет поглощает коралл Бездны, она наносит врагам в радиусе @HexRange@ яч. магический урон в размере @PercentHealthMagicDamage*100@% от максимального запаса здоровья.",
+        "effects": [
+            {
+                "maxUnits": 25000,
+                "minUnits": 1,
+                "style": 4,
+                "variables": {
+                    "PercentHealthHeal": 0.20000000298023224,
+                    "{0b0b3c63}": 0.5,
+                    "{1ec4c4d2}": 0.10000000149011612,
+                    "{9b1e8f37}": 2.0
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/Trait_Icon_9_Empress.TFT_Set9.tex",
+        "name": "Императрица"
+    },
+    {
+        "apiName": "Set9_ShadowIsles",
+        "desc": "Нанеся или получив урон @DamageInstances@ р., бойцы с Сумрачных островов получают щит на @Duration@ сек. и становятся призраками до конца боя. Призраки восстанавливают ману каждую секунду.<br><br><expandRow>(@MinUnits@) прочность щита: @MaxHealthShield@% %i:scaleHealth%; @ManaRegen@ %i:scaleMana%</expandRow>",
+        "effects": [
+            {
+                "maxUnits": 3,
+                "minUnits": 2,
+                "style": 1,
+                "variables": {
+                    "Duration": 12.0,
+                    "{0f5e9c98}": 8.0,
+                    "{471b1a16}": 1.0,
+                    "{4e39b1d2}": 40.0,
+                    "{d8f646f3}": 5.0
+                }
+            },
+            {
+                "maxUnits": 5,
+                "minUnits": 4,
+                "style": 4,
+                "variables": {
+                    "Duration": 12.0,
+                    "{0f5e9c98}": 8.0,
+                    "{471b1a16}": 1.0,
+                    "{4e39b1d2}": 80.0,
+                    "{d8f646f3}": 12.0
+                }
+            },
+            {
+                "maxUnits": 25000,
+                "minUnits": 6,
+                "style": 5,
+                "variables": {
+                    "Duration": 12.0,
+                    "{0f5e9c98}": 8.0,
+                    "{471b1a16}": 1.0,
+                    "{4e39b1d2}": 125.0,
+                    "{d8f646f3}": 20.0
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/Trait_Icon_9_ShadowIsles.TFT_Set9.tex",
+        "name": "Сумрачные острова"
+    },
+    {
+        "apiName": "Set9_Freljord",
+        "desc": "Через @DelayTime@ сек. на поле начинает бушевать ледяная буря. Враги в ней получают чистый урон в размере части от максимального запаса здоровья и ослабляются.<br><br><row>(@MinUnits@) @PercentHealthDamage@% %i:scaleHealth%, у врагов <TFTKeyword>раскалывается</TFTKeyword> (@ShredSunder@%) броня, и они <TFTKeyword>истощаются</TFTKeyword> (%) на @Duration@ сек.</row><br><row>(@MinUnits@) @PercentHealthDamage@% %i:scaleHealth%, у врагов также <TFTKeyword>вытягивается мана</TFTKeyword> (@Reave@%)</row><br><row>(@MinUnits@) @PercentHealthDamage@% %i:scaleHealth%, враги также оказываются оглушены на @StunDuration@ сек.</row><br><br><rules><tftbold>Раскол</tftbold>: ослабляет броню<br><tftbold>Истощение</tftbold>: уменьшает сопротивление магии<br><tftbold>Вытягивание маны</tftbold>: увеличивает максимальный запас маны до следующего применения умения</rules>",
+        "effects": [
+            {
+                "maxUnits": 2,
+                "minUnits": 2,
+                "style": 1,
+                "variables": {
+                    "Duration": 10.0,
+                    "PercentHealthDamage": 5.0,
+                    "{14adee04}": 40.0,
+                    "{17f82fb1}": 8.0,
+                    "{81ce23cf}": 1.0
+                }
+            },
+            {
+                "maxUnits": 3,
+                "minUnits": 3,
+                "style": 4,
+                "variables": {
+                    "Duration": 10.0,
+                    "PercentHealthDamage": 10.0,
+                    "{17f82fb1}": 8.0,
+                    "{5e31469e}": 35.0,
+                    "{81ce23cf}": 2.0
+                }
+            },
+            {
+                "maxUnits": 25000,
+                "minUnits": 4,
+                "style": 5,
+                "variables": {
+                    "Duration": 10.0,
+                    "PercentHealthDamage": 15.0,
+                    "StunDuration": 1.5,
+                    "{17f82fb1}": 8.0,
+                    "{81ce23cf}": 3.0
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/Trait_Icon_9_Freljord.TFT_Set9.tex",
+        "name": "Фрельйорд"
+    },
+    {
+        "apiName": "Set9_Targon",
+        "desc": "У всех ваших бойцов увеличивается эффективность лечения и щитов.<br><br><expandRow>(@MinUnits@) @HealShieldIncrease*100@% эффективности лечения и щитов</expandRow>",
+        "effects": [
+            {
+                "maxUnits": 2,
+                "minUnits": 2,
+                "style": 1,
+                "variables": {
+                    "{0b39c7c2}": 0.20000000298023224
+                }
+            },
+            {
+                "maxUnits": 3,
+                "minUnits": 3,
+                "style": 4,
+                "variables": {
+                    "{0b39c7c2}": 0.4000000059604645
+                }
+            },
+            {
+                "maxUnits": 25000,
+                "minUnits": 4,
+                "style": 5,
+                "variables": {
+                    "{0b39c7c2}": 0.699999988079071
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/Trait_Icon_9_Targon.TFT_Set9.tex",
+        "name": "Таргон"
+    },
+    {
+        "apiName": "Set9_Darkin",
+        "desc": "Когда Атрокс или владелец Клинка даркинов погибает, Клинок переходит к ближайшему союзному чемпиону. При этом чемпион получает @BonusHealth@ здоровья и @BonusOmnivamp*100@% всестороннего вытягивания жизни.<br><br>Если он владеет Клинком даркинов более @RespawnTimer@ сек., после его смерти Атрокс возрождается.",
+        "effects": [
+            {
+                "maxUnits": 25000,
+                "minUnits": 1,
+                "style": 4,
+                "variables": {
+                    "BonusHealth": 400.0,
+                    "{8bdcd88d}": 0.15000000596046448,
+                    "{ad17ba74}": 5.0
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/Trait_Icon_9_Darkin.TFT_Set9.tex",
+        "name": "Даркин"
+    },
+    {
+        "apiName": "Set9_Wanderer",
+        "desc": "Умение Райза зависит от региона, за который проголосовали игроки в начале игры.",
+        "effects": [
+            {
+                "maxUnits": 25000,
+                "minUnits": 1,
+                "style": 4,
+                "variables": {}
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/Trait_Icon_9_Wanderer.TFT_Set9.tex",
+        "name": "Странник"
+    },
+    {
+        "apiName": "Set9_Zaun",
+        "desc": "Чемпионы из Зауна создают случайные химтековые модификации, которые могут использовать только они. Каждому бойцу можно дать не более одной модификации, и они снимаются только при продаже чемпиона.<br><br><row>(@MinUnits@) 1 химтековая модификация</row><br><row>(@MinUnits@) 2 химтековые модификации</row><br><row>(@MinUnits@) 3 химтековые модификации; на модификации действует перегрузка</row><br>",
+        "effects": [
+            {
+                "maxUnits": 3,
+                "minUnits": 2,
+                "style": 1,
+                "variables": {
+                    "{05b87026}": 1.0,
+                    "{dbf68e4f}": "null"
+                }
+            },
+            {
+                "maxUnits": 5,
+                "minUnits": 4,
+                "style": 4,
+                "variables": {
+                    "{05b87026}": 2.0,
+                    "{dbf68e4f}": "null"
+                }
+            },
+            {
+                "maxUnits": 25000,
+                "minUnits": 6,
+                "style": 5,
+                "variables": {
+                    "{05b87026}": 3.0,
+                    "{dbf68e4f}": 1.0
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/Trait_Icon_9_Zaun.TFT_Set9.tex",
+        "name": "Заун"
+    },
+    {
+        "apiName": "Set9_Armorclad",
+        "desc": "Чем больше здоровья теряют джаггернауты, тем меньше урона они получают.<br><br><expandRow>(@MinUnits@) @MinDR*100@-@MaxDR*100@% уменьшения урона</expandRow>",
+        "effects": [
+            {
+                "maxUnits": 3,
+                "minUnits": 2,
+                "style": 1,
+                "variables": {
+                    "Duration": 7.0,
+                    "{012399e1}": 0.15000000596046448,
+                    "{5532c3ef}": 0.25
+                }
+            },
+            {
+                "maxUnits": 5,
+                "minUnits": 4,
+                "style": 3,
+                "variables": {
+                    "Duration": 7.0,
+                    "{012399e1}": 0.25,
+                    "{5532c3ef}": 0.3499999940395355
+                }
+            },
+            {
+                "maxUnits": 25000,
+                "minUnits": 6,
+                "style": 4,
+                "variables": {
+                    "Duration": 7.0,
+                    "{012399e1}": 0.3499999940395355,
+                    "{5532c3ef}": 0.5
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/Trait_Icon_9_Juggernaut.TFT_Set9.tex",
+        "name": "Джаггернаут"
+    },
+    {
+        "apiName": "Set9_Technogenius",
+        "desc": "Вы получаете продвинутую турель с 3 ячейками для улучшений, которую можно выставить на поле боя. Улучшения периодически попадаются в магазине. Цена каждого из них: @GoldCost@ золота. У продвинутой турели такие же скорость атаки и сила умений, как у Хеймердингера.<br><br><rules>Всего можно разместить не более 1 продвинутой турели.</rules>",
+        "effects": [
+            {
+                "maxUnits": 25000,
+                "minUnits": 1,
+                "style": 4,
+                "variables": {
+                    "{8063e2fe}": 1.0,
+                    "{cc5f430a}": 6.0,
+                    "{db5e6ace}": 100.0
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/Trait_Icon_9_Technogenius.TFT_Set9.tex",
+        "name": "Техногений"
+    },
+    {
+        "apiName": "Set9_Challenger",
+        "desc": "Ваши задиры получают дополнительную скорость атаки. Когда цель задиры погибает, он совершает рывок к новой цели и увеличивает свою прибавку к скорости атаки на @IncreasePct*100@% на @BurstDuration@ сек.<br><br><expandRow>(@MinUnits@) @BonusAS@% %i:scaleAS%</expandRow>",
+        "effects": [
+            {
+                "maxUnits": 3,
+                "minUnits": 2,
+                "style": 1,
+                "variables": {
+                    "BonusAS": 30.0,
+                    "{17cfa971}": 2.5,
+                    "{89094428}": 0.5
+                }
+            },
+            {
+                "maxUnits": 5,
+                "minUnits": 4,
+                "style": 3,
+                "variables": {
+                    "BonusAS": 60.0,
+                    "{17cfa971}": 2.5,
+                    "{89094428}": 0.5
+                }
+            },
+            {
+                "maxUnits": 7,
+                "minUnits": 6,
+                "style": 4,
+                "variables": {
+                    "BonusAS": 95.0,
+                    "{17cfa971}": 2.5,
+                    "{89094428}": 0.5
+                }
+            },
+            {
+                "maxUnits": 25000,
+                "minUnits": 8,
+                "style": 5,
+                "variables": {
+                    "BonusAS": 140.0,
+                    "{17cfa971}": 2.5,
+                    "{89094428}": 0.5
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/Trait_Icon_6_Challenger.tex",
+        "name": "Задира"
+    },
+    {
+        "apiName": "Set9_Ionia",
+        "desc": "У каждого бойца из Ионии есть уникальный бонус. <br><br>Раз в @SpiritDuration@ сек. ваши бойцы из Ионии просветляются и принимают духовную форму на @SpiritDuration@ сек., восстанавливая @Mana@ маны. При этом бонусные прибавки удваиваются.<br><br><expandRow>(@MinUnits@) Бонус Ионии: @TooltipBonus*100@%; просветленные бойцы: @NumberOfSpirits@</expandRow>",
+        "effects": [
+            {
+                "maxUnits": 5,
+                "minUnits": 3,
+                "style": 1,
+                "variables": {
+                    "Mana": 20.0,
+                    "{18bfc1ac}": 10.0,
+                    "{1b8cd16a}": 30.0,
+                    "{27b17444}": 40.0,
+                    "{3076bc18}": 4.0,
+                    "{3fc62f6f}": 2.0,
+                    "{4df03474}": 200.0,
+                    "{53912082}": 1.0,
+                    "{b9a6ee1b}": 15.0,
+                    "{c5f948bd}": 1.0,
+                    "{eb0c521b}": 15.0,
+                    "{ed124bdb}": 30.0,
+                    "{f2474447}": 1.0,
+                    "{f6b4b588}": 3.0,
+                    "{f809601e}": 33.0
+                }
+            },
+            {
+                "maxUnits": 8,
+                "minUnits": 6,
+                "style": 4,
+                "variables": {
+                    "Mana": 20.0,
+                    "{18bfc1ac}": 20.0,
+                    "{1b8cd16a}": 60.0,
+                    "{27b17444}": 80.0,
+                    "{3076bc18}": 4.0,
+                    "{3fc62f6f}": 2.0,
+                    "{4df03474}": 400.0,
+                    "{53912082}": 1.0,
+                    "{b9a6ee1b}": 30.0,
+                    "{c5f948bd}": 2.0,
+                    "{eb0c521b}": 30.0,
+                    "{ed124bdb}": 60.0,
+                    "{f2474447}": 2.0,
+                    "{f6b4b588}": 6.0,
+                    "{f809601e}": 66.0
+                }
+            },
+            {
+                "maxUnits": 25000,
+                "minUnits": 9,
+                "style": 5,
+                "variables": {
+                    "Mana": 20.0,
+                    "{18bfc1ac}": 32.5,
+                    "{1b8cd16a}": 97.5,
+                    "{27b17444}": 130.0,
+                    "{3076bc18}": 4.0,
+                    "{3fc62f6f}": 2.0,
+                    "{4df03474}": 650.0,
+                    "{53912082}": 1.0,
+                    "{b9a6ee1b}": 146.25,
+                    "{c5f948bd}": 3.0,
+                    "{eb0c521b}": 48.75,
+                    "{ed124bdb}": 97.5,
+                    "{f2474447}": 3.25,
+                    "{f6b4b588}": 10.0,
+                    "{f809601e}": 107.25
+                }
+            }
+        ],
+        "icon": "ASSETS/UX/TraitIcons/Trait_Icon_9_Ionia.TFT_Set9.tex",
+        "name": "Иония"
+    }
+]
