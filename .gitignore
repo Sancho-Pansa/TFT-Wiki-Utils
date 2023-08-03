@@ -130,3 +130,4 @@ dist
 .pnp.*
 
 workspace.code-workspace
+package-lock.json

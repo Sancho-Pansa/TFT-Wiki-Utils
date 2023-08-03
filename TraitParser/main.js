@@ -13,7 +13,7 @@ class Trait{
 
 async function getJson() {
     try {
-        const result = await fs.promises.readFile("Traits-9.json", { encoding: "utf-8" });
+        const result = await fs.promises.readFile("TraitParser/Traits-9.json", { encoding: "utf-8" });
         return result;
     } catch (err) {
         console.error(err);
