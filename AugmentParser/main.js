@@ -7,6 +7,7 @@ class Augment {
         name,
         apiName,
         engname,
+        image,
         tier,
         associatedTraits,
         desc,
@@ -15,6 +16,7 @@ class Augment {
         this.name = name;
         this.apiName = apiName;
         this.engname = engname;
+        this.image = image;
         this.tier = tier;
         this.associatedTraits = associatedTraits;
         this.desc = desc;
@@ -54,13 +56,24 @@ function extractAugmentsJson(onlineData, setRuData, setEnData) {
             }
         }
 
+        let augmentImage = setRuAugmentsList[x].image.full;
+        let imageName = augmentImage.split(".")[0];
+        let augmentTier;
+        if(imageName.search(/1$/gm) != -1 || imageName.search(/-I{1}$/gm != -1))
+            augmentTier = "silver";
+        else if(imageName.search(/2$/gm) != -1 || imageName.search(/-I{2}$/gm) != -1)
+            augmentTier = "gold";
+        else
+            augmentTier = "prismatic";
+
         let augmentDesc = augmentOnlineData?.desc;
         let augmentEffects = augmentOnlineData?.effects;
         let augment = new Augment(
             setRuAugmentsList[x].name, 
             setRuAugmentsList[x].id, 
             setEnAugmentsList[x].name,
-            "silver",
+            augmentImage,
+            augmentTier,
             setRuAugmentsList[x].associatedTraits, 
             augmentDesc, 
             augmentEffects
