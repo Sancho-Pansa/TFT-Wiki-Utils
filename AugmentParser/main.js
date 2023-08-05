@@ -10,8 +10,7 @@ class Augment {
         image,
         tier,
         associatedTraits,
-        desc,
-        effects
+        desc
     ) {
         this.name = name;
         this.apiName = apiName;
@@ -20,7 +19,6 @@ class Augment {
         this.tier = tier;
         this.associatedTraits = associatedTraits;
         this.desc = desc;
-        this.effects = effects;
     }
 }
 
@@ -46,7 +44,7 @@ function extractAugmentsJson(onlineData, setRuData, setEnData) {
     const items = onlineData.items;
     const setRuAugmentsList = setRuData.data;
     const setEnAugmentsList = setEnData.data;
-    const augments = new Array();
+    const augments = [];
     for(let x in setRuAugmentsList) {
         let augmentOnlineData;
         for(let element of items) {
@@ -68,6 +66,8 @@ function extractAugmentsJson(onlineData, setRuData, setEnData) {
 
         let augmentDesc = augmentOnlineData?.desc;
         let augmentEffects = augmentOnlineData?.effects;
+        let augmmentDecodedDesc = decodeDescription(augmentDesc, augmentEffects);
+        
         let augment = new Augment(
             setRuAugmentsList[x].name, 
             setRuAugmentsList[x].id, 
@@ -75,11 +75,15 @@ function extractAugmentsJson(onlineData, setRuData, setEnData) {
             augmentImage,
             augmentTier,
             setRuAugmentsList[x].associatedTraits, 
-            augmentDesc, 
-            augmentEffects
+            augmmentDecodedDesc
         );
         augments.push(augment);
     }
+
+    augments.sort(function(a, b) {
+        return a.name > b.name ? 1 : -1;
+    })
+
     return augments;
 }
 
@@ -93,13 +97,15 @@ function extractAugmentsJson(onlineData, setRuData, setEnData) {
  * @returns {String}
  */
 function decodeDescription(text, effects) {
-    let regexRemoveFooters = new RegExp("<br><br>.+", "gm");
+    let regexRemoveFooters = new RegExp("<br><br>.+", "gm");    
     let regexRemoveGenericVars = new RegExp("@TFTUnitProperty.+?@", "gm");
+    let regexQuoteEscapesChars = new RegExp("\"", "gm");
     text = text
+        .replace(regexQuoteEscapesChars, "\\\"")
         .replace(regexRemoveFooters, "")
         .replace(regexRemoveGenericVars, "");
     let regexTftVariable = new RegExp("@(.+?)@", "gm");
-    let regexTftVariableHundredfold = new RegExp("(.+?)\\*100", "gm");
+    let regexTftVariableHundredfold = new RegExp("(.+?)\\*100", "gm");    
     text = text.replace(regexTftVariable, function(match, group) {        
         if(group.search(regexTftVariableHundredfold) == -1) {
             return replaceTextWithValue(group, effects);
@@ -114,7 +120,6 @@ function decodeDescription(text, effects) {
             }
         }
     });
-    console.log(text);
     return text;
 }
 
@@ -131,12 +136,43 @@ function decodeDescription(text, effects) {
 function replaceTextWithValue(textToReplace, effects) {
     let fnvHash = hash(textToReplace.toLowerCase()).toString(16);
     for(let x in effects) {
-        if(x.substring(1, x.length - 1) == fnvHash || x == textToReplace) {
+        if(x.substring(1, x.length - 1) == fnvHash || x.toLowerCase() == textToReplace.toLowerCase()) {
             return effects[x].toString();
         }
     }
     return textToReplace;
-}  
+}
+
+/**
+ * 
+ * @param {Array<Augment>} augmentJson 
+ */
+function convertJsonToLua(augmentJson) {
+    const TAB = "\t";
+    const DTAB = "\t\t";
+    let result = [ "-- Augments data\n\nreturn {" ];
+
+    for(let x of augmentJson) {
+        let luaObject = [];
+        luaObject.push(`${TAB}["${x.name}"] = {`);
+        luaObject.push(`${DTAB}["engname"] = "${x.engname}",`);
+        luaObject.push(`${DTAB}["image"] = "${x.image}",`);
+        luaObject.push(`${DTAB}["tier"] = "${x.tier}",`);
+        luaObject.push(`${DTAB}["desc"] = "${x.desc}"`);
+        luaObject.push(`${TAB}},`);
+        result.push(luaObject.join("\n"));        
+    }
+    result.push("}");
+    return result.join("\n");
+}
+
+async function writeLua(lua) {
+    try {
+        await fs.promises.writeFile("AugmentParser/AugmentData.lua", lua);
+    } catch(err) {
+        console.error(err);
+    }
+}
 
 async function writeInFile(data) {
     try {
@@ -159,8 +195,11 @@ function main() {
         let onlineJson = jsons[0];
         let ruJson = jsons[1];
         let enJson = jsons[2];
-        console.log(extractAugmentsJson(onlineJson, ruJson, enJson));
-    }).catch(console.error);
+        let formattedJson = extractAugmentsJson(onlineJson, ruJson, enJson);
+        return convertJsonToLua(formattedJson);
+    })
+    .then(writeLua)
+    .catch(console.error);
 }
 
 main();
