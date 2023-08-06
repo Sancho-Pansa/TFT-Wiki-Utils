@@ -57,12 +57,16 @@ function extractAugmentsJson(onlineData, setRuData, setEnData) {
         let augmentImage = setRuAugmentsList[x].image.full;
         let imageName = augmentImage.split(".")[0];
         let augmentTier;
-        if(imageName.search(/1$/gm) != -1 || imageName.search(/-I{1}$/gm != -1))
-            augmentTier = "silver";
+        console.debug(`${imageName} : ${imageName.search(/3$/gm)}`);
+        console.debug(`${imageName} : ${imageName.search(/-I{3}$/gm)}`);
+        console.debug(`${imageName.search(/3$/gm) != -1 || imageName.search(/-I{3}$/gm) != -1}`);
+        if(imageName.search(/3$/gm) != -1 || imageName.search(/-I{3}$/gm) != -1) {
+            augmentTier = "prismatic";
+        }
         else if(imageName.search(/2$/gm) != -1 || imageName.search(/-I{2}$/gm) != -1)
             augmentTier = "gold";
         else
-            augmentTier = "prismatic";
+            augmentTier = "silver";
 
         let augmentDesc = augmentOnlineData?.desc;
         let augmentEffects = augmentOnlineData?.effects;
