@@ -31,11 +31,11 @@ async function getTftData() {
     return await response.json();
 }
 
-async function getLocalData(path) {    
+async function getLocalData(path) {
     try {
         let json = await fs.promises.readFile(path, { encoding: "utf8" });
         return JSON.parse(json);
-    } catch(err) {        
+    } catch(err) {
         console.error(err);
     }
 }
@@ -71,14 +71,14 @@ function extractAugmentsJson(onlineData, setRuData, setEnData) {
         let augmentDesc = augmentOnlineData?.desc;
         let augmentEffects = augmentOnlineData?.effects;
         let augmmentDecodedDesc = decodeDescription(augmentDesc, augmentEffects);
-        
+
         let augment = new Augment(
-            setRuAugmentsList[x].name, 
-            setRuAugmentsList[x].id, 
+            setRuAugmentsList[x].name,
+            setRuAugmentsList[x].id,
             setEnAugmentsList[x].name,
             augmentImage,
             augmentTier,
-            setRuAugmentsList[x].associatedTraits, 
+            setRuAugmentsList[x].associatedTraits,
             augmmentDecodedDesc
         );
         augments.push(augment);
@@ -86,22 +86,23 @@ function extractAugmentsJson(onlineData, setRuData, setEnData) {
 
     augments.sort(function(a, b) {
         return a.name > b.name ? 1 : -1;
-    })
+    });
+    let augmentSet = Array.from(new Set(augments));
 
-    return augments;
+    return augmentSet;
 }
 
 /**
  * Принимает на вход текст описания аугментации и объект связанных с ней эффектов.
- * 
- * По возможности заменяет переменные, заключенные в пару символов "@" на соответствующие 
+ *
+ * По возможности заменяет переменные, заключенные в пару символов "@" на соответствующие
  * в объекте эффекта значения.
- * @param {String} text 
- * @param {Object} effects 
+ * @param {String} text
+ * @param {Object} effects
  * @returns {String}
  */
 function decodeDescription(text, effects) {
-    let regexRemoveFooters = new RegExp("<br><br>.+", "gm");    
+    let regexRemoveFooters = new RegExp("<br><br>.+", "gm");
     let regexRemoveGenericVars = new RegExp("@TFTUnitProperty.+?@", "gm");
     let regexQuoteEscapesChars = new RegExp("\"", "gm");
     text = text
@@ -109,8 +110,8 @@ function decodeDescription(text, effects) {
         .replace(regexRemoveFooters, "")
         .replace(regexRemoveGenericVars, "");
     let regexTftVariable = new RegExp("@(.+?)@", "gm");
-    let regexTftVariableHundredfold = new RegExp("(.+?)\\*100", "gm");    
-    text = text.replace(regexTftVariable, function(match, group) {        
+    let regexTftVariableHundredfold = new RegExp("(.+?)\\*100", "gm");
+    text = text.replace(regexTftVariable, function(match, group) {
         if(group.search(regexTftVariableHundredfold) == -1) {
             return replaceTextWithValue(group, effects);
         } else {
@@ -129,9 +130,9 @@ function decodeDescription(text, effects) {
 
 /**
  * Принимает на вход имя переменной из текста описания и объект эффектов этой аугментации.
- * 
+ *
  * Если в объекте находится имя переменной или её FNV1a-хэшированный вариант, возвращает соответствующее ей значение.
- * 
+ *
  * В противном случае текст возвращается без изменений.
  * @param {String} textToReplace Заменяемый текст
  * @param {Object} effects Объект, хранящий пары "хэш (или имя переменной)": "значение"
@@ -148,8 +149,8 @@ function replaceTextWithValue(textToReplace, effects) {
 }
 
 /**
- * 
- * @param {Array<Augment>} augmentJson 
+ *
+ * @param {Array<Augment>} augmentJson
  */
 function convertJsonToLua(augmentJson) {
     const TAB = "\t";
@@ -164,7 +165,7 @@ function convertJsonToLua(augmentJson) {
         luaObject.push(`${DTAB}["tier"] = "${x.tier}",`);
         luaObject.push(`${DTAB}["desc"] = "${x.desc}"`);
         luaObject.push(`${TAB}},`);
-        result.push(luaObject.join("\n"));        
+        result.push(luaObject.join("\n"));
     }
     result.push("}");
     return result.join("\n");
@@ -180,13 +181,13 @@ async function writeLua(lua) {
 
 async function writeInFile(data) {
     try {
-        //await fs.promises.writeFile("AugmentParser/Augments-9-Set_formatted.json", JSON.stringify(data, null, 2));        
+        //await fs.promises.writeFile("AugmentParser/Augments-9-Set_formatted.json", JSON.stringify(data, null, 2));
     } catch(err) {
         console.error(err);
     }
 }
 
-function main() {
+export function main() {
     const onlinePromise = getTftData();
     const ruJsonPromise = getLocalData(SET_JSON_RU);
     const enJsonPromise = getLocalData(SET_JSON_EN);
