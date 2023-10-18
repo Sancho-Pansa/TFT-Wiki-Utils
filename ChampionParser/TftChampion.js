@@ -11,14 +11,7 @@ export default class TftChampion {
      * @param {String} abilityName Название умения
      * @param {String} abilityIcon Иллюстрация умения
      * @param {String} abilityDescription Описание умения
-     * @param {Number} health Здоровье
-     * @param {Number} mana Запас маны
-     * @param {Number} startMana Начальный объем маны
-     * @param {Number} attackDamage Сила атаки
-     * @param {Number} attackSpeed Скорость атаки
-     * @param {Number} range Дальность атаки
-     * @param {Number} armor Броня
-     * @param {Number} magicResistance Магическое сопротивление
+     * @param {ChampionStats} stats Характеристики чемпиона
      * @param {String} unitType Тип бойца
      * @param {Boolean} variant Является ли вариацией одного и того же бойца
      */
@@ -30,14 +23,7 @@ export default class TftChampion {
         abilityName,
         abilityIcon,
         abilityDescription,
-        health,
-        mana,
-        startMana,
-        attackDamage,
-        attackSpeed,
-        range,
-        armor,
-        magicResistance,
+        stats,
         unitType,
         variant
     ) {
@@ -48,6 +34,24 @@ export default class TftChampion {
         this.abilityName = abilityName;
         this.abilityIcon = abilityIcon;
         this.abilityDescription = abilityDescription;
+        this.stats = stats;
+        this.unitType = unitType;
+        this.variant = variant;
+    }
+}
+
+class ChampionStats {
+    /**
+    * @param {Number} health Здоровье
+    * @param {Number} mana Запас маны
+    * @param {Number} startMana Начальный объем маны
+    * @param {Number} attackDamage Сила атаки
+    * @param {Number} attackSpeed Скорость атаки
+    * @param {Number} range Дальность атаки
+    * @param {Number} armor Броня
+    * @param {Number} magicResistance Магическое сопротивление
+    */
+    constructor() {
         this.health = health;
         this.mana = mana;
         this.startMana = startMana;
@@ -56,7 +60,5 @@ export default class TftChampion {
         this.range = range;
         this.armor = armor;
         this.magicResistance = magicResistance;
-        this.unitType = unitType;
-        this.variant = variant;
     }
 }
