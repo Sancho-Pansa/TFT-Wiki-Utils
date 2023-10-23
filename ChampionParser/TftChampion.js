@@ -1,7 +1,7 @@
 /**
  * Класс чемпиона TFT
  */
-export default class TftChampion {
+class TftChampion {
     /**
      * Конструктор чемпиона TFT
      * @param {String} name Имя
@@ -45,20 +45,22 @@ class ChampionStats {
     * @param {Number} health Здоровье
     * @param {Number} mana Запас маны
     * @param {Number} startMana Начальный объем маны
-    * @param {Number} attackDamage Сила атаки
-    * @param {Number} attackSpeed Скорость атаки
+    * @param {Number} ad Сила атаки
+    * @param {Number} as Скорость атаки
     * @param {Number} range Дальность атаки
     * @param {Number} armor Броня
-    * @param {Number} magicResistance Магическое сопротивление
+    * @param {Number} mr Магическое сопротивление
     */
-    constructor() {
+    constructor(health, mana, startMana, ad, as, range, armor, mr) {
         this.health = health;
         this.mana = mana;
         this.startMana = startMana;
-        this.attackDamage = attackDamage;
-        this.attackSpeed = attackSpeed;
+        this.ad = ad;
+        this.as = as;
         this.range = range;
         this.armor = armor;
-        this.magicResistance = magicResistance;
+        this.mr = mr;
     }
 }
+
+export {TftChampion, ChampionStats};

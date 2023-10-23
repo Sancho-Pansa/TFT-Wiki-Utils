@@ -135,3 +135,4 @@ package-lock.json
 # put new gitignore here
 *.lua
 *.json
+out/

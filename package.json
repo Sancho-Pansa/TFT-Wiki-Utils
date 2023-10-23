@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "fnv1a": "^1.1.1",
+    "js-levenshtein": "^1.1.6",
     "node-fetch": "^3.3.2"
   }
 }
