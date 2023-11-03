@@ -18,6 +18,8 @@ export default function jsonToLua(json, defaultIndent = "\t") {
       if(typeof value === "object") {
         if(Array.isArray(value)) {
           return `["${key}"] = [${convertArray(value)}]`;
+        } else if(value === null) {
+          return `["${key}"] = nil`;
         } else {
           return `["${key}"] = {\n${convertObject(value)}}`;
         }
