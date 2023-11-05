@@ -1,4 +1,6 @@
-export default function jsonToLua(json, defaultIndent = "\t") {
+export default function jsonToLua(json, replacer = {}, defaultIndent = "\t") {
+  let indentation = 0;
+
   if(typeof json === "object") {
     if(Array.isArray(json)) {
       return defaultIndent + convertArray(json);
@@ -8,23 +10,26 @@ export default function jsonToLua(json, defaultIndent = "\t") {
   }
 
   function convertObject(obj) {
+    indentation++;
     let str = [];
     for(let [key, value] of Object.entries(obj)) {
       str.push(convertPair(key, value));
     };
+    indentation--;
     return str.join(", \n");
 
     function convertPair(key, value) {
+      let k = replacer[key] ?? key
       if(typeof value === "object") {
         if(Array.isArray(value)) {
-          return `["${key}"] = [${convertArray(value)}]`;
+          return `${defaultIndent.repeat(indentation)}["${k}"] = {${convertArray(value)}}`;
         } else if(value === null) {
-          return `["${key}"] = nil`;
+          return `${defaultIndent.repeat(indentation)}["${k}"] = ${convertPrimitive(value)}`;
         } else {
-          return `["${key}"] = {\n${convertObject(value)}}`;
+          return `${defaultIndent.repeat(indentation)}["${k}"] = {\n${convertObject(value)}\n${defaultIndent.repeat(indentation)}}`;
         }
       } else {
-        return `["${key}"] = ${convertPrimitive(value)}`;
+        return `${defaultIndent.repeat(indentation)}["${k}"] = ${convertPrimitive(value)}`;
       }
     }
   }
@@ -49,6 +54,7 @@ export default function jsonToLua(json, defaultIndent = "\t") {
     if(typeof prim === "number" || typeof prim === "boolean") {
       return prim.toString();
     } else if(typeof prim === "string") {
+      prim = prim.replace(/\n/g, "<br />");
       return `"${prim}"`;
     } else {
       return "nil";

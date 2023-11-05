@@ -1,3 +1,4 @@
+"use strict";
 import { fileURLToPath } from "node:url";
 import { dirname } from "node:path";
 import fs from "node:fs";
@@ -5,6 +6,7 @@ import levenshtein from "js-levenshtein";
 import { fetchTftData } from "../TFTDataFetcher.js";
 import { TftChampion, ChampionStats } from "./TftChampion.js";
 import "../JsonToLua.js";
+import jsonToLua from "../JsonToLua.js";
 
 /**
  * Вычленяет из общего объекта данных из Community Dragon только тот, что соответствует запрошенному сезону.
@@ -36,13 +38,13 @@ function processTftChampions(jsonArray) {
     let engname = value.characterName.replace(/TFT\d*_/g, "");
     let abilityName = value.ability.name;
     //let abilityIcon
-    let abilityDesc = generateAbilityDescription(value.ability.desc, value.ability.variables);
+    let abilityDesc = generateAbilityDescription(value.ability.desc, value.ability.variables, value.name);
     let championStats = new ChampionStats(
       value.stats.hp,
       value.stats.mana,
       value.stats.initialMana,
       value.stats.damage,
-      value.stats.attackSpeed,
+      roundVariable(value.stats.attackSpeed),
       value.stats.range,
       value.stats.armor,
       value.stats.magicResist
@@ -56,7 +58,7 @@ function processTftChampions(jsonArray) {
       "Q.png",
       abilityDesc,
       championStats,
-      value.traits.length == 0, // Если нет особенностей - это не чемпион
+      value.traits.length === 0, // Если нет особенностей - это не чемпион
       false
     )})
     .sort((a, b) => a.name > b.name ? 1 : -1);
@@ -70,17 +72,17 @@ function processTftChampions(jsonArray) {
    * @param {Array} variables Массив динамических параметров умений
    * @returns {String} Текст в разметке MediaWiki
    */
-  function generateAbilityDescription(rawDescription, variables) {
+  function generateAbilityDescription(rawDescription, variables, name) {
     if(!rawDescription) {
       return "";
     }
-    console.log(rawDescription);
     const regexBreaks = new RegExp("<br>", "gm");
     const regexRules = new RegExp(/(?:<rules>.*<\/rules>|<tftitemrules>.*<\/tftitemrules>)/gm);
     const regexTags = new RegExp("(<.*?>)", "gm");
     const regexMetaScalings = new RegExp(/@(\S*?)@ \((?:%i:\w*%)+\)/gm);
     const regexGenerics = new RegExp("@(.*?)@", "gm");
     const regexScales = new RegExp("%i:(.*?)%", "gm");
+    const regexDecimals = new RegExp(/\d+\.\d+/g);
     const regexKeywords = getKeywordRegex();
 
 
@@ -89,12 +91,15 @@ function processTftChampions(jsonArray) {
       .replace(regexRules, "")
       .replace(regexTags, "")
       .replace(regexMetaScalings, replaceMetaScalings)
-      .replace(regexGenerics, replaceGenerics);
+      .replace(regexGenerics, replaceGenerics)
+      .replace(regexDecimals, "{{fd|$&}}")
+      .replace(name, `'''${name}'''`)
+      .replace(/\n+/g, "\n")
+      .replace(/\n$/g, "");
 
     regexKeywords.forEach((regexPair) => {
       abilityText = abilityText.replace(regexPair[0], `{{tip|${regexPair[1]}|$&}}`);
     });
-    console.log(abilityText);
     return abilityText;
 
     /**
@@ -175,12 +180,31 @@ function processTftChampions(jsonArray) {
       }
       return resultText;
     }
-
-    function roundVariable(abilityVar, isPercent) {
-      let roundedValue = Math.round(abilityVar * 100);
-      return isPercent ? roundedValue : (roundedValue / 100);
-    }
   }
+}
+
+function roundVariable(abilityVar, isPercent) {
+  let roundedValue = Math.round(abilityVar * 100);
+  return isPercent ? roundedValue : (roundedValue / 100);
+}
+
+/**
+ *
+ * @param {TftChampion[]} championArray
+ */
+function convertToLua(championArray) {
+  let preparedObject = {};
+  for(let champion of championArray) {
+    let {name: name, ...rest} = champion
+    preparedObject[champion.name] = rest;
+  }
+  let replacer = {
+    abilityName: "abilityname",
+    abilityIcon: "abilityicon",
+    abilityDescription: "active",
+    unitType: "nonchampion"
+  }
+  return jsonToLua(preparedObject, replacer);
 }
 
 async function writeLua(filepath, lua) {
@@ -195,8 +219,8 @@ function main() {
   fetchTftData()
     .then(json => extrudeCDragonData(json, "TFTSet9_Stage2"))
     .then(processTftChampions)
-    //.then(console.log)
-    //.then(writeLua)
+    .then(convertToLua)
+    .then((luaText) => writeLua("Set9.5.lua", luaText))
     .catch(console.error);
 }
 
