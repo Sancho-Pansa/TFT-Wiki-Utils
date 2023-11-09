@@ -60,7 +60,8 @@ function processTftChampions(jsonArray) {
       championStats,
       value.traits.length === 0, // Если нет особенностей - это не чемпион
       false
-    )})
+    )
+  })
     .sort((a, b) => a.name > b.name ? 1 : -1);
 
   return championArray;
@@ -88,11 +89,11 @@ function processTftChampions(jsonArray) {
 
     let abilityText = rawDescription
       .replace(regexBreaks, "\n")
+      .replace(/\&nbsp;/g, " ")
       .replace(regexRules, "")
       .replace(regexTags, "")
       .replace(regexMetaScalings, replaceMetaScalings)
       .replace(regexGenerics, replaceGenerics)
-      .replace(regexDecimals, "{{fd|$&}}")
       .replace(name, `'''${name}'''`)
       .replace(/\n+/g, "\n")
       .replace(/\n$/g, "");
@@ -169,13 +170,18 @@ function processTftChampions(jsonArray) {
       let index = levenshteinArray.indexOf(Math.min(...levenshteinArray));
       if(index > -1) {
         let guessedVariable = variables[index];
-        let star1 = roundVariable(guessedVariable.value[1], isPercent);
-        let star2 = roundVariable(guessedVariable.value[2], isPercent);
-        let star3 = roundVariable(guessedVariable.value[3], isPercent);
-        if(star1 === star2 && star2 === star3) {
-          resultText = star1;
+        if(variables[index].value) {
+          let star1 = roundVariable(guessedVariable.value[1], isPercent);
+          let star2 = roundVariable(guessedVariable.value[2], isPercent);
+          let star3 = roundVariable(guessedVariable.value[3], isPercent);
+
+          if(star1 === star2 && star2 === star3) {
+            resultText = star1;
+          } else {
+            resultText = `{{ap|${star1}|${star2}|${star3}}}`;
+          }
         } else {
-          resultText = `{{ap|${star1}|${star2}|${star3}}}`;
+          resultText = "";
         }
       }
       return resultText;
@@ -195,7 +201,7 @@ function roundVariable(abilityVar, isPercent) {
 function convertToLua(championArray) {
   let preparedObject = {};
   for(let champion of championArray) {
-    let {name: name, ...rest} = champion
+    let { name: name, ...rest } = champion
     preparedObject[champion.name] = rest;
   }
   let replacer = {
@@ -216,11 +222,14 @@ async function writeLua(filepath, lua) {
 }
 
 function main() {
-  fetchTftData("pbe")
-    .then(json => extrudeCDragonData(json, "TFTSet10"))
+  let args = process.argv;
+  let setMutator = args[2] ?? "TFTSet10";
+  let patchVersion = args[3] ?? "latest";
+  fetchTftData(patchVersion)
+    .then(json => extrudeCDragonData(json, setMutator))
     .then(processTftChampions)
     .then(convertToLua)
-    .then((luaText) => writeLua("Set10.lua", luaText))
+    .then((luaText) => writeLua(`${setMutator}.lua`, luaText))
     .catch(console.error);
 }
 
