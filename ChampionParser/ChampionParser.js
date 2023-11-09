@@ -216,11 +216,11 @@ async function writeLua(filepath, lua) {
 }
 
 function main() {
-  fetchTftData()
-    .then(json => extrudeCDragonData(json, "TFTSet9_Stage2"))
+  fetchTftData("pbe")
+    .then(json => extrudeCDragonData(json, "TFTSet10"))
     .then(processTftChampions)
     .then(convertToLua)
-    .then((luaText) => writeLua("Set9.5.lua", luaText))
+    .then((luaText) => writeLua("Set10.lua", luaText))
     .catch(console.error);
 }
 
