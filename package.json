@@ -3,15 +3,20 @@
   "version": "1.0.0",
   "description": "",
   "type": "module",
-  "main": "main.js",
+  "main": "ChampionParser/ChampionParser.js",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha ChampionParser/test.js"
   },
-  "author": "",
+  "author": "Sancho Pansa",
   "license": "ISC",
   "dependencies": {
     "fnv1a": "^1.1.1",
     "js-levenshtein": "^1.1.6",
     "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "chai": "^4.3.10",
+    "mocha": "^10.2.0"
   }
 }
