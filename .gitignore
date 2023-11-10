@@ -130,7 +130,6 @@ dist
 .pnp.*
 
 workspace.code-workspace
-package-lock.json
 
 # put new gitignore here
 *.lua

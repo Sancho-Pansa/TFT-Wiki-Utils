@@ -1,4 +1,13 @@
-export default function jsonToLua(json, replacer = {}, defaultIndent = "\t") {
+/**
+ * Преобразует объект JavaScript в таблицу Lua
+ * @param {Object} json Объект JS для преобразования
+ * @param {Object={}} replacer Объект, в котором даются возможные замены первоначальных имен ключей в объекте JS
+ * @param {String[]} exclude Массив ключей объекта, которые нужно пропустить при преобразовании
+ * @param {Boolean} flat Если true, то все вложенные объекты будут сведены на верхний уровень таблицы Lua
+ * @param {String} defaultIndent Символ отступа по умолчанию
+ * @returns {String} таблица Lua в виде текстовой строки
+ */
+export default function jsonToLua(json, replacer = {}, exclude = [], flat = true, defaultIndent = "\t") {
   let indentation = 0;
 
   if(typeof json === "object") {
@@ -9,14 +18,19 @@ export default function jsonToLua(json, replacer = {}, defaultIndent = "\t") {
     }
   }
 
+  return "";
+
   function convertObject(obj) {
     indentation++;
     let str = [];
     for(let [key, value] of Object.entries(obj)) {
+      if(exclude.includes(key)) {
+        continue;
+      }
       str.push(convertPair(key, value));
     };
     indentation--;
-    return str.join(", \n");
+    return str.join(",\n");
 
     function convertPair(key, value) {
       let k = replacer[key] ?? key
