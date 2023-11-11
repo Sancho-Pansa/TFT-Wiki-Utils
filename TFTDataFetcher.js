@@ -12,6 +12,12 @@ async function fetchTftData(tftPatch = "latest") {
     return await response.json();
 }
 
+/**
+ * Вызывает JSON с информацией из CDragon
+ * @param {String} [lolPatch=latest] Номер обновления TFT в формате X.X (e.g. 13.18) или "latest"
+ * @param {String} fullPath Полный путь к файлу .json
+ * @returns {Promise<any>}
+ */
 async function fetchLoLData(lolPatch = "latest", fullPath) {
     const response = await fetch(CDRAGON_URL + lolPatch + fullPath);
     return await response.json();
