@@ -9,6 +9,7 @@
  */
 export default function jsonToLua(json, replacer = {}, exclude = [], flat = true, defaultIndent = "\t") {
   let indentation = 0;
+  let nestingLevel = 0;
 
   if(typeof json === "object") {
     if(Array.isArray(json)) {
@@ -21,7 +22,10 @@ export default function jsonToLua(json, replacer = {}, exclude = [], flat = true
   return "";
 
   function convertObject(obj) {
-    indentation++;
+    nestingLevel++;
+    if(flat && nestingLevel < 3) {
+      indentation++;
+    }
     let str = [];
     for(let [key, value] of Object.entries(obj)) {
       if(exclude.includes(key)) {
@@ -29,22 +33,29 @@ export default function jsonToLua(json, replacer = {}, exclude = [], flat = true
       }
       str.push(convertPair(key, value));
     };
-    indentation--;
+    if(flat && nestingLevel < 3) {
+      indentation--;
+    }
+    nestingLevel--;
     return str.join(",\n");
+  }
 
-    function convertPair(key, value) {
-      let k = replacer[key] ?? key
-      if(typeof value === "object") {
-        if(Array.isArray(value)) {
-          return `${defaultIndent.repeat(indentation)}["${k}"] = {${convertArray(value)}}`;
-        } else if(value === null) {
-          return `${defaultIndent.repeat(indentation)}["${k}"] = ${convertPrimitive(value)}`;
+  function convertPair(key, value) {
+    let k = replacer[key] ?? key
+    if(typeof value === "object") {
+      if(Array.isArray(value)) {
+        return `${defaultIndent.repeat(indentation)}["${k}"] = {${convertArray(value)}}`;
+      } else if(value === null) {
+        return `${defaultIndent.repeat(indentation)}["${k}"] = ${convertPrimitive(value)}`;
+      } else {
+        if(flat && nestingLevel > 1) {
+          return `${convertObject(value)}`;
         } else {
           return `${defaultIndent.repeat(indentation)}["${k}"] = {\n${convertObject(value)}\n${defaultIndent.repeat(indentation)}}`;
         }
-      } else {
-        return `${defaultIndent.repeat(indentation)}["${k}"] = ${convertPrimitive(value)}`;
       }
+    } else {
+      return `${defaultIndent.repeat(indentation)}["${k}"] = ${convertPrimitive(value)}`;
     }
   }
 
