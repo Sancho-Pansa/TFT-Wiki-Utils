@@ -200,17 +200,26 @@ function roundVariable(abilityVar, isPercent) {
  */
 function convertToLua(championArray) {
   let preparedObject = {};
+  let counter = 0;
   for(let champion of championArray) {
     let { name: name, ...rest } = champion
-    preparedObject[champion.name] = rest;
+    if(preparedObject[champion.name]) {
+      preparedObject[`${champion.name}:${counter++}`] = rest;
+    } else {
+      preparedObject[champion.name] = rest;
+    }
   }
   let replacer = {
     abilityName: "abilityname",
     abilityIcon: "abilityicon",
     abilityDescription: "active",
-    unitType: "nonchampion"
-  }
-  return jsonToLua(preparedObject, replacer);
+    unitType: "nonchampion",
+    health: "hp",
+    startMana: "startmana",
+    armor: "arm"
+  };
+  let exclude = ["engname"];
+  return jsonToLua(preparedObject, replacer, exclude, true);
 }
 
 async function writeLua(filepath, lua) {
