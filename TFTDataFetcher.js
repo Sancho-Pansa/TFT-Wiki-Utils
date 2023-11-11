@@ -12,4 +12,9 @@ async function fetchTftData(tftPatch = "latest") {
     return await response.json();
 }
 
-export {fetchTftData};
+async function fetchLoLData(lolPatch = "latest", fullPath) {
+    const response = await fetch(CDRAGON_URL + lolPatch + fullPath);
+    return await response.json();
+}
+
+export {fetchTftData, fetchLoLData};

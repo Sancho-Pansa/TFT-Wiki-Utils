@@ -3,10 +3,12 @@ import { fileURLToPath } from "node:url";
 import { dirname } from "node:path";
 import fs from "node:fs";
 import levenshtein from "js-levenshtein";
-import { fetchTftData } from "../TFTDataFetcher.js";
+import { fetchTftData, fetchLoLData } from "../TFTDataFetcher.js";
 import { TftChampion, ChampionStats } from "./TftChampion.js";
 import "../JsonToLua.js";
 import jsonToLua from "../JsonToLua.js";
+
+let patchVersion;
 
 /**
  * Вычленяет из общего объекта данных из Community Dragon только тот, что соответствует запрошенному сезону.
@@ -34,10 +36,10 @@ function extrudeCDragonData(fullJson, setMutator) {
  * @param {Object[]} jsonArray Массив объектов из JSON
  */
 function processTftChampions(jsonArray) {
-  let championArray = jsonArray.map((value) => {
+  let championArray = jsonArray.map(async (value) => {
     let engname = value.characterName.replace(/TFT\d*_/g, "");
     let abilityName = value.ability.name;
-    //let abilityIcon
+    let abilityIcon = await getAbilityIcon(value.name, value.ability.icon);
     let abilityDesc = generateAbilityDescription(value.ability.desc, value.ability.variables, value.name);
     let championStats = new ChampionStats(
       value.stats.hp,
@@ -55,7 +57,7 @@ function processTftChampions(jsonArray) {
       value.cost,
       value.traits,
       abilityName,
-      "Q.png",
+      abilityIcon,
       abilityDesc,
       championStats,
       value.traits.length === 0, // Если нет особенностей - это не чемпион
@@ -64,7 +66,58 @@ function processTftChampions(jsonArray) {
   })
     .sort((a, b) => a.name > b.name ? 1 : -1);
 
-  return championArray;
+  return Promise.all(championArray);
+
+  /**
+   * Генерирует имя иконки умения чемпиона по информации из данных TFT.
+   *
+   * Вызывает информацию из `/plugins/rcp-be-lol-game-data/global/ru_ru/v1/champions_summary.json`, а через него -
+   * подробную информацию о нём в LoL, в том числе имя умения (в английской локализации).
+   * @async
+   * @param {String} championName Имя чемпиона
+   * @param {String} iconPath
+   */
+  async function getAbilityIcon(championName, iconPath) {
+    let abilityIcon = "Q.png";
+
+    if(!iconPath) {
+      return abilityIcon;
+    }
+
+    let keyMatches = [...iconPath.matchAll(/_([QWERP])\d?[_\.]/gm)];
+    let abilityKey = keyMatches[0]?.[1];
+    if(!abilityKey) {
+      return abilityIcon;
+    }
+
+    let championSummary = await fetchLoLData(patchVersion, "/plugins/rcp-be-lol-game-data/global/ru_ru/v1/champion-summary.json");
+    let championId = championSummary.find((c) => c.name === championName)?.id;
+    if(championId) {
+      let championJson = await fetchLoLData(patchVersion, `/plugins/rcp-be-lol-game-data/global/en_gb/v1/champions/${championId}.json`);
+      if(championJson) {
+        let { name, passive, spells } = championJson;
+        switch(abilityKey) {
+          case "P":
+            abilityIcon = `${name} ${passive.name}.png`;
+            break;
+          case "Q":
+            abilityIcon = `${name} ${spells[0].name}.png`;
+            break;
+          case "W":
+            abilityIcon = `${name} ${spells[1].name}.png`;
+            break;
+          case "E":
+            abilityIcon = `${name} ${spells[2].name}.png`;
+            break;
+          case "R":
+            abilityIcon = `${name} ${spells[3].name}.png`;
+            break;
+        }
+      }
+    }
+    return abilityIcon;
+
+  }
 
   /**
    * Принимает на вход описание умений с метасимволами из JSON Community Dragon и
@@ -233,7 +286,7 @@ async function writeLua(filepath, lua) {
 function main() {
   let args = process.argv;
   let setMutator = args[2] ?? "TFTSet10";
-  let patchVersion = args[3] ?? "latest";
+  patchVersion = args[3] ?? "latest";
   fetchTftData(patchVersion)
     .then(json => extrudeCDragonData(json, setMutator))
     .then(processTftChampions)
