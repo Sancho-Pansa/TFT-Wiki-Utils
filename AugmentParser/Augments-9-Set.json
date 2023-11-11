@@ -1,0 +1,6098 @@
+[
+  {
+    "apiName": "TFT9_Augment_BerserkI",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Скорость атаки ваших бойцов увеличивается на @AttackSpeed*100@% за каждые @MissingHealthPercent*100@% недостающего здоровья.",
+    "effects": {
+      "AttackSpeed": 0.004999999888241291,
+      "MissingHealthPercent": 0.009999999776482582
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Missing-T1.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Берсерки I",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_BerserkII",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Скорость атаки ваших бойцов увеличивается на @AttackSpeed*100@% за каждые @MissingHealthPercent*100@% недостающего здоровья.",
+    "effects": {
+      "AttackSpeed": 0.009999999776482582,
+      "MissingHealthPercent": 0.009999999776482582
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Missing-T2.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Берсерки II",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_BerserkIII",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Скорость атаки ваших бойцов увеличивается на @AttackSpeed*100@% за каждые @MissingHealthPercent*100@% недостающего здоровья.",
+    "effects": {
+      "AttackSpeed": 0.014999999664723873,
+      "MissingHealthPercent": 0.009999999776482582
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Missing-T3.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Берсерки III",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_OneHundredDuckSizedHorses",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Максимальный размер команды увеличивается на @TeamSize@, но ваши бойцы могут использовать только 1 предмет и их запасы здоровья уменьшаются на @HealthReduction*100@%. Вы получаете @Gold@ золота.",
+    "effects": {
+      "Gold": 8,
+      "{cab626a5}": 3,
+      "{f0bf6ea0}": 0.20000000298023224
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/100-Duck-Sized-Horses-III.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Бесчисленные орды",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_OneHundredDuckSizedHorsesPlus",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Максимальный размер команды увеличивается на @TeamSize@, но ваши бойцы могут использовать только 1 предмет и их запасы здоровья уменьшаются на @HealthReduction*100@%. Вы получаете @Gold@ золота.",
+    "effects": {
+      "Gold": 12,
+      "{cab626a5}": 3
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/100-Duck-Sized-Horses-III.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Бесчисленные орды+",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_TargonStaffOfFlowingWaters",
+    "associatedTraits": [
+      "Set9_Targon"
+    ],
+    "composition": [],
+    "desc": "Когда активен бонус Таргона, ваши бойцы получают @BonusAS*100@% скорости атаки на @Duration@ сек. после того, как их лечат или на них накладывают щит. Также вы получаете 2 бойцов с Таргона.",
+    "effects": {
+      "BonusAS": 0.44999998807907104,
+      "Duration": 4
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Staff-of-Flowing-Waters-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Благословение звезднорога",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_GetJinxed",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Спустя @Delay@ сек. боя в самое большое скопление врагов прилетает Супер-мега-ракета смерти, которая наносит @Stage2Damage@-@Stage6Damage@ урона в зависимости от текущей стадии. Эффективность лечения пораженных врагов снижается на @GrievousWoundsPercent@% на @Duration@ сек.",
+    "effects": {
+      "Duration": 15,
+      "{2161bfa2}": 33,
+      "{4ed1f1d8}": 8,
+      "{5cc52ba8}": 2,
+      "{85778578}": 250,
+      "{999c56da}": 350,
+      "{ba1a01d7}": 300,
+      "{d5e0f4a9}": 425,
+      "{ef09e86c}": 500
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Missing-T2.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Бодрячком!",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_CombatCaster",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "После применения умения ваши бойцы получают щит прочностью @shieldamount1@-@shieldamount4@ (в зависимости от текущей стадии) на @Duration@ сек.",
+    "effects": {
+      "Duration": 6,
+      "{0f61f008}": 170,
+      "{1461f7e7}": 90,
+      "{1561f97a}": 115,
+      "{1661fb0d}": 145
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Combat-Caster-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Боевой заклинатель",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Commander_NutsAndBolts1",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете несколько компонентов (@NumComponents@) и Перековщиков (@numreforgers@).",
+    "effects": {
+      "{24acadb2}": 1,
+      "{5cc08b27}": 1
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Missing-T1.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Болты и гайки I",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Commander_NutsAndBolts2",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете несколько компонентов (@NumComponents@) и Перековщиков (@numreforgers@).",
+    "effects": {
+      "{24acadb2}": 1,
+      "{5cc08b27}": 2
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Missing-T2.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Болты и гайки II",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Commander_NutsAndBolts3",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете несколько компонентов (@NumComponents@) и Перековщиков (@numreforgers@).",
+    "effects": {
+      "{24acadb2}": 1,
+      "{5cc08b27}": 3
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Missing-T3.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Болты и гайки III",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Commander_LargeForge",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете Наковальню предметов Орна и Наковальню компонентов.",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Forge-III.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Большая кузница",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Commander_Money2",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете @gold@ золота. Спустя несколько (@Numberofcombats@) раундов вы снова получаете @gold@ золота.",
+    "effects": {
+      "Gold": 16,
+      "{ec71edd2}": 4
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Money-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Больше денег!",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_BigGrabBag",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете случайные компоненты (@NumItems@ шт.), @Gold@ золота и Перековщик. ",
+    "effects": {
+      "Gold": 8,
+      "{24acadb2}": 1,
+      "{6c216145}": 2
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Grab-Bag-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Большой мешок с сюрпризом",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_GuinsoosLargeBead",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Атаки ваших бойцов не могут быть критическими, но наносят магический урон в размере @CritConversion*100@% от шанса критического удара при попадании.",
+    "effects": {
+      "{1490e87d}": 1.5
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Missing-T2.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Большой прицел Гинсу",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_SettTheBoss",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете Сетта. В первый раз, когда у вашего сильнейшего Сетта остается менее @Threshold*100@% здоровья, он начинает качать пресс. При каждом подъеме корпуса он восстанавливает @HealRatio*100@% от макс. запаса здоровья и получает @AttackSpeedRatio*100@% скорости атаки и силы умений.",
+    "effects": {
+      "HealRatio": 0.10000000149011612,
+      "{4939f3f8}": 0.6000000238418579,
+      "{60c51c2b}": 0.4000000059604645
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/The-Boss-II.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Босс",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Legend_BronzeTicket",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "После каждого @RollNumber@-го обновления магазина вы можете один раз обновить его бесплатно.",
+    "effects": {
+      "{d3850cab}": 4
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/GoldenTicket1.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Бронзовый билет",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_BronzeTicket",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "После каждого @RollNumber@-го обновления магазина вы можете один раз обновить его бесплатно.",
+    "effects": {
+      "{d3850cab}": 4
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/GoldenTicket1.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Бронзовый билет",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_RollTheDice",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете Перчатки мерзавца, которые дают два случайных лучезарных предмета каждый раунд.",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Roll-the-Dice-III.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Бросок костей",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Legend_OnARoll",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Увеличивая количество звезд у чемпиона, вы получаете возможность бесплатно обновить магазин. Срабатывает не более @TurnLimit@ раз(а) за раунд. Также вы получаете @Gold@ золота.",
+    "effects": {
+      "Gold": 2,
+      "{a8474169}": 2
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/On-a-Roll-I.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "В ударе",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_OnARoll",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Увеличивая количество звезд у чемпиона, вы получаете возможность бесплатно обновить магазин. Срабатывает не более @TurnLimit@ раз(а) за раунд. Также вы получаете @Gold@ золота.",
+    "effects": {
+      "Gold": 2,
+      "{a8474169}": 2
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/On-a-Roll-I.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "В ударе",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_RogueVampiricBlades",
+    "associatedTraits": [
+      "Set9_Rogue"
+    ],
+    "composition": [],
+    "desc": "Ваши бойцы получают @BaselineOmnivamp*100@% всестороннего вытягивания жизни. Ваши головорезы вместо этого получают @RogueOmnivamp*100@% всестороннего вытягивания жизни. Также вы получаете 2 головорезов.",
+    "effects": {
+      "{36097507}": 0.10000000149011612,
+      "{8bea09c0}": 0.20000000298023224
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Vampiric-Blades-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Вампирические клинки",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_GalioCarry",
+    "associatedTraits": [
+      "Set9_Demacia",
+      "Set9_Bastion"
+    ],
+    "composition": [],
+    "desc": "Вы получаете Галио. Область поражения умения вашего сильнейшего Галио увеличена, и оно каждую секунду наносит врагам магический урон в размере @HealthRatio*100@% от макс. запаса здоровья Галио.",
+    "effects": {
+      "HealthRatio": 0.07999999821186066,
+      "{e7df87c9}": 2
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Winds-of-War-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Ветра войны",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Commander_RollingForDays",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы можете бесплатно обновить магазин @Numrolls@ р. (счетчик не сбрасывается между раундами).",
+    "effects": {
+      "{b3c9f10d}": 10
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Rolling-For-Days-I.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Вечное обновление I",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Commander_RollingForDays2",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы можете бесплатно обновить магазин @Numrolls@ р. (счетчик не сбрасывается между раундами).",
+    "effects": {
+      "{b3c9f10d}": 15
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Rolling-For-Days-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Вечное обновление II",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Commander_RollingForDays3",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы можете бесплатно обновить магазин @Numrolls@ р. (счетчик не сбрасывается между раундами).",
+    "effects": {
+      "{b3c9f10d}": 25
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Rolling-For-Days-III.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Вечное обновление III",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_ReturnOnInvestmentHR",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Обновив магазин @RollCount@ р., вы получаете Корону тактика (не более раза).<br><br>(Обновлений магазина за эту игру: @TFTUnitProperty.item:TFT9_ReturnOnInvestmentRolls@)",
+    "effects": {
+      "{7852b5fd}": 28
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/GoldReserves2.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Возврат инвестиций",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_ReturnOnInvestment",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Обновив магазин @RollCount@ р., вы получаете Корону тактика (не более раза).<br><br>(Обновлений магазина за эту игру: @TFTUnitProperty.item:TFT9_ReturnOnInvestmentRolls@)",
+    "effects": {
+      "{7852b5fd}": 22
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/GoldReserves2.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Возврат инвестиций",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Commander_Ascension",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Спустя @Delay@ сек. боя ваши бойцы начинают наносить на @DamageAmp@% больше урона.",
+    "effects": {
+      "DamageAmp": 45,
+      "{4ed1f1d8}": 15
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Ascension2.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Вознесение",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_OldMansWalkingStick",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете Слишком Большой Жезл. Сила умений ваших бойцов увеличивается на @AP@%.",
+    "effects": {
+      "AP": 20
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Old-Man_s-Walking-Stick-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Волшебная палочка",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_MagicalJourney",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "После каждой карусели вы получаете @XP@ ед. опыта или несколько (@Rerolls@) бесплатных обновлений магазина. Затем вы снова случайным образом получаете один из этих бонусов.",
+    "effects": {
+      "{16c71d08}": 2,
+      "{516374d5}": 2
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Missing-T1.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Волшебное путешествие",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_MagicalJourneyPlus",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "После каждой карусели вы получаете @XP@ ед. опыта или несколько (@Rerolls@) бесплатных обновлений магазина. Затем вы снова случайным образом получаете один из этих бонусов.",
+    "effects": {
+      "{16c71d08}": 3,
+      "{516374d5}": 4
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Missing-T2.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Волшебное путешествие+",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_MagicalJourneyPlusPlus",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "После каждой карусели вы получаете @XP@ ед. опыта или несколько (@Rerolls@) бесплатных обновлений магазина. Затем вы снова случайным образом получаете один из этих бонусов.",
+    "effects": {
+      "{16c71d08}": 4,
+      "{516374d5}": 6
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Missing-T3.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Волшебное путешествие++",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_AllThatShimmers",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "У вас открывается оружейная, в которой можно выбрать 1 из @ArmoryChoiceCount@ предметов златоносных. Предметы златоносных ускоряют генерацию золота.",
+    "effects": {
+      "{b300068b}": 3
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/All-that-Shimmers-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Все то золото",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_SwainCarry",
+    "associatedTraits": [
+      "Set9_Noxus",
+      "Set9_Sorcerer",
+      "Set9_Strategist"
+    ],
+    "composition": [],
+    "desc": "Вы получаете Свейна. Ваш сильнейший Свейн наносит на @DamageAmp*100@% больше урона за каждые @Health@ максимального запаса здоровья.",
+    "effects": {
+      "DamageAmp": 0.03999999910593033,
+      "Health": 100
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Demonflare-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Вспышка демона",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_VoidEmblem",
+    "associatedTraits": [
+      "Set9_Void"
+    ],
+    "composition": [],
+    "desc": "Вы получаете Эмблему Бездны и Кассадина.",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Void-Crest-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Герб Бездны",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_DemaciaEmblem",
+    "associatedTraits": [
+      "Set9_Demacia"
+    ],
+    "composition": [],
+    "desc": "Вы получаете Эмблему Демасии и Галио.",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Demacia-Crest-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Герб Демасии",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_ZaunEmblem",
+    "associatedTraits": [
+      "Set9_Zaun"
+    ],
+    "composition": [],
+    "desc": "Вы получаете Эмблему Зауна и Варвика.",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Zaun-Crest-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Герб Зауна",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_IoniaEmblem",
+    "associatedTraits": [
+      "Set9_Ionia"
+    ],
+    "composition": [],
+    "desc": "Вы получаете Эмблему Ионии и Сетта.",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Ionia-Crest-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Герб Ионии",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_NoxusEmblem",
+    "associatedTraits": [
+      "Set9_Noxus"
+    ],
+    "composition": [],
+    "desc": "Вы получаете Эмблему Ноксуса и Свейна.",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Noxus-Crest-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Герб Ноксуса",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_PiltoverEmblem",
+    "associatedTraits": [
+      "Set9_Piltover"
+    ],
+    "composition": [],
+    "desc": "Вы получаете Эмблему Пилтовера и Вай.",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Missing-T2.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Герб Пилтовера",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_ShadowIslesEmblem",
+    "associatedTraits": [
+      "Set9_ShadowIsles"
+    ],
+    "composition": [],
+    "desc": "Вы получаете Эмблему Сумрачных островов, Маокая и @Gold@ золота.",
+    "effects": {
+      "Gold": 1
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Shadow-Crest-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Герб Сумрачных островов",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_TargonEmblem",
+    "associatedTraits": [
+      "Set9_Targon"
+    ],
+    "composition": [],
+    "desc": "Вы получаете Эмблему Таргона и Сораку.",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Missing-T2.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Герб Таргона",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_FreljordEmblem",
+    "associatedTraits": [
+      "Set9_Freljord"
+    ],
+    "composition": [],
+    "desc": "Вы получаете Эмблему Фрельйорда и Эш.",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Missing-T2.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Герб Фрельйорда",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_ShurimaEmblem",
+    "associatedTraits": [
+      "Set9_Shurima"
+    ],
+    "composition": [],
+    "desc": "Вы получаете Эмблему Шуримы и Талию.",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Shurima-Crest-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Герб Шуримы",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_RogueEmblem",
+    "associatedTraits": [
+      "Set9_Rogue"
+    ],
+    "composition": [],
+    "desc": "Вы получаете Эмблему головореза и Зеда.",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Rogue-Crest-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Герб головореза",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_BruiserEmblem",
+    "associatedTraits": [
+      "Set9_Bruiser"
+    ],
+    "composition": [],
+    "desc": "Вы получаете Эмблему громилы и Вай.",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/BruiserEmblem2.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Герб громилы",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_ArmorcladEmblem",
+    "associatedTraits": [
+      "Set9_Armorclad"
+    ],
+    "composition": [],
+    "desc": "Вы получаете Эмблему джаггернаута и Сетта.",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Juggernaut-Crest-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Герб джаггернаута",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_SlayerEmblem",
+    "associatedTraits": [
+      "Set9_Slayer"
+    ],
+    "composition": [],
+    "desc": "Вы получаете Эмблему душегуба и Кледа.",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Slayer-Crest-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Герб душегуба",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_ChallengerEmblem",
+    "associatedTraits": [
+      "Set9_Challenger"
+    ],
+    "composition": [],
+    "desc": "Вы получаете Эмблему задиры и Варвика.",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/ChallengerEmblem2.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Герб задиры",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_ProtectorEmblem",
+    "associatedTraits": [
+      "Set9_DefTrait"
+    ],
+    "composition": [],
+    "desc": "Вы получаете Эмблему заступника и Ёнэ.",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Missing-T2.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Герб заступника",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_DeadeyeEmblem",
+    "associatedTraits": [
+      "Set9_Deadeye"
+    ],
+    "composition": [],
+    "desc": "Вы получаете Эмблему зоркого глаза и Эш.",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Deadeye-Crest-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Герб зоркого глаза",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_PreserverEmblem",
+    "associatedTraits": [
+      "Set9_Preserver"
+    ],
+    "composition": [],
+    "desc": "Вы получаете Эмблему колдуна и Сораку.",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Invoker-Crest-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Герб колдуна",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_BastionEmblem",
+    "associatedTraits": [
+      "Set9_Bastion"
+    ],
+    "composition": [],
+    "desc": "Вы получаете Эмблему несокрушимого и Кассадина.",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Bastion-Crest-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Герб несокрушимого",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_StrategistEmblem",
+    "associatedTraits": [
+      "Set9_Strategist"
+    ],
+    "composition": [],
+    "desc": "Вы получаете Эмблему стратега и Свейна.",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Strategist-Crest-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Герб стратега",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_MarksmanEmblem",
+    "associatedTraits": [
+      "Set9_Marksman"
+    ],
+    "composition": [],
+    "desc": "Вы получаете Эмблему стрелка и Джинкс.",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Gunner-Crest-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Герб стрелка",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_SorcererEmblem",
+    "associatedTraits": [
+      "Set9_Sorcerer"
+    ],
+    "composition": [],
+    "desc": "Вы получаете Эмблему чародея и Свейна.",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Sorcerer-Crest-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Герб чародея",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_GuildOfThieves",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Ваши чемпионы лишаются всех текущих предметов, но получают Перчатки вора до конца игры. Когда вы получаете предмет, он превращается в @GoldAmount@ золота. ",
+    "effects": {
+      "{b9b4d8d7}": 1
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Missing-T3.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Гильдия воров",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_LissandraCarry",
+    "associatedTraits": [
+      "Set9_Freljord",
+      "Set9_Preserver"
+    ],
+    "composition": [],
+    "desc": "Вы получаете Лиссандру. Область поражения умения вашей сильнейшей Лиссандры увеличена, и если она участвовала в убийстве врага, тот взрывается, нанося урон в размере @DamageRatio*100@% от ее силы умений.",
+    "effects": {
+      "{049f8e33}": 0.5
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Missing-T2.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Глубокая заморозка",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_BattleReady",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Ваши бойцы наносят на @BonusDamage@% больше урона и получают на @DR@% меньше урона. ",
+    "effects": {
+      "BonusDamage": 3,
+      "{471cad93}": 3
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Battle-Ready-I.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Готовность к бою",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_BattleReadyII",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Ваши бойцы наносят на @BonusDamage@% больше урона и получают на @DR@% меньше урона. ",
+    "effects": {
+      "BonusDamage": 6,
+      "{471cad93}": 6
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Battle-Ready-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Готовность к бою II",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_BattleReadyIII",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Ваши бойцы наносят на @BonusDamage@% больше урона и получают на @DR@% меньше урона. ",
+    "effects": {
+      "BonusDamage": 8,
+      "{471cad93}": 8
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Battle-Ready-III.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Готовность к бою III",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_TwoHealthy",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Ваши бойцы получают @HealthPerUnit@ здоровья за каждого выставленного бойца @Tier@-го ранга. ",
+    "effects": {
+      "{4548e0c8}": 100,
+      "{5c51b509}": 2
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Two-Healthy-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Двойное здоровье",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Commander_Money",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете @gold@ золота. Спустя несколько (@Numberofcombats@) раундов вы снова получаете @gold@ золота.",
+    "effects": {
+      "Gold": 10,
+      "{ec71edd2}": 4
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Money-I.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Деньги!",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Legend_LesserJeweledLotus",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Начало боя: шанс критического удара вашего сильнейшего бойца увеличивается на @CritChance@%. Кроме того, его умения могут наносить критический урон.",
+    "effects": {
+      "CritChance": 40
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Jeweled-Lotus-I.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Драгоценный лотос I",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_LesserJeweledLotus",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Начало боя: шанс критического удара вашего сильнейшего бойца увеличивается на @CritChance@%. Кроме того, его умения могут наносить критический урон.",
+    "effects": {
+      "CritChance": 40
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Jeweled-Lotus-I.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Драгоценный лотос I",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Legend_JeweledLotus",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Умения ваших бойцов могут наносить критический урон. Шанс критического удара ваших бойцов увеличивается на @critchance@%.",
+    "effects": {
+      "CritChance": 15
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Jeweled-Lotus-II.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Драгоценный лотос II",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_JeweledLotus",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Умения ваших бойцов могут наносить критический урон. Шанс критического удара ваших бойцов увеличивается на @critchance@%.",
+    "effects": {
+      "CritChance": 15
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Jeweled-Lotus-II.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Драгоценный лотос II",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_GreaterJeweledLotus",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Умения ваших бойцов могут наносить критический урон. Шанс критического удара ваших бойцов увеличивается на @critchance@%.",
+    "effects": {
+      "CritChance": 45
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Jeweled-Lotus-III.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Драгоценный лотос III",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Legend_GreaterJeweledLotus",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Умения ваших бойцов могут наносить критический урон. Шанс критического удара ваших бойцов увеличивается на @critchance@%.",
+    "effects": {
+      "CritChance": 45
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Jeweled-Lotus-III.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Драгоценный лотос III",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_LongDistanceRelationship1",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Начало боя: два ваших бойца, которые стоят дальше всего друг от друга, формируют связь и дают друг другу @PercentShare*100@% от прочности брони, сопротивления магии, силы атаки и силы умений.",
+    "effects": {
+      "{957e9391}": 0.20000000298023224
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Heart-Crown-I.TFT_Set8.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Друзья на расстоянии",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_LongDistanceRelationship2",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Начало боя: два ваших бойца, которые стоят дальше всего друг от друга, формируют связь и дают друг другу @PercentShare*100@% от прочности брони, сопротивления магии, силы атаки и силы умений.",
+    "effects": {
+      "{957e9391}": 0.25
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Long-Distance-Relationship-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Друзья на расстоянии II",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_GadgeteenSpirit",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Начало боя: между чемпионами, у которых меньше всего предметов, распределяются несколько (@numitems@) временных предметов.",
+    "effects": {
+      "{6c216145}": 1,
+      "{a416e152}": 1
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Missing-T1.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Дух гаджетенка",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_IoniaSentinelsSpirit",
+    "associatedTraits": [
+      "Set9_Ionia"
+    ],
+    "composition": [],
+    "desc": "В форме духа ваши бойцы из Ионии получают @BonusAS*100@% скорости атаки и щит прочностью @ShieldRatio*100@% от макс. запаса здоровья. Вы получаете 3 бойцов из Ионии.",
+    "effects": {
+      "BonusAS": 0.15000000596046448,
+      "ShieldRatio": 0.15000000596046448
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Final-Breath-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Дух стража",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_VoidTrait2",
+    "associatedTraits": [
+      "Set9_Void"
+    ],
+    "composition": [],
+    "desc": "Счетчик бойцов из Бездны в вашей команде увеличивается на 1. Также вы получаете Портал Зз'Рота и Рек'Сай.",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Void-Crown-III.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Душа Бездны",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_PiltoverTrait2",
+    "associatedTraits": [
+      "Set9_Piltover"
+    ],
+    "composition": [],
+    "desc": "Счетчик бойцов из Пилтовера в вашей команде увеличивается на 1. Также вы получаете Убийцу великанов и Джейса.",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Piltover-Crown-III.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Душа Пилтовера",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_ShadowIslesTrait2",
+    "associatedTraits": [
+      "Set9_ShadowIsles"
+    ],
+    "composition": [],
+    "desc": "Счетчик бойцов с Сумрачных островов в вашей команде увеличивается на 1. Также вы получаете Решимость титана и Виего.",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Missing-T3.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Душа Сумрачных островов",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_TargonTrait2",
+    "associatedTraits": [
+      "Set9_Targon"
+    ],
+    "composition": [],
+    "desc": "Счетчик бойцов с Таргона в вашей команде увеличивается на 1. Также вы получаете Искупление и Тарика.",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Targon-Crown-III.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Душа Таргона",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_FreljordTrait2",
+    "associatedTraits": [
+      "Set9_Freljord"
+    ],
+    "composition": [],
+    "desc": "Счетчик бойцов из Фрельйорда в вашей команде увеличивается на 1. Также вы получаете Посох архангела и Лиссандру.",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Freljord-Crown-III.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Душа Фрельйорда",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_MulticasterTrait2",
+    "associatedTraits": [
+      "Set9_Multicaster"
+    ],
+    "composition": [],
+    "desc": "Счетчик искусников в вашей команде увеличивается на 1. Также вы получаете Драгоценную перчатку и Вел'Коза.",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Multicaster-Crown-III.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Душа искусника",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_YordleTrait2",
+    "associatedTraits": [
+      "Set9_BandleCity"
+    ],
+    "composition": [],
+    "desc": "Счетчик йордлов в вашей команде увеличивается на 1. Также вы получаете Грань Бесконечности и Кледа.",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Missing-T3.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Душа йордла",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_StrategistTrait2",
+    "associatedTraits": [
+      "Set9_Strategist"
+    ],
+    "composition": [],
+    "desc": "Счетчик стратегов в вашей команде увеличивается на 1. Также вы получаете Чашу силы и Свейна.",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Strategist-Crown-III.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Душа стратега",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_GunnerSpiritOfTheDuelist",
+    "associatedTraits": [
+      "Set9_Marksman"
+    ],
+    "composition": [],
+    "desc": "Ваши стрелки получают @BonusAS*100@% скорости атаки плюс @StackingAS*100@% за каждый заряд бонуса стрелков. Также вы получаете 2 стрелков.",
+    "effects": {
+      "BonusAS": 0.05000000074505806,
+      "{c2b90de1}": 0.019999999552965164
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Spirit-of-the-Duelist-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Дуэль стрелков",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_ChallengerForAllUnits",
+    "associatedTraits": [
+      "Set9_Challenger"
+    ],
+    "composition": [],
+    "desc": "Бонусы задир начинают действовать на всех ваших чемпионов. Счетчик особенности при этом не увеличивается. Также вы получаете Варвика.",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Study-the-Blade-I.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Единство задир",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Commander_Money3",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете @gold@ золота. Спустя несколько (@Numberofcombats@) раундов вы снова получаете @gold@ золота.",
+    "effects": {
+      "Gold": 25,
+      "{ec71edd2}": 4
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Money-III.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Еще больше денег!",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_EnshroudingStillness",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Все враги получают чистый урон в размере @MaxHealthPerSecond@% от макс. запаса здоровья каждую секунду, пока не применят умение в первый раз за бой. Также вы получаете Покров тишины.",
+    "effects": {
+      "{8cf37cd6}": 2
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Mana-Burn-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Жгучая мана",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_IronAssets",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете Наковальню компонентов и @Gold@ золота.",
+    "effects": {
+      "Gold": 2
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Iron-Assets-I.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Железный аргумент",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_GiftsFromTheFallen",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Ваши бойцы получают @AD@% силы атаки, @ap@ силы умений, @Armor@ брони и @MR@ сопротивления магии. Когда один из союзных бойцов погибает, все остальные снова получают эти бонусы.",
+    "effects": {
+      "AD": 4,
+      "AP": 4,
+      "Armor": 4,
+      "{552e0cbe}": 4
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Gifts-from-the-Fallen-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Загробные дары",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Commander_Experience1",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете @Experience@ ед. опыта.",
+    "effects": {
+      "Experience": 12
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Knowledge-Download-I.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Загрузка знаний I",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Commander_Experience1Plus",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете @Experience@ ед. опыта.",
+    "effects": {
+      "Experience": 20
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Missing-T1.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Загрузка знаний I+",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Commander_Experience2",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете @Experience@ ед. опыта.",
+    "effects": {
+      "Experience": 22
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Knowledge-Download-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Загрузка знаний II",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Commander_Experience2Plus",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете @Experience@ ед. опыта.",
+    "effects": {
+      "Experience": 28
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Missing-T2.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Загрузка знаний II+",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Commander_Experience3",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете @Experience@ ед. опыта.",
+    "effects": {
+      "Experience": 36
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Knowledge-Download-III.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Загрузка знаний III",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Commander_Experience3Plus",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете @Experience@ ед. опыта.",
+    "effects": {
+      "Experience": 36
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Missing-T3.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Загрузка знаний III+",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_EscortQuest",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете тренировочный манекен. Если его не уничтожают в бою, в конце раунда вы получаете @Gold@ золота. ",
+    "effects": {
+      "Gold": 3
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Escort-Quest-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Задание по сопровождению",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_BuildingACollection",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете случайный компонент в начале следующих @roundsofbonusitems@ раундов (включая текущий).",
+    "effects": {
+      "Gold": "null",
+      "{9ce9870c}": 2
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Buried-Treasures-I.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Закопанные сокровища I",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Legend_BuildingACollection",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете случайный компонент в начале следующих @roundsofbonusitems@ раундов (включая текущий).",
+    "effects": {
+      "Gold": "null",
+      "{9ce9870c}": 2
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Buried-Treasures-I.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Закопанные сокровища I",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Legend_BuildingACollectionPlus",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете случайный компонент в начале следующих @roundsofbonusitems@ раундов (включая текущий).",
+    "effects": {
+      "Gold": "null",
+      "{9ce9870c}": 3
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Buried-Treasures-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Закопанные сокровища II",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_BuildingACollectionPlus",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете случайный компонент в начале следующих @roundsofbonusitems@ раундов (включая текущий).",
+    "effects": {
+      "Gold": "null",
+      "{9ce9870c}": 3
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Buried-Treasures-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Закопанные сокровища II",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Legend_BuildingACollectionPlusPlus",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете случайный компонент в начале следующих @roundsofbonusitems@ раундов (включая текущий).",
+    "effects": {
+      "Gold": "null",
+      "{9ce9870c}": 5
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Buried-Treasures-III.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Закопанные сокровища III",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_BuildingACollectionPlusPlus",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете случайный компонент в начале следующих @roundsofbonusitems@ раундов (включая текущий).",
+    "effects": {
+      "Gold": "null",
+      "{9ce9870c}": 5
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Buried-Treasures-III.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Закопанные сокровища III",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Commander_WellEarnedComforts",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Ваши бойцы получают @Health@ здоровья за каждый используемый предмет.",
+    "effects": {
+      "Health": 60
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Well-Earned-Comforts-I.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Заслуженный комфорт I",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Commander_WellEarnedComforts2",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Ваши бойцы получают @Health@ здоровья за каждый используемый предмет.",
+    "effects": {
+      "Health": 111
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Well-Earned-Comforts-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Заслуженный комфорт II",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Commander_WellEarnedComforts3",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Ваши бойцы получают @Health@ здоровья и @AttackSpeed*100@% скорости атаки за каждый используемый предмет.",
+    "effects": {
+      "AttackSpeed": 0.07999999821186066,
+      "Health": 120
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Well-Earned-Comforts-III.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Заслуженный комфорт III",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_ChallengerDefensiveDash",
+    "associatedTraits": [
+      "Set9_Challenger"
+    ],
+    "composition": [],
+    "desc": "В начале боя и после участия в убийстве ваши задиры получают щит прочностью @MinShield@-@MaxShield@ (в зависимости от текущей стадии) на @Duration@ сек. Также вы получаете 2 задир.",
+    "effects": {
+      "Duration": 2.5,
+      "MaxShield": 225,
+      "{54b4ed36}": 50,
+      "{6e046e66}": 75
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Critical-Charge-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Защитный рывок",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_KnowYourEnemy",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Ваши бойцы наносят на @BaseDamageAmp@% больше урона. Если у вас и вашего оппонента есть одинаковые активированные особенности, прибавка к урону увеличивается до @FullDamageAmp@%.",
+    "effects": {
+      "{05868bf1}": 20,
+      "{c581d15d}": 15
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Know-Your-Enemy-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Знай своего врага",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Idealism",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете Руку правосудия. Чемпионы с Рукой правосудия наносят на @DamageAmp*100@% больше урона.",
+    "effects": {
+      "DamageAmp": 0.12999999523162842
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Idealism-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Идеализм",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Edgy1",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "В начале боя союзные бойцы на краю вашего поля получают @AD*100@% силы атаки и @AS*100@% скорости атаки.",
+    "effects": {
+      "AD": 0.20000000298023224,
+      "AS": 0.20000000298023224
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Missing-T1.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Из крайности в крайность I",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Edgy2",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "В начале боя союзные бойцы на краю вашего поля получают @AD*100@% силы атаки и @AS*100@% скорости атаки.",
+    "effects": {
+      "AD": 0.30000001192092896,
+      "AS": 0.30000001192092896
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Missing-T2.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Из крайности в крайность II",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Edgy3",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "В начале боя союзные бойцы на краю вашего поля получают @AD*100@% силы атаки и @AS*100@% скорости атаки.",
+    "effects": {
+      "AD": 0.4000000059604645,
+      "AS": 0.4000000059604645
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Missing-T3.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Из крайности в крайность III",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Legend_BardPlaybook3",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Повышая уровень, вы получаете предметы.<br>Ур. @levelreqa@: Наковальня компонентов<br>Ур. @levelreqb@: Наковальня полноценных предметов<br>Ур. @levelreqc@: оружейная лучезарных предметов",
+    "effects": {
+      "{c926b888}": 7,
+      "{ca26ba1b}": 6,
+      "{cb26bbae}": 4
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Caretaker_s-Chosen-III.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Избранник",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_BardPlaybook3",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Повышая уровень, вы получаете предметы.<br>Ур. @levelreqa@: Наковальня компонентов<br>Ур. @levelreqb@: Наковальня полноценных предметов<br>Ур. @levelreqc@: оружейная лучезарных предметов",
+    "effects": {
+      "{c926b888}": 7,
+      "{ca26ba1b}": 6,
+      "{cb26bbae}": 4
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Caretaker_s-Chosen-III.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Избранник",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_TacticiansTools",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете две Лопатки.",
+    "effects": {
+      "{eb702324}": 2
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Tactician_s-Tools-III.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Инструменты тактика",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Contagion",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Начало боя: врага с наибольшим количеством здоровья поражает инфекция, увеличивающая получаемый им урон на @DamageAmp*100@%. Раз в @SpreadTimer@ сек. или при смерти зараженного врага инфекция распространяется на ближайших противников (@SpreadTargets@).",
+    "effects": {
+      "DamageAmp": 0.20000000298023224,
+      "{4d1fc844}": 2,
+      "{8b5594ef}": 5
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Contagion-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Инфекция",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_BrokenTradeSector",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете возможность бесплатно обновить магазин. Затем этот эффект срабатывает во время каждого @RoundsPerRefresh@-го боя против игроков.",
+    "effects": {
+      "{b6338552}": 2
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Missing-T1.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Искаженный Торговый сектор",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Execute",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Ваши бойцы наносят на @damageamp@% больше урона целям, у которых осталось менее @hppercent@% здоровья.",
+    "effects": {
+      "DamageAmp": 30,
+      "HPPercent": 50
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Missing-T2.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Казнь",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_CyberneticBulk1",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Ваши чемпионы с предметами получают @health@ здоровья.",
+    "effects": {
+      "Health": 250
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Cybernetic-Bulk-I.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Кибервыносливость I",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_CyberneticBulk2",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Ваши чемпионы с предметами получают @health@ здоровья.",
+    "effects": {
+      "Health": 350
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Cybernetic-Bulk-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Кибервыносливость II",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_CyberneticBulk3",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Ваши чемпионы с предметами получают @health@ здоровья.",
+    "effects": {
+      "Health": 500
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Cybernetic-Bulk-III.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Кибервыносливость III",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_CyberneticLeech1",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Ваши бойцы с предметами получают @health@ здоровья и @omnivamp@% всестороннего вытягивания жизни.",
+    "effects": {
+      "Health": 80,
+      "{ad16f688}": 13
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Cybernetic-Leech-I.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Кибервытягивание I",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_CyberneticLeech2",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Ваши бойцы с предметами получают @health@ здоровья и @omnivamp@% всестороннего вытягивания жизни.",
+    "effects": {
+      "Health": 120,
+      "{ad16f688}": 18
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Cybernetic-Leech-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Кибервытягивание II",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_CyberneticLeech3",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Ваши бойцы с предметами получают @health@ здоровья и @omnivamp@% всестороннего вытягивания жизни.",
+    "effects": {
+      "Health": 225,
+      "{ad16f688}": 25
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Cybernetic-Leech-III.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Кибервытягивание III",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Formation1",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Если в начале боя 3 или больше ваших бойцов находятся в одном и том же ряду, они получают @armor@ брони и сопротивления магии. ",
+    "effects": {
+      "Armor": 18,
+      "{552e0cbe}": 18
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Red-Rover-I.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Коллективная оборона I",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Formation2",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Если в начале боя 3 или больше ваших бойцов находятся в одном и том же ряду, они получают @armor@ брони и сопротивления магии. ",
+    "effects": {
+      "Armor": 30,
+      "{552e0cbe}": 30
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Red-Rover-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Коллективная оборона II",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_VoidEmblem2",
+    "associatedTraits": [
+      "Set9_Void"
+    ],
+    "composition": [],
+    "desc": "Вы получаете Эмблему Бездны, Портал Зз'Рота и Рек'Сай.",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Void-Crown-III.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Корона Бездны",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_DemaciaEmblem2",
+    "associatedTraits": [
+      "Set9_Demacia"
+    ],
+    "composition": [],
+    "desc": "Вы получаете Эмблему Демасии, Клинок ярости Гинсу и Гарена.",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Demacia-Crown-III.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Корона Демасии",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_ZaunEmblem2",
+    "associatedTraits": [
+      "Set9_Zaun"
+    ],
+    "composition": [],
+    "desc": "Вы получаете Эмблему Зауна, Бронелом и Экко.",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Zaun-Crown-III.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Корона Зауна",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_IoniaEmblem2",
+    "associatedTraits": [
+      "Set9_Ionia"
+    ],
+    "composition": [],
+    "desc": "Вы получаете Эмблему Ионии, Бронелом и Карму.",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Ionia-Crown-III.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Корона Ионии",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_NoxusEmblem2",
+    "associatedTraits": [
+      "Set9_Noxus"
+    ],
+    "composition": [],
+    "desc": "Вы получаете Эмблему Ноксуса, Тренировочные перчатки и Дариуса.",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Noxus-Crown-III.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Корона Ноксуса",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_PiltoverEmblem2",
+    "associatedTraits": [
+      "Set9_Piltover"
+    ],
+    "composition": [],
+    "desc": "Вы получаете Эмблему Пилтовера, Убийцу великанов и Джейса.",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Missing-T3.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Корона Пилтовера",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_ShadowIslesEmblem2",
+    "associatedTraits": [
+      "Set9_ShadowIsles"
+    ],
+    "composition": [],
+    "desc": "Вы получаете Эмблему Сумрачных островов, Слезу богини и Калисту.",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Shadow-Crown-III.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Корона Сумрачных островов",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_TargonEmblem2",
+    "associatedTraits": [
+      "Set9_Targon"
+    ],
+    "composition": [],
+    "desc": "Вы получаете Эмблему Таргона, Искупление и Тарика.",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Missing-T3.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Корона Таргона",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_FreljordEmblem2",
+    "associatedTraits": [
+      "Set9_Freljord"
+    ],
+    "composition": [],
+    "desc": "Вы получаете Эмблему Фрельйорда, Посох архангела и Лиссандру.",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Missing-T3.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Корона Фрельйорда",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_ShurimaEmblem2",
+    "associatedTraits": [
+      "Set9_Shurima"
+    ],
+    "composition": [],
+    "desc": "Вы получаете Эмблему Шуримы, Клятву защитника и Акшана.",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Shurima-Crown-III.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Корона Шуримы",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_RogueEmblem2",
+    "associatedTraits": [
+      "Set9_Rogue"
+    ],
+    "composition": [],
+    "desc": "Вы получаете Эмблему головореза, Руку правосудия и Катарину.",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Rogue-Crown-III.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Корона головореза",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_BruiserEmblem2",
+    "associatedTraits": [
+      "Set9_Bruiser"
+    ],
+    "composition": [],
+    "desc": "Вы получаете Эмблему громилы, Искупление и Рек'Сай.",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/BruiserSoul3.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Корона громилы",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_ArmorcladEmblem2",
+    "associatedTraits": [
+      "Set9_Armorclad"
+    ],
+    "composition": [],
+    "desc": "Вы получаете Эмблему джаггернаута, Кровопийцу и Дариуса.",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Juggernaut-Crown-III.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Корона джаггернаута",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_SlayerEmblem2",
+    "associatedTraits": [
+      "Set9_Slayer"
+    ],
+    "composition": [],
+    "desc": "Вы получаете Эмблему душегуба, Решимость титана и Кледа.",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Slayer-Crown-III.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Корона душегуба",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_ChallengerEmblem2",
+    "associatedTraits": [
+      "Set9_Challenger"
+    ],
+    "composition": [],
+    "desc": "Вы получаете Эмблему задиры, Скорострельную пушку и Калисту.",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/ChallengerSoul3.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Корона задиры",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_ProtectorEmblem2",
+    "associatedTraits": [
+      "Set9_DefTrait"
+    ],
+    "composition": [],
+    "desc": "Вы получаете Эмблему заступника, Хекстековый штык и Ёнэ.",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Missing-T3.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Корона заступника",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_DeadeyeEmblem2",
+    "associatedTraits": [
+      "Set9_Deadeye"
+    ],
+    "composition": [],
+    "desc": "Вы получаете Эмблему зоркого глаза, Клинок ярости Гинсу и Акшана.",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Deadeye-Crown-III.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Корона зоркого глаза",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_PreserverEmblem2",
+    "associatedTraits": [
+      "Set9_Preserver"
+    ],
+    "composition": [],
+    "desc": "Вы получаете Эмблему колдуна, Драгоценную перчатку и Карму.",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Invoker-Crown-III.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Корона колдуна",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_BastionEmblem2",
+    "associatedTraits": [
+      "Set9_Bastion"
+    ],
+    "composition": [],
+    "desc": "Вы получаете Эмблему несокрушимого, Накидку солнечного пламени и Тарика.",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Bastion-Crown-III.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Корона несокрушимого",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_StrategistEmblem2",
+    "associatedTraits": [
+      "Set9_Strategist"
+    ],
+    "composition": [],
+    "desc": "Вы получаете Эмблему стратега, Чашу силы и Свейна.",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Strategist-Crown-III.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Корона стратега",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_MarksmanEmblem2",
+    "associatedTraits": [
+      "Set9_Marksman"
+    ],
+    "composition": [],
+    "desc": "Вы получаете Эмблему стрелка, Ураган Рунаан и Джейса.",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Gunner-Crown-III.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Корона стрелка",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_SorcererEmblem2",
+    "associatedTraits": [
+      "Set9_Sorcerer"
+    ],
+    "composition": [],
+    "desc": "Вы получаете Эмблему чародея, Копье Седзина и Вел'Коза.",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Sorcerer-Crown-III.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Корона чародея",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Commander_Coinpurse1",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете @AugmentGold@ золота.",
+    "effects": {
+      "{45e02ace}": 10
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Missing-T1.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Кошелек I",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Commander_Coinpurse1plus",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете @AugmentGold@ золота.",
+    "effects": {
+      "{45e02ace}": 20
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Missing-T1.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Кошелек I+",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Commander_Coinpurse2",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете @AugmentGold@ золота.",
+    "effects": {
+      "{45e02ace}": 15
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Missing-T2.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Кошелек II",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Commander_Coinpurse2plus",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете @AugmentGold@ золота.",
+    "effects": {
+      "{45e02ace}": 20
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Missing-T2.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Кошелек II+",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Commander_Coinpurse3",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете @AugmentGold@ золота.",
+    "effects": {
+      "{45e02ace}": 20
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Missing-T3.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Кошелек III",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Commander_Coinpurse3plus",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете @AugmentGold@ золота.",
+    "effects": {
+      "{45e02ace}": 30
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Missing-T3.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Кошелек III+",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_RedBuff",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Атаки ваших бойцов поджигают врагов, нанося им урон в размере @BurnPercent@% от их макс. запаса здоровья в течение @Duration@ сек. и ослабляя получаемое ими лечение на @HealingReductionPct@%.",
+    "effects": {
+      "Duration": 5,
+      "{57706a69}": 5,
+      "{6f59ce59}": 50
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Red-Buff-I.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Красное усиление",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_BloodPrice1",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Ваши бойцы получают @AttackSpeed*100@% скорости атаки за каждые @Health@ недостающего здоровья тактика.",
+    "effects": {
+      "AttackSpeed": 0.02500000037252903,
+      "Health": 10
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Blood-Price-I-I.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Кровавая цена I",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_BloodPrice2",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Ваши бойцы получают @AttackSpeed*100@% скорости атаки за каждые @Health@ недостающего здоровья тактика.",
+    "effects": {
+      "AttackSpeed": 0.03500000014901161,
+      "Health": 10
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Blood-Price-II-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Кровавая цена II",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_BloodPrice3",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Ваши бойцы получают @AttackSpeed*100@% скорости атаки за каждые @Health@ недостающего здоровья тактика.",
+    "effects": {
+      "AttackSpeed": 0.05000000074505806,
+      "Health": 10
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Blood-Price-III-III.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Кровавая цена III",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_BloodMoney",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете @Gold@ золота за каждые @HealthPerGold@ здоровья, потерянного вашим тактиком.",
+    "effects": {
+      "Gold": 1,
+      "{8421887c}": 3
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Blood-Money-I.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Кровавые деньги",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Commander_TinyPower1",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Ваши бойцы получают @ap@% силы атаки, силы умений и скорости атаки.",
+    "effects": {
+      "AD": 7,
+      "AP": 7,
+      "AS": 7
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Tiny-Power-I.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Крошечная сила I",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Commander_TinyPower2",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Ваши бойцы получают @ap@% силы атаки, силы умений и скорости атаки.",
+    "effects": {
+      "AD": 10,
+      "AP": 10,
+      "AS": 10
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Tiny-Power-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Крошечная сила II",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Commander_TinyPower3",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Ваши бойцы получают @ap@% силы атаки, силы умений и скорости атаки.",
+    "effects": {
+      "AD": 16,
+      "AP": 16,
+      "AS": 16
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Tiny-Power-III.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Крошечная сила III",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_TinyGrabBag",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете случайный компонент, @Gold@ золота и Магнитный отделитель. ",
+    "effects": {
+      "Gold": 4,
+      "{24acadb2}": "null",
+      "{466ef38d}": "null",
+      "{4a99a5b2}": "null",
+      "{65358e6c}": 1,
+      "{6c216145}": 1,
+      "{e12702aa}": "null"
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Grab-Bag-I.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Крошечный мешок с сюрпризом",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_WhatTheForge",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Все полноценные предметы, которые у вас уже есть и которые вы получите в будущем (кроме Короны тактика и эмблем), превращаются в случайные артефакты Орна. Бойцы получают @Health@ здоровья за каждый используемый артефакт.",
+    "effects": {
+      "Health": 160
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/What-The-Forge-III.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Кузничный хаос",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_ImpromptuInventions",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "В начале боя до @MaxComponents@ компонентов чемпионов превращаются в полноценные предметы до конца раунда. Также вы получаете по одному компоненту в начале следующих стадий (@NumStages@).",
+    "effects": {
+      "{2aceef04}": 1,
+      "{f27a6f05}": 4
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Impromptu-Invention-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Кустарные изобретения",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_FreljordGlacialBreeze",
+    "associatedTraits": [
+      "Set9_Freljord"
+    ],
+    "composition": [],
+    "desc": "Когда на поле боя обрушивается призванная вами фрельйордская буря, ваши бойцы получают щит прочностью @ShieldRatio*100@% от макс. запаса здоровья и @BonusAS*100@% скорости атаки. Также вы получаете 2 бойцов из Фрельйорда.",
+    "effects": {
+      "BonusAS": 0.07999999821186066,
+      "ShieldRatio": 0.15000000596046448
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Glacial-Breeze-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Леденящий ветер",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Harmacist1",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Ваши бойцы восстанавливают здоровье в размере @Omnivamp@% от наносимого урона, а @Conversion@% от избыточного лечения превращается в чистый урон при следующей атаке.",
+    "effects": {
+      "{8cdfbd85}": 20,
+      "{ad16f688}": 10
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Harmacist-1-2-3-I.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Лечим и калечим I",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Harmacist2",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Ваши бойцы восстанавливают здоровье в размере @Omnivamp@% от наносимого урона, а @Conversion@% от избыточного лечения превращается в чистый урон при следующей атаке.",
+    "effects": {
+      "{8cdfbd85}": 25,
+      "{ad16f688}": 15
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Harmacist-1-2-3-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Лечим и калечим II",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Harmacist3",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Ваши бойцы восстанавливают здоровье в размере @Omnivamp@% от наносимого урона, а @Conversion@% от избыточного лечения превращается в чистый урон при следующей атаке.",
+    "effects": {
+      "{8cdfbd85}": 30,
+      "{ad16f688}": 25
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Harmacist-1-2-3-III.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Лечим и калечим III",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Sleightofhand",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете Перчатки вора. Чемпионы с Перчатками вора получают @AS@% скорости атаки.",
+    "effects": {
+      "AS": 30
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Sleight-of-Hand-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Ловкость рук",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Legend_BardPlaybook2",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете Наковальню компонентов, когда достигаете @levelreqa@, @levelreqb@, @levelreqc@ и @levelreqd@-го уровней.",
+    "effects": {
+      "{c926b888}": 7,
+      "{ca26ba1b}": 6,
+      "{cb26bbae}": 5,
+      "{d026c38d}": 8
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Caretaker_s-Chosen-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Любимец",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_BardPlaybook2",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете Наковальню компонентов, когда достигаете @levelreqa@, @levelreqb@, @levelreqc@ и @levelreqd@-го уровней.",
+    "effects": {
+      "{c926b888}": 7,
+      "{ca26ba1b}": 6,
+      "{cb26bbae}": 5,
+      "{d026c38d}": 8
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Caretaker_s-Chosen-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Любимец",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Shoplifting",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "В начале каждого раунда вы бесплатно получаете самого дорогого чемпиона из магазина.",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Shoplifting-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Магазинное воровство",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Commander_SmallForge",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете Наковальню компонентов и @gold@ золота.",
+    "effects": {
+      "Gold": 4,
+      "{a8bbf652}": 1
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Forge-I.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Малая кузница",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Infusion",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Ваши бойцы восстанавливают @Mana@ маны раз в @Interval@ сек.",
+    "effects": {
+      "Mana": 20,
+      "{cedd8578}": 5
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Infusion-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Мания на ману",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_ItemGrabBagPlus",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете случайный полноценный предмет, случайный компонент и @Gold@ золота. ",
+    "effects": {
+      "Gold": 5,
+      "{24acadb2}": "null",
+      "{466ef38d}": "null",
+      "{4a99a5b2}": "null",
+      "{65358e6c}": "null",
+      "{6c216145}": 1,
+      "{e12702aa}": 1
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/ItemGrabBag2.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Мешок предметов II",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_ItemGrabBagPlusPlus",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете несколько (@NumFullItems@) случайных полноценных предметов и @Gold@ золота.",
+    "effects": {
+      "Gold": 8,
+      "{24acadb2}": "null",
+      "{466ef38d}": "null",
+      "{4a99a5b2}": "null",
+      "{65358e6c}": "null",
+      "{6c216145}": "null",
+      "{e12702aa}": 2
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/ItemGrabBag3.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Мешок предметов III",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_FinalGrabBagPlusPlus",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете случайные компоненты (@NumItems@ шт.), Дубликатор чемпионов и Лопатку. ",
+    "effects": {
+      "Gold": "null",
+      "{24acadb2}": "null",
+      "{466ef38d}": 1,
+      "{4a99a5b2}": 1,
+      "{65358e6c}": "null",
+      "{6c216145}": 2
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Final-Grab-Bag-III.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Мешок с сюрпризом Урфа",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_WanderingTrainer",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете тренировочный манекен с @NumOfEmblems@ случайными эмблемами, которые нельзя снять. Также вы получаете @gold@ золота.",
+    "effects": {
+      "Gold": 4,
+      "{6ef3e0e1}": 3
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Wandering-Trainer-III.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Многогранный манекен",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_BruiserTitanicStrength",
+    "associatedTraits": [
+      "Set9_Bruiser"
+    ],
+    "composition": [],
+    "desc": "Ваши громилы получают силу атаки в размере @HealthPercent*100@% от их максимального запаса здоровья. Также вы получаете 2 громил.",
+    "effects": {
+      "HealthPercent": 0.014999999664723873
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Titanic-Strength-II.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Мощь титана",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_CosmicWisdom",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Опыт теперь стоит @InitialCost@ золота. Каждый раз, когда вы покупаете опыт в текущем раунде, его стоимость увеличивается на @increase@, вплоть до @MaxCost@. Кроме того, вы можете достичь 10-го уровня.",
+    "effects": {
+      "{d1eb411a}": 2,
+      "{e7b066dc}": 4,
+      "{ff37c82d}": 1
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Missing-T2.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Мудрость космоса I",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_CosmicWisdom2",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Опыт теперь стоит @InitialCost@ золота. Каждый раз, когда вы покупаете опыт в текущем раунде, его стоимость увеличивается на @increase@, вплоть до @MaxCost@. Кроме того, вы можете достичь 10-го уровня.",
+    "effects": {
+      "{d1eb411a}": 1,
+      "{e7b066dc}": 4,
+      "{ff37c82d}": 1
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Missing-T3.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Мудрость космоса II",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Martyr",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Когда один из ваших бойцов погибает, все союзники восстанавливают себе @Missinghealth@% от максимального запаса здоровья.",
+    "effects": {
+      "{dfb16731}": 10
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Martyr-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Мученик",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Dedication",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Когда вы впервые в бою против игрока выставляете на поле несколько (@NumUnits@) разных бойцов с одной и той же особенностью, вы получаете эмблему этой особенности.",
+    "effects": {
+      "{03ddeb0e}": 4
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Dedication-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Награда за старания",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_GottaGoFast",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Ваши бойцы восстанавливают на @PercentMana@% больше маны и передвигаются на @BonusMovementSpeed@% быстрее.",
+    "effects": {
+      "{36f72964}": 20,
+      "{49123935}": 10
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Gotta-Go-Fast-I.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Надо ускориться!",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_GottaGoFastII",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Ваши бойцы восстанавливают на @PercentMana@% больше маны и передвигаются на @BonusMovementSpeed@% быстрее.",
+    "effects": {
+      "{36f72964}": 40,
+      "{49123935}": 25
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Gotta-Go-Fast-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Надо ускориться! II",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_GottaGoFastIII",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Ваши бойцы восстанавливают на @PercentMana@% больше маны и передвигаются на @BonusMovementSpeed@% быстрее.",
+    "effects": {
+      "{36f72964}": 50,
+      "{49123935}": 35
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Gotta-Go-Fast-III.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Надо ускориться! III",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Conditioning1",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Ваши бойцы навсегда увеличивают максимальный запас здоровья на @healthperstack@ каждые @secondspertrigger@ сек. в бою. Кроме того, они получают @StartingHealth@ дополнительного здоровья сразу.",
+    "effects": {
+      "StartingHealth": 50,
+      "{40376e4e}": 5,
+      "{4cf6fc5f}": 5
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Missing-T1.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Накопление I",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Conditioning2",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Ваши бойцы навсегда увеличивают максимальный запас здоровья на @healthperstack@ каждые @secondspertrigger@ сек. в бою. Кроме того, они получают @StartingHealth@ дополнительного здоровья сразу.",
+    "effects": {
+      "StartingHealth": 75,
+      "{40376e4e}": 8,
+      "{4cf6fc5f}": 5
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Missing-T2.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Накопление II",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Conditioning3",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Ваши бойцы навсегда увеличивают максимальный запас здоровья на @healthperstack@ каждые @secondspertrigger@ сек. в бою. Кроме того, они получают @StartingHealth@ дополнительного здоровья сразу.",
+    "effects": {
+      "StartingHealth": 100,
+      "{40376e4e}": 12,
+      "{4cf6fc5f}": 5
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Missing-T3.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Накопление III",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_AirspeedVelocity1",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Увеличивает скорость атаки бойцов без предметов на @AttackSpeed*100@%.",
+    "effects": {
+      "AttackSpeed": 0.30000001192092896
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Unladen-Airspeed-Velocity-I.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Налегке I",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_AirspeedVelocity2",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Увеличивает скорость атаки бойцов без предметов на @AttackSpeed*100@%.",
+    "effects": {
+      "AttackSpeed": 0.550000011920929
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Unladen-Airspeed-Velocity-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Налегке II",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_AirspeedVelocity3",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Увеличивает скорость атаки бойцов без предметов на @AttackSpeed*100@%.",
+    "effects": {
+      "AttackSpeed": 0.75
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Makeshift3.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Налегке III",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_ShurimaShurimasLegacy",
+    "associatedTraits": [
+      "Set9_Shurima"
+    ],
+    "composition": [],
+    "desc": "Спустя @TooltipTimer@ сек. боя на поле появляется солнечный диск. Он атакует врагов каждые @AttackCadence@ сек., нанося @MinTurretDamage@-@MaxTurretDamage@ магического урона (в зависимости от текущей стадии). Также вы получаете 3 бойцов из Шуримы.",
+    "effects": {
+      "{0a844b4a}": 900,
+      "{2effe8b4}": 2,
+      "{a8b74ee1}": 8,
+      "{b0943a2c}": 180
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Shurima_s-Legacy-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Наследие Шуримы",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_EarlyEducation",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Сила умений ваших бойцов увеличивается на @StartingAP@. Кроме того, они навсегда получают @AP@ силы умений, когда убивают врагов.",
+    "effects": {
+      "AP": 1,
+      "{a86a3a88}": 15
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Early-Education-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Начальное образование",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_NotToday",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете Грань ночи. Чемпионы с Гранью ночи получают @AS@% скорости атаки.",
+    "effects": {
+      "AS": 35
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Not-Today-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Не сегодня",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Jackpot",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Обновив магазин @RerollAmount@ р., вы получаете копию каждого бойца @UnitCost@-го ранга. <br><br>(Обновлений магазина за эту игру: @TFTUnitProperty.item:TFT9_JackpotRolls@)",
+    "effects": {
+      "{143f3d3e}": 5,
+      "{cbc48edf}": 40
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Jackpot-I.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Недостающее звено",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_SorcererOverchargedManafont",
+    "associatedTraits": [
+      "Set9_Sorcerer"
+    ],
+    "composition": [],
+    "desc": "Начало боя: ваши чародеи восстанавливают @StartingBonusMana@ маны. Когда ваш чародей впервые за раунд участвует в убийстве, он восстанавливает @TakedownBonusMana@ маны. Также вы получаете 2 чародеев.",
+    "effects": {
+      "{0df00397}": 10,
+      "{208c42f6}": 20,
+      "{ac78e3c6}": 1
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Overcharged-Manafont-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Неиссякаемый источник маны",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_WarwickCarry",
+    "associatedTraits": [
+      "Set9_Zaun",
+      "Set9_Bruiser",
+      "Set9_Challenger"
+    ],
+    "composition": [],
+    "desc": "Вы получаете Варвика. Когда ваш сильнейший Варвик получает или наносит урон, его сила атаки увеличивается на @BonusStats@%, а сила умений – на @BonusStats@ (суммируются до @StackCap@ раз). Лечение от пассивного эффекта заменяется на магический урон при атаках.",
+    "effects": {
+      "{83e12d6f}": 5,
+      "{9396f00d}": 40
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Ravenous-Hunter-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Ненасытный охотник",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Inconsistency",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Если у вас серия из менее чем 3 побед или поражений, вы получаете 2 золота.",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Inconsistency-I.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Непостоянство",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_CapriciousForge",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете Перчатки кузнеца, которые дают два временных артефакта Орна каждый раунд.",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Prototype-Forge-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Непредсказуемая кузница",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_ImpenetrableBulwark",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете Терновый жилет, Коготь дракона и Магнитный отделитель.",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/StandBehind3.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Непробиваемая защита",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_YordleUnstableYordlePortalHR",
+    "associatedTraits": [
+      "Set9_BandleCity"
+    ],
+    "composition": [],
+    "desc": "Дважды в начале боя: вы получаете случайного йордла или @MinGold@-@MaxGold@ золота (в зависимости от текущей стадии). Также вы получаете 3 йордлов.",
+    "effects": {
+      "{0fb1f1e5}": 0.5,
+      "{29c71ed5}": 1,
+      "{4e351fc8}": 0.20000000298023224,
+      "{e511c7e7}": 5
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Unstable-Yordle-Portal-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Нестабильная доставка йордлов",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_YordleUnstableYordlePortal",
+    "associatedTraits": [
+      "Set9_BandleCity"
+    ],
+    "composition": [],
+    "desc": "Начало раунда: вы получаете случайного йордла или @MinGold@-@MaxGold@ золота (в зависимости от текущей стадии). Также вы получаете 3 йордлов сразу.",
+    "effects": {
+      "{0fb1f1e5}": 0.5,
+      "{29c71ed5}": 1,
+      "{4e351fc8}": 0.05000000074505806,
+      "{e511c7e7}": 5
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Unstable-Yordle-Portal-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Нестабильная доставка йордлов",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_IndomitableWill",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "При участии в убийстве ваши бойцы снимают с себя все негативные эффекты и становятся невосприимчивыми к эффектам контроля на @duration@ сек.",
+    "effects": {
+      "Duration": 10
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Indomitable-Will-I.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Неукротимая воля",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_LevelUpGold",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "При покупке опыта вы дополнительно получаете @XP@ ед. опыта. Кроме того, вы можете достичь 10-го уровня.",
+    "effects": {
+      "{516374d5}": 2
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/LevelUp2.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Новый уровень.",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_LevelUpSilver",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "При покупке опыта вы дополнительно получаете @XP@ ед. опыта. Кроме того, вы можете достичь 10-го уровня.",
+    "effects": {
+      "{516374d5}": 1
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/LevelUp1.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Новый уровень?",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_LockStep",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Начало раунда: если у вашего предыдущего оппонента был более высокий уровень, чем у вас, вы получаете @Experience@ ед. опыта. В противном случае вы получаете @Gold@ золота.",
+    "effects": {
+      "Experience": 4,
+      "Gold": 2
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Spoils-of-War-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Нога в ногу",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_MissedConnections",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете копию каждого чемпиона 1-го ранга.",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Missed-Connections-I.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Номер один",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_GiantGrabBag",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете случайные компоненты (@NumItems@), @Gold@ золота и малый Дубликатор чемпионов. ",
+    "effects": {
+      "Gold": 10,
+      "{56ba63f8}": 1,
+      "{6c216145}": 3
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Grab-Bag-III.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Огромный мешок с сюрпризом",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_MoneyHealsAllWounds",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "В начале раунда вы получаете @GoldPerTurn@ золота. Если у вас есть хотя бы @GoldThreshhold@ золота, ваш тактик восстанавливает @Health@ здоровья.",
+    "effects": {
+      "Health": 2,
+      "{4d2f20e1}": 3,
+      "{c62b8040}": 40
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Money-Heals-all-Wounds-III.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Оздоровительное золото",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_EagleEye",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы видите, с кем будете сражаться дальше. Ваши бойцы получают @ArmorAmount@ брони или @MRAmount@ сопротивления магии – показатель можно менять во время фазы планирования.",
+    "effects": {
+      "{53e6dd62}": 40,
+      "{88555c58}": 40
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/TFT_Augment_EagleEye.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Орлиный глаз",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_BlindingSpeed",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете Скорострельную пушку, Клинок ярости Гинсу и Магнитный отделитель.",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Berserk-III.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Ослепляющая скорость",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_MoneyLaundering",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы лишаетесь дохода от сбережений, но в начале каждого боя против игрока получаете @Gold@ золота за каждые несколько (@UnitsPerGold@) бойцов на вашей скамейке.",
+    "effects": {
+      "Gold": 1,
+      "{3c8420c1}": 2
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Money-Laundering--II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Отмывание денег",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Executioner",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "При попадании ваши бойцы добивают врагов, у которых осталось менее @Healththreshold@% здоровья. При этом вы с вероятностью @GoldChance@% получаете @goldgenerated@ золота.",
+    "effects": {
+      "HealthThreshold": 5,
+      "{2dd33743}": 10,
+      "{fce04ce8}": 1
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Missing-T1.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Палач I",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_ExecutionerPlus",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "При попадании ваши бойцы добивают врагов, у которых осталось менее @Healththreshold@% здоровья. При этом вы с вероятностью @GoldChance@% получаете @goldgenerated@ золота.",
+    "effects": {
+      "HealthThreshold": 8,
+      "{2dd33743}": 20,
+      "{fce04ce8}": 1
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Missing-T2.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Палач II",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_ExecutionerPlusPlus",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "При попадании ваши бойцы добивают врагов, у которых осталось менее @Healththreshold@% здоровья. При этом вы с вероятностью @GoldChance@% получаете @goldgenerated@ золота.",
+    "effects": {
+      "HealthThreshold": 12,
+      "{2dd33743}": 25,
+      "{fce04ce8}": 1
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Missing-T3.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Палач III",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Legend_Transfusion",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Ваши бойцы получают @BaseHP@ здоровья плюс еще @BonusHPPerMissingHealth@ здоровья за каждую единицу недостающего здоровья тактика.",
+    "effects": {
+      "{17b55a20}": 20,
+      "{5da22543}": 2
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Transfusion-I.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Переливание I",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Transfusion",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Ваши бойцы получают @BaseHP@ здоровья плюс еще @BonusHPPerMissingHealth@ здоровья за каждую единицу недостающего здоровья тактика.",
+    "effects": {
+      "{17b55a20}": 20,
+      "{5da22543}": 2
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Transfusion-I.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Переливание I",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_TransfusionPlus",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Ваши бойцы получают @BaseHP@ здоровья плюс еще @BonusHPPerMissingHealth@ здоровья за каждую единицу недостающего здоровья тактика.",
+    "effects": {
+      "{17b55a20}": 80,
+      "{5da22543}": 3
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Transfusion-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Переливание II",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Legend_TransfusionPlus",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Ваши бойцы получают @BaseHP@ здоровья плюс еще @BonusHPPerMissingHealth@ здоровья за каждую единицу недостающего здоровья тактика.",
+    "effects": {
+      "{17b55a20}": 80,
+      "{5da22543}": 3
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Transfusion-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Переливание II",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Legend_TransfusionPlusPlus",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Ваши бойцы получают @BaseHP@ здоровья плюс еще @BonusHPPerMissingHealth@ здоровья за каждую единицу недостающего здоровья тактика.",
+    "effects": {
+      "{17b55a20}": 100,
+      "{5da22543}": 5
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Transfusion-III.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Переливание III",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_TransfusionPlusPlus",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Ваши бойцы получают @BaseHP@ здоровья плюс еще @BonusHPPerMissingHealth@ здоровья за каждую единицу недостающего здоровья тактика.",
+    "effects": {
+      "{17b55a20}": 100,
+      "{5da22543}": 5
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Transfusion-III.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Переливание III",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_DemaciaPetriciteShackles",
+    "associatedTraits": [
+      "Set9_Demacia"
+    ],
+    "composition": [],
+    "desc": "Ваши бойцы из Демасии наносят на @BaseDamage*100@% больше урона. Прибавка увеличивается до @BonusDamage*100@%, если макс. запас маны врага больше или равен @ManaThreshold@ либо если враг из Ноксуса. Также вы получаете 3 бойцов из Демасии.",
+    "effects": {
+      "BaseDamage": 0.15000000596046448,
+      "BonusDamage": 0.30000001192092896,
+      "{4aed7c65}": 100
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Petricite-Shackles-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Петрицитовые оковы",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_MulticasterPracticeMakesPerfect",
+    "associatedTraits": [
+      "Set9_Multicaster"
+    ],
+    "composition": [],
+    "desc": "Каждый раз, когда ваши искусники применяют умения, они получают @StackingAP@ силы умений (максимум: @MaxAP@) до конца боя. Также вы получаете 2 искусников.",
+    "effects": {
+      "{5925fe48}": 70,
+      "{bfb90928}": 5
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Practice-Makes-Perfect-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Повторение – мать учения",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_OverwhelmingForce",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете Клинок смерти, Грань Бесконечности и Магнитный отделитель.",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Eagle-Eye-III.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Подавляющая сила",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_HighEndSector",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете @gold@ зол. каждый раунд. При повышении уровня вы можете обновить магазин бесплатно за каждый уровень (не сбрасывается между раундами).",
+    "effects": {
+      "Gold": 1,
+      "{a9ad6d1b}": 8
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Trade3.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Покупки",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Legend_HighEndSector",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете @gold@ зол. каждый раунд. При повышении уровня вы можете обновить магазин бесплатно за каждый уровень (не сбрасывается между раундами).",
+    "effects": {
+      "Gold": 1,
+      "{a9ad6d1b}": 8
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Trade3.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Покупки",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_ChemtechOverdrive",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Открывает портал в Заун в случайной ячейке во втором ряду. В начале боя любой боец в портале получает @Health@ здоровья и @AttackSpeed*100@% скорости атаки, а после смерти оставляет на поле @Gold@ золота.",
+    "effects": {
+      "AttackSpeed": 0.4000000059604645,
+      "Gold": 1,
+      "Health": 500
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Missing-T2.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Полезные химикаты",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_TopDeck",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете @Gold@ золота и Малый Дубликатор чемпионов.",
+    "effects": {
+      "Gold": 7,
+      "{56ba63f8}": 1
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Training-Reward-I.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Поощрение",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_TopDeckPlus",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете @Gold@ золота и Малый Дубликатор чемпионов.",
+    "effects": {
+      "Gold": 15,
+      "{56ba63f8}": 1
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Training-Reward-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Поощрение II",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_TopDeckPlusPlus",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете @Gold@ золота и Дубликатор чемпионов. ",
+    "effects": {
+      "Gold": 24,
+      "{4a99a5b2}": 1
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Training-Reward-III.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Поощрение III",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Commander_FinalAscension",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Ваши бойцы наносят на @damageamp@% больше урона. Спустя @delay@ сек. боя этот бонус утраивается.",
+    "effects": {
+      "DamageAmp": 15,
+      "{4ed1f1d8}": 15
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Ascension3.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Последнее вознесение",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_FinalGrabBag",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете случайный компонент, @Gold@ золота и Перековщик. ",
+    "effects": {
+      "Gold": 12,
+      "{24acadb2}": 1,
+      "{65358e6c}": "null",
+      "{6c216145}": 1
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Final-Grab-Bag-I.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Последний мешок с сюрпризом",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_FinalGrabBagPlus",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете случайные компоненты (@NumItems@ шт.), @Gold@ золота и Магнитный отделитель. ",
+    "effects": {
+      "Gold": 15,
+      "{24acadb2}": "null",
+      "{65358e6c}": 1,
+      "{6c216145}": 2
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Final-Grab-Bag-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Последний мешок с сюрпризом II",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_JustKeepRolling",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Если вы обновите магазин @Tier1Rolls@ р., все последующие обновления будут стоить @RefreshCost@ золота до конца игры.<br><br>(Обновлений магазина за эту игру: @TFTUnitProperty.item:TFT9_JustKeepRollingRolls@)",
+    "effects": {
+      "{5b720329}": 1,
+      "{880a3be0}": 10
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Pirates2.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Постоянный покупатель",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_JustKeepRollingHR",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Если вы обновите магазин @Tier1Rolls@ р., все последующие обновления будут стоить @RefreshCost@ золота до конца игры.<br><br>(Обновлений магазина за эту игру: @TFTUnitProperty.item:TFT9_JustKeepRollingRolls@)",
+    "effects": {
+      "{5b720329}": 1,
+      "{880a3be0}": 20
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Pirates2.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Постоянный покупатель",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_LearningPotential",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "После каждого боя с игроком вы получаете @Experience@ ед. опыта за каждые несколько (@NumTraitsPerExp@) неактивных особенностей в вашей команде.<br><br><tftitemrules>Неактивные особенности: @TFTUnitProperty.item:TFT9_Augment_LearningPotential_TraitNum@</tftitemrules>",
+    "effects": {
+      "Experience": 1,
+      "{8a8f7468}": 2
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Missing-T2.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Потенциал для развития",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_FinalReserves",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Когда у вас впервые остается 1 здоровья или меньше, вы выживаете. В начале следующей фазы планирования вы получаете @xp@ ед. опыта и @gold@ золота.",
+    "effects": {
+      "Gold": 40,
+      "{516374d5}": 80
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Final-Reserves-III.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Превозмогая смерть",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_PandorasItems2",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете случайные компоненты предметов (@NumCompletedItems@). В начале раунда предметы на скамейке меняются на случайные (кроме Короны тактика, Лопатки и расходуемых).",
+    "effects": {
+      "{5cc08b27}": "null",
+      "{c3c62200}": 1
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Pandora2.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Предметы Пандоры II",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Legend_PandorasItems2",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете случайные компоненты предметов (@NumCompletedItems@). В начале раунда предметы на скамейке меняются на случайные (кроме Короны тактика, Лопатки и расходуемых).",
+    "effects": {
+      "{5cc08b27}": "null",
+      "{c3c62200}": 1
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Pandora2.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Предметы Пандоры II",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Legend_PandorasRadiantBox",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете случайный лучезарный предмет. В начале раунда предметы на вашей скамейке меняются на случайные (кроме Короны тактика, Лопатки и расходуемых).",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Pandora3.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Предметы Пандоры III",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_PandorasRadiantBox",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете случайный лучезарный предмет. В начале раунда предметы на вашей скамейке меняются на случайные (кроме Короны тактика, Лопатки и расходуемых).",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Pandora3.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Предметы Пандоры III",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Commander_LargeForgePlus",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете Наковальню предметов Орна и Наковальню полноценных предметов.",
+    "effects": {
+      "Gold": 5
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Job_s-Done-III.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Прекрасная работа",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_ShadowIslesHauntedShell",
+    "associatedTraits": [
+      "Set9_ShadowIsles"
+    ],
+    "composition": [],
+    "desc": "Когда активен бонус Сумрачных островов, после смерти каждого союзника ваши бойцы получают @StackingResistances@ брони и сопротивления магии. Кроме того, вы получаете 2 бойцов с Сумрачных островов.",
+    "effects": {
+      "{da858795}": 10
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Haunted-Shell-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Призрачные доспехи",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_GiftsFromAbove",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Начало боя: между чемпионами, у которых меньше всего предметов, распределяются несколько (@numitems@) временных предметов.",
+    "effects": {
+      "{6c216145}": 4
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Gifts-from-Above-III.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Призрачные припасы",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_JuggernautCantStopMe",
+    "associatedTraits": [
+      "Set9_Armorclad"
+    ],
+    "composition": [],
+    "desc": "Ваши джаггернауты наносят на @MinBonusDamage*100@% больше урона. Прибавка увеличивается до @MaxBonusDamage*100@% до конца боя, если у них остается менее @HealthThreshold*100@% здоровья. Также вы получаете 2 джаггернаутов.",
+    "effects": {
+      "HealthThreshold": 0.5,
+      "{20c48f59}": 0.25,
+      "{a98aec77}": 0.10000000149011612
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Can_t-Stop-Me-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Прилив адреналина",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_UnleashedArcana",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете Драгоценную перчатку, Смертельную шляпу Рабадона и Магнитный отделитель.",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/LifelongLearner3.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Прилив магии",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Commander_ManaJolt1",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Начало боя: ваши бойцы восстанавливают @startingmana@ маны.",
+    "effects": {
+      "{1a97299e}": 20
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Missing-T1.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Прилив маны I",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Commander_ManaJolt2",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Начало боя: ваши бойцы восстанавливают @startingmana@ маны.",
+    "effects": {
+      "{1a97299e}": 30
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Missing-T2.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Прилив маны II",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Commander_ManaJolt3",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Начало боя: ваши бойцы восстанавливают @startingmana@ маны.",
+    "effects": {
+      "{1a97299e}": 40
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Missing-T3.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Прилив маны III",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_DoubleEquipment",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете две копии случайного компонента.",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Missing-T1.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Про запас",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_DangerousToGoAlone",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "При смерти ваш боец дает временную копию одного из своих предметов ближайшему союзнику со свободной ячейкой для предметов, и тот получает щит прочностью @ShieldRatio*100@% от макс. запаса здоровья.",
+    "effects": {
+      "ShieldRatio": 0.4000000059604645
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/It_s-Dangerous-to-Go-Alone-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Прощальный подарок",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_OneTwosThree",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете одного бойца 1-го ранга, несколько (@numchamps@) бойцов 2-го ранга и одного бойца 3-го ранга.",
+    "effects": {
+      "{78bc82ef}": 2
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Threes-Company-I.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Раз, два, три",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Legend_OneTwosThree",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете одного бойца 1-го ранга, несколько (@numchamps@) бойцов 2-го ранга и одного бойца 3-го ранга.",
+    "effects": {
+      "{78bc82ef}": 2
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Threes-Company-I.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Раз, два, три",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Commander_TeamingUp1",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете полноценные предметы (@NumItems@ шт.), собранные из двух одинаковых компонентов, и @Gold@ золота.",
+    "effects": {
+      "Gold": 2,
+      "{6c216145}": 1
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Tinker1.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Раздвоение I",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Commander_TeamingUp2",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете полноценные предметы (@NumItems@ шт.), собранные из двух одинаковых компонентов, и @Gold@ золота.",
+    "effects": {
+      "Gold": 10,
+      "{6c216145}": 1
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Tinker2.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Раздвоение II",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Commander_TeamingUp3",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете полноценные предметы (@NumItems@ шт.), собранные из двух одинаковых компонентов, и @Gold@ золота.",
+    "effects": {
+      "Gold": 4,
+      "{6c216145}": 2
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Tinker3.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Раздвоение III",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_GargantuanResolve",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете Решимость титана. Максимальное количество зарядов этого предмета увеличивается с 25 до @MaxStacks@.",
+    "effects": {
+      "MaxStacks": 35
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Gargantuan-Resolve-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Растущая решимость",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_ArmyBuilding",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете два Малых Дубликатора чемпионов: один сразу, а второй – через несколько (@PlayerCombatNum@) боев против игроков.",
+    "effects": {
+      "{b7229f70}": 7
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Building-an-army-I.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Расширение армии",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_ArmyBuildingHR",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете два Малых Дубликатора чемпионов: один сразу, а второй – через несколько (@PlayerCombatNum@) боев против игроков.",
+    "effects": {
+      "{b7229f70}": 3
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Building-an-army-I.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Расширение армии",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Legend_BranchingOut",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете случайную эмблему и Перековщик.",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Branching-Out-I.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Расширение дела",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_BranchingOut",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете случайную эмблему и Перековщик.",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Branching-Out-I.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Расширение дела",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_SlayerSlayersResolve",
+    "associatedTraits": [
+      "Set9_Slayer"
+    ],
+    "composition": [],
+    "desc": "Когда ваш душегуб получает или наносит урон, его броня и сопротивление магии увеличиваются на @BonusResistances@ до конца боя (суммируется до @StackCap@ раз). Также вы получаете 2 душегубов.",
+    "effects": {
+      "{861cdd9e}": 2,
+      "{9396f00d}": 25
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Slayer_s-Resolve-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Решимость душегуба",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_RiskyMoves",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Ваш тактик теряет @Health@ здоровья, но через несколько (@PlayerCombatNum@) боев с игроками вы получаете @Gold@ золота.",
+    "effects": {
+      "Gold": 30,
+      "Health": 20,
+      "{b7229f70}": 7
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Risky-Moves-I.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Рискованный ход",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Legend_StarsAreBorn",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Первый купленный вами чемпион 1-го ранга и первый чемпион 2-го ранга становятся 2-звездочными. Также вы получаете @Gold@ золота.",
+    "effects": {
+      "Gold": 6
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Stars-are-born-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Рождение звезды",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_StarsAreBorn",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Первый купленный вами чемпион 1-го ранга и первый чемпион 2-го ранга становятся 2-звездочными. Также вы получаете @Gold@ золота.",
+    "effects": {
+      "Gold": 6
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Stars-are-born-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Рождение звезды",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_JayceCarry",
+    "associatedTraits": [
+      "Set9_Piltover",
+      "Set9_Marksman"
+    ],
+    "composition": [],
+    "desc": "Вы получаете Джейса. Пока действует умение вашего сильнейшего Джейса, он использует Шоковый заряд вместо атак.",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Cannon-Overdrive-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Ртутная пушка: ускорение",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_NoScope",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Максимальная дальность атаки ваших бойцов в первых 2 рядах уменьшается до @RangeMax@. Они получают @Armor@ брони, @MagicResist@ сопротивления магии и @AD*100@% силы атаки за каждую потерянную ячейку дальности.",
+    "effects": {
+      "AD": 0.3499999940395355,
+      "Armor": 12,
+      "MagicResist": 12,
+      "{e34873d4}": 2
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/NoScope.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Рукопашный бой",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_ActionSurge",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Спустя @CombatDuration@ сек. боя ваши бойцы получают @AttackSpeedBoost*100@% скорости атаки на @AttackSpeedDuration@ сек.",
+    "effects": {
+      "{3b96bc78}": 6,
+      "{5a2fd953}": 0.5,
+      "{864d46f1}": 6
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Missing-T1.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "С новой силой",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_ActionSurge2",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Спустя @CombatDuration@ сек. боя ваши бойцы получают @AttackSpeedBoost*100@% скорости атаки на @AttackSpeedDuration@ сек.",
+    "effects": {
+      "{3b96bc78}": 6,
+      "{5a2fd953}": 0.800000011920929,
+      "{864d46f1}": 6
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Missing-T1.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "С новой силой II",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_ActionSurge3",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Спустя @CombatDuration@ сек. боя ваши бойцы получают @AttackSpeedBoost*100@% скорости атаки на @AttackSpeedDuration@ сек.",
+    "effects": {
+      "{3b96bc78}": 6,
+      "{5a2fd953}": 1.2999999523162842,
+      "{864d46f1}": 6
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Missing-T3.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "С новой силой III",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_YouHaveMyBow",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете Изогнутый лук. Скорость атаки ваших бойцов увеличивается на @AS@%. ",
+    "effects": {
+      "AS": 15
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/You-Have-My-Bow-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "С тобой мой лук",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_YouHaveMySword",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете Самый Лучший Меч. Сила атаки ваших бойцов увеличивается на @AD@%. ",
+    "effects": {
+      "AD": 18
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/You-Have-My-Sword-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "С тобой мой меч",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Legend_TiniestTitan",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Ваш шустрый крошечный тактик восстанавливает @Heal@ здоровья после PvP-раундов и дает @Gold@ золота каждый раунд.",
+    "effects": {
+      "Gold": 2,
+      "Heal": 2
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Tiniest-TitanIII.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Самый крошечный великан",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_TiniestTitan",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Ваш шустрый крошечный тактик восстанавливает @Heal@ здоровья после PvP-раундов и дает @Gold@ золота каждый раунд.",
+    "effects": {
+      "Gold": 2,
+      "Heal": 2
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Tiniest-TitanIII.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Самый крошечный великан",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_BalancedBudget",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "В начале следующих @rounds@ раундов вы получаете @gold@ золота.",
+    "effects": {
+      "Gold": 4,
+      "{b7b53758}": 4
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Balanced-Budget-I.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Сбалансированный бюджет",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_BalancedBudget2",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "В начале следующих @rounds@ раундов вы получаете @gold@ золота.",
+    "effects": {
+      "Gold": 6,
+      "{b7b53758}": 4
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Balanced-Budget-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Сбалансированный бюджет II",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_BalancedBudget3",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "В начале следующих @rounds@ раундов вы получаете @gold@ золота.",
+    "effects": {
+      "Gold": 10,
+      "{b7b53758}": 4
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Balanced-Budget-III.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Сбалансированный бюджет III",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_InfernalContract",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Ваш максимальный уровень – 7. Вы получаете @augmentgold@ золота.",
+    "effects": {
+      "{45e02ace}": 85
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Infernal-Contract-III.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Сделка с дьяволом",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_DeadeyeSuppressingFire",
+    "associatedTraits": [
+      "Set9_Deadeye"
+    ],
+    "composition": [],
+    "desc": "Цель совместной атаки ваших зорких глаз наносит на @DamageReduction*100@% меньше урона в течение @Duration@ сек. Также вы получаете 2 зорких глаза.",
+    "effects": {
+      "DamageReduction": 0.3499999940395355,
+      "Duration": 8
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Hail-of-Bullets-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Сдерживающий огонь",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_VoidTrait",
+    "associatedTraits": [
+      "Set9_Void"
+    ],
+    "composition": [],
+    "desc": "Счетчик бойцов из Бездны в вашей команде увеличивается на 1. Также вы получаете Кассадина.",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Void-Heart-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Сердце Бездны",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_DemaciaTrait",
+    "associatedTraits": [
+      "Set9_Demacia"
+    ],
+    "composition": [],
+    "desc": "Счетчик бойцов из Демасии в вашей команде увеличивается на 1. Также вы получаете Галио.",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Demacia-Heart-I.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Сердце Демасии",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_ZaunTrait",
+    "associatedTraits": [
+      "Set9_Zaun"
+    ],
+    "composition": [],
+    "desc": "Счетчик бойцов из Зауна в вашей команде увеличивается на 1. Также вы получаете Варвика.",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Zaun-Heart-I.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Сердце Зауна",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_IoniaTrait",
+    "associatedTraits": [
+      "Set9_Ionia"
+    ],
+    "composition": [],
+    "desc": "Счетчик бойцов из Ионии в вашей команде увеличивается на 1. Также вы получаете Сетта.",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Ionia-Heart-I.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Сердце Ионии",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_NoxusTrait",
+    "associatedTraits": [
+      "Set9_Noxus"
+    ],
+    "composition": [],
+    "desc": "Счетчик бойцов из Ноксуса в вашей команде увеличивается на 1. Также вы получаете Свейна.",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Noxus-Heart-I.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Сердце Ноксуса",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_PiltoverTrait",
+    "associatedTraits": [
+      "Set9_Piltover"
+    ],
+    "composition": [],
+    "desc": "Счетчик бойцов из Пилтовера в вашей команде увеличивается на 1. Также вы получаете Вай.",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Piltover-Heart-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Сердце Пилтовера",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_ShadowIslesTrait",
+    "associatedTraits": [
+      "Set9_ShadowIsles"
+    ],
+    "composition": [],
+    "desc": "Счетчик бойцов с Сумрачных островов в вашей команде увеличивается на 1. Также вы получаете Виего и @Gold@ золота.",
+    "effects": {
+      "Gold": 1
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Shadow-Heart-I.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Сердце Сумрачных островов",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_TargonTrait",
+    "associatedTraits": [
+      "Set9_Targon"
+    ],
+    "composition": [],
+    "desc": "Счетчик бойцов с Таргона в вашей команде увеличивается на 1. Также вы получаете Сораку.",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Targon-Heart-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Сердце Таргона",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_FreljordTrait",
+    "associatedTraits": [
+      "Set9_Freljord"
+    ],
+    "composition": [],
+    "desc": "Счетчик бойцов из Фрельйорда в вашей команде увеличивается на 1. Также вы получаете Эш.",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Freljord-Heart-I.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Сердце Фрельйорда",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_ShurimaTrait",
+    "associatedTraits": [
+      "Set9_Shurima"
+    ],
+    "composition": [],
+    "desc": "Счетчик бойцов из Шуримы в вашей команде увеличивается на 1. Также вы получаете Талию.",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Shurima-Heart-I.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Сердце Шуримы",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_RogueTrait",
+    "associatedTraits": [
+      "Set9_Rogue"
+    ],
+    "composition": [],
+    "desc": "Счетчик головорезов в вашей команде увеличивается на 1. Также вы получаете Зеда.",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Rogue-Heart-I.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Сердце головореза",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_BruiserTrait",
+    "associatedTraits": [
+      "Set9_Bruiser"
+    ],
+    "composition": [],
+    "desc": "Счетчик громил в вашей команде увеличивается на 1. Также вы получаете Вай.",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/BruiserHeart1.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Сердце громилы",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_ArmorcladTrait",
+    "associatedTraits": [
+      "Set9_Armorclad"
+    ],
+    "composition": [],
+    "desc": "Счетчик джаггернаутов в вашей команде увеличивается на 1. Также вы получаете Сетта.",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Juggernaut-Heart-I.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Сердце джаггернаута",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_SlayerTrait",
+    "associatedTraits": [
+      "Set9_Slayer"
+    ],
+    "composition": [],
+    "desc": "Счетчик душегубов в вашей команде увеличивается на 1. Также вы получаете Кледа.",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Slayer-Heart-I.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Сердце душегуба",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_ChallengerTrait",
+    "associatedTraits": [
+      "Set9_Challenger"
+    ],
+    "composition": [],
+    "desc": "Счетчик задир в вашей команде увеличивается на 1. Также вы получаете Варвика.",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/ChallengerHeart1.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Сердце задиры",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_ProtectorTrait",
+    "associatedTraits": [
+      "Set9_DefTrait"
+    ],
+    "composition": [],
+    "desc": "Счетчик заступников в вашей команде увеличивается на 1. Также вы получаете Ёнэ.",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Missing-T1.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Сердце заступника",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_DeadeyeTrait",
+    "associatedTraits": [
+      "Set9_Deadeye"
+    ],
+    "composition": [],
+    "desc": "Счетчик бойцов с особенностью \"Зоркий глаз\" в вашей команде увеличивается на 1. Также вы получаете Эш.",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Deadeye-Heart-I.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Сердце зоркого глаза",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_MulticasterTrait",
+    "associatedTraits": [
+      "Set9_Multicaster"
+    ],
+    "composition": [],
+    "desc": "Счетчик искусников в вашей команде увеличивается на 1. Также вы получаете Талию.",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Multicaster-Heart-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Сердце искусника",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_YordleTrait",
+    "associatedTraits": [
+      "Set9_BandleCity"
+    ],
+    "composition": [],
+    "desc": "Счетчик йордлов в вашей команде увеличивается на 1. Также вы получаете Кледа.",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Missing-T2.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Сердце йордла",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_PreserverTrait",
+    "associatedTraits": [
+      "Set9_Preserver"
+    ],
+    "composition": [],
+    "desc": "Счетчик колдунов в вашей команде увеличивается на 1. Также вы получаете Сораку.",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Invoker-Heart-I.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Сердце колдуна",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_BastionTrait",
+    "associatedTraits": [
+      "Set9_Bastion"
+    ],
+    "composition": [],
+    "desc": "Счетчик несокрушимых в вашей команде увеличивается на 1. Также вы получаете Кассадина.",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Bastion-Heart-I.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Сердце несокрушимого",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_StrategistTrait",
+    "associatedTraits": [
+      "Set9_Strategist"
+    ],
+    "composition": [],
+    "desc": "Счетчик стратегов в вашей команде увеличивается на 1. Также вы получаете Свейна.",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Strategist-Heart-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Сердце стратега",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_MarksmanTrait",
+    "associatedTraits": [
+      "Set9_Marksman"
+    ],
+    "composition": [],
+    "desc": "Счетчик стрелков в вашей команде увеличивается на 1. Также вы получаете Джинкс.",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Gunner-Heart-I.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Сердце стрелка",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_SorcererTrait",
+    "associatedTraits": [
+      "Set9_Sorcerer"
+    ],
+    "composition": [],
+    "desc": "Счетчик чародеев в вашей команде увеличивается на 1. Также вы получаете Свейна.",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Sorcerer-Heart-I.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Сердце чародея",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_SilverSpoon",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете @Experience@ ед. опыта.<br>",
+    "effects": {
+      "Experience": 10
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Silver-Spoon-I.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Серебряная ложка",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_SilverTicket",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Когда вы обновляете магазин, у вас появляется @RerollPercent@% шанс получить еще одно бесплатное обновление.",
+    "effects": {
+      "{c43e4438}": 30
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/GoldenTicket2.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Серебряный билет",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_StrengthOfAges",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "В конце каждой стадии все бойцы на поле и на скамейке запасных получают @AD*100@% силы атаки, @AP*100@% силы умений и @Health@ здоровья.",
+    "effects": {
+      "AD": 0.15000000596046448,
+      "AP": 0.15000000596046448,
+      "Health": 150
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Missing-T1.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Сила веков I",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_InvokerLovingInvocation",
+    "associatedTraits": [
+      "Set9_Preserver"
+    ],
+    "composition": [],
+    "desc": "Ваши бойцы получают @BonusAP@ силы умений до конца боя каждый раз, когда ваши колдуны применяют умения. Вы получаете 2 колдунов.",
+    "effects": {
+      "{d49caf5d}": 2
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Loving-Invocation-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Сильное колдунство",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Commander_SmallForgePlus",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете несколько (@anvils@) Наковален компонентов.",
+    "effects": {
+      "{a8bbf652}": 2
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Job_s-Done-I.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Сносная работа",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_CustomerIsAlwaysRight",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вместо случайных компонентов вы получаете Наковальни компонентов. Также вы получаете случайный компонент.",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/The-customer-is-always-right-I.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Собери сам",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_SocialDistancing",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Начало боя: бойцы, к которым не примыкают союзники, получают @Stats@% силы атаки и силы умений.",
+    "effects": {
+      "{6a311cec}": 12
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Social-Distance-I.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Социальная дистанция I",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_SocialDistancing2",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Начало боя: бойцы, к которым не примыкают союзники, получают @Stats@% силы атаки и силы умений.",
+    "effects": {
+      "{6a311cec}": 20
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Social-Distance-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Социальная дистанция II",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_SocialDistancing3",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Начало боя: бойцы, к которым не примыкают союзники, получают @Stats@% силы атаки и силы умений.",
+    "effects": {
+      "{6a311cec}": 30
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Social-Distance-III.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Социальная дистанция III",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_PhreakyFriday",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете два Вечных Союза: один сразу, а второй – через несколько (@CombatNum@) боев против игроков.",
+    "effects": {
+      "{78389a8f}": 5
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Phreaky-Friday-III.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Союз на века",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_PhreakyFridayHR",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете два Вечных Союза: один сразу, а второй – через несколько (@CombatNum@) боев против игроков.",
+    "effects": {
+      "{78389a8f}": 3
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Phreaky-Friday-III.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Союз на века",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_PhreakyFridayPlusHR",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете два Вечных Союза: один сразу, а второй – через несколько (@CombatNum@) боев против игроков.",
+    "effects": {
+      "{78389a8f}": 2
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Phreaky-Friday-III.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Союз на века+",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_PhreakyFridayPlus",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете два Вечных Союза: один сразу, а второй – через несколько (@CombatNum@) боев против игроков.",
+    "effects": {
+      "{78389a8f}": 3
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Phreaky-Friday-III.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Союз на века+",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Legend_BardPlaybook1",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "При каждом повышении уровня вы получаете одного и того же случайного чемпиона @UnitTier@-го ранга.",
+    "effects": {
+      "{ae102917}": 2
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Caretaker_s-Chosen-I.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Союзник",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_BardPlaybook1",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "При каждом повышении уровня вы получаете одного и того же случайного чемпиона @UnitTier@-го ранга.",
+    "effects": {
+      "{ae102917}": 2
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Caretaker_s-Chosen-I.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Союзник",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_LongTimeCraftingHR",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Через несколько (@NumberOfCombats@) боев против игроков вы получаете Наковальню предметов Орна.",
+    "effects": {
+      "{ec71edd2}": 4
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Long-time-Crafting-I.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Спящая кузница",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_LongTimeCrafting",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Через несколько (@NumberOfCombats@) боев против игроков вы получаете Наковальню предметов Орна.",
+    "effects": {
+      "{ec71edd2}": 8
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Long-time-Crafting-I.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Спящая кузница",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Legend_LongTimeCrafting",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Через несколько (@NumberOfCombats@) боев против игроков вы получаете Наковальню предметов Орна.",
+    "effects": {
+      "{ec71edd2}": 8
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Long-time-Crafting-I.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Спящая кузница",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Commander_MediumForge",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете Наковальню полноценных предметов и @gold@ золота.",
+    "effects": {
+      "Gold": 7,
+      "{6c216145}": 1
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Forge-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Средняя кузница",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_CuttingCorners",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Для повышения уровня нужно на @Experience@ меньше ед. опыта. Кроме того, вы можете достичь 10-го уровня.",
+    "effects": {
+      "Experience": 3
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Cutting-Corners-I.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Срезание углов",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Legend_CuttingCorners",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Для повышения уровня нужно на @Experience@ меньше ед. опыта. Кроме того, вы можете достичь 10-го уровня.",
+    "effects": {
+      "Experience": 3
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Cutting-Corners-I.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Срезание углов",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Legend_StarterKit",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете чемпиона 4-го ранга и 2-звездочного чемпиона 1-го ранга с такой же особенностью. В след. стадиях (@FutureChampionCount@) вы получаете еще по одному чемпиону 4-го ранга.",
+    "effects": {
+      "{5b3374c0}": 2
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Starter-Kit-III.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Стартовый набор",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_StarterKit",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете чемпиона 4-го ранга и 2-звездочного чемпиона 1-го ранга с такой же особенностью. В след. стадиях (@FutureChampionCount@) вы получаете еще по одному чемпиону 4-го ранга.",
+    "effects": {
+      "{5b3374c0}": 2
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Starter-Kit-III.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Стартовый набор",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Legend_HedgeFund",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете @Gold@ золота. Максимальный доход от сбережений увеличивается до @InterestCap@.",
+    "effects": {
+      "Gold": 22,
+      "{9e368069}": 10
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/RichGetRicher3.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Страховой фонд",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_HedgeFund",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете @Gold@ золота. Максимальный доход от сбережений увеличивается до @InterestCap@.",
+    "effects": {
+      "Gold": 22,
+      "{9e368069}": 10
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/RichGetRicher3.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Страховой фонд",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_HedgeFundPlus",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете @Gold@ золота. Максимальный доход от сбережений увеличивается до @InterestCap@.",
+    "effects": {
+      "Gold": 32,
+      "{9e368069}": 10
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/RichGetRicher3.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Страховой фонд+",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_HedgeFundPlusPlus",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете @Gold@ золота. Максимальный доход от сбережений увеличивается до @InterestCap@.",
+    "effects": {
+      "Gold": 44,
+      "{9e368069}": 10
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/RichGetRicher3.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Страховой фонд++",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Superstars",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Ваши бойцы наносят на @BaseBonusDamage@% больше урона. Прибавка увеличивается на @BonusDamagePer3Star@% за каждого 3-звездочного чемпиона в команде.",
+    "effects": {
+      "{d5eeac4e}": 10,
+      "{fb280f31}": 5
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Missing-T2.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Суперзвезды",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_HealingOrbsI",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Когда погибает враг, ближайший союзник восстанавливает себе @Heal@ здоровья.",
+    "effects": {
+      "Heal": 300
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Healing-Orbs-I.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Сфера лечения I",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_HealingOrbsII",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Когда погибает враг, ближайший союзник восстанавливает себе @Heal@ здоровья.",
+    "effects": {
+      "Heal": 500
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Healing-Orbs-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Сфера лечения II",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_StrategistTacticalSuperiority",
+    "associatedTraits": [
+      "Set9_Strategist"
+    ],
+    "composition": [],
+    "desc": "Ваши чемпионы получают @BonusAD*100@% силы атаки и силы умений за каждую их активную особенность. Прибавка удваивается, когда вы выставляете на поле стратега. Также вы получаете 2 стратегов.",
+    "effects": {
+      "BonusAD": 0.05000000074505806,
+      "{d49caf5d}": 5
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Tactical-Superiority-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Тактическое превосходство",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_LearningFromExperience2",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "После каждого боя против игрока вы получаете опыт: @winxp@ ед. при победе, @lossxp@ ед. при поражении. Вы можете достичь 10-го уровня.",
+    "effects": {
+      "{0bb15a39}": 2,
+      "{4a173602}": 3
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Learning-From-Experience-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Терпеливый ученик",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Legend_LearningFromExperience2",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "После каждого боя против игрока вы получаете опыт: @winxp@ ед. при победе, @lossxp@ ед. при поражении. Вы можете достичь 10-го уровня.",
+    "effects": {
+      "{0bb15a39}": 2,
+      "{4a173602}": 3
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Learning-From-Experience-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Терпеливый ученик",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_LearningFromExperience1",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "После каждого боя против игрока вы получаете опыт: @winxp@ ед. при победе, @lossxp@ ед. при поражении. Вы можете достичь 10-го уровня.",
+    "effects": {
+      "{0bb15a39}": 1,
+      "{4a173602}": 2
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Missing-T1.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Терпеливый ученик I",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_LearningFromExperience3",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "После каждого боя против игрока вы получаете опыт: @winxp@ ед. при победе, @lossxp@ ед. при поражении. Вы можете достичь 10-го уровня.",
+    "effects": {
+      "{0bb15a39}": 3,
+      "{4a173602}": 6
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Missing-T3.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Терпеливый ученик III",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_ThinkInsideTheBox",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "В начале раунда бойцы не на краю вашего поля получают @AP*100@% силы умений и @Health@ здоровья. ",
+    "effects": {
+      "AP": 0.15000000596046448,
+      "Health": 75
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Missing-T1.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Тесные рамки I",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_ThinkInsideTheBox2",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "В начале раунда бойцы не на краю вашего поля получают @AP*100@% силы умений и @Health@ здоровья. ",
+    "effects": {
+      "AP": 0.20000000298023224,
+      "Health": 100
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Missing-T2.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Тесные рамки II",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_ThinkInsideTheBox3",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "В начале раунда бойцы не на краю вашего поля получают @AP*100@% силы умений и @Health@ здоровья. ",
+    "effects": {
+      "AP": 0.30000001192092896,
+      "Health": 150
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Missing-T3.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Тесные рамки III",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_TonsOfStats",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Ваши бойцы получают @Health@ здоровья, @AttackDamage@% силы атаки, @AbilityPower@ силы умений, @Armor@ брони, @MR@ сопротивления магии, @AttackSpeed@% скорости атаки и @Mana@ маны.",
+    "effects": {
+      "Armor": 5,
+      "AttackDamage": 5,
+      "AttackSpeed": 5,
+      "Health": 55,
+      "Mana": 5,
+      "{552e0cbe}": 5,
+      "{7f1304b2}": 5
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Tons-of-Stats-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Тонны показателей!",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_NoxusTotalDomination",
+    "associatedTraits": [
+      "Set9_Noxus"
+    ],
+    "composition": [],
+    "desc": "Атаки и умения ваших бойцов из Ноксуса добивают врагов, у которых осталось менее @BaseExecuteThreshold@% здоровья. Порог казни увеличивается на @StackingExecuteThreshold@% за каждого побежденного игрока. Вы получаете 3 бойцов из Ноксуса.",
+    "effects": {
+      "{7bf8a5d2}": 8,
+      "{92061c1f}": 1
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Total-Domination-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Тотальное доминирование",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_EnduranceTraining",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Запас здоровья ваших бойцов увеличивается на @StartingHealth@. Кроме того, они навсегда получают @Health@ дополнительного здоровья, когда убивают врагов.",
+    "effects": {
+      "Health": 18,
+      "StartingHealth": 100
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Endurance-Training-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Тренировка на выносливость",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_ThreesACrowd",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Ваши бойцы получают @HealthPerUnit@ здоровья за каждого выставленного бойца @Tier@-го ранга. ",
+    "effects": {
+      "{4548e0c8}": 111,
+      "{5c51b509}": 3
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Three_s-a-Crowd-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Трое – уже толпа",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Legend_DravenSpoilsOfWar",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Когда ваша команда убивает вражеского бойца, на поле боя с вероятностью @LootDropChance*100@% появляется добыча.",
+    "effects": {
+      "{2cda9606}": 0.25,
+      "{ac7ef35a}": 0.25
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Spoils-Of-War-Legend-I.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Трофеи I",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_DravenSpoilsOfWar",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Когда ваша команда убивает вражеского бойца, на поле боя с вероятностью @LootDropChance*100@% появляется добыча.",
+    "effects": {
+      "{2cda9606}": 0.25,
+      "{ac7ef35a}": 0.25
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Spoils-Of-War-Legend-I.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Трофеи I",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_DravenSpoilsOfWar2",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Когда ваша команда убивает вражеского бойца, на поле боя с вероятностью @LootDropChance*100@% появляется добыча.",
+    "effects": {
+      "{2cda9606}": 0.30000001192092896,
+      "{ac7ef35a}": 0.30000001192092896
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Spoils-Of-War-Legend-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Трофеи II",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Legend_DravenSpoilsOfWar2",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Когда ваша команда убивает вражеского бойца, на поле боя с вероятностью @LootDropChance*100@% появляется добыча.",
+    "effects": {
+      "{2cda9606}": 0.30000001192092896,
+      "{ac7ef35a}": 0.30000001192092896
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Spoils-Of-War-Legend-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Трофеи II",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_DravenSpoilsOfWar3",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Когда ваша команда убивает вражеского бойца, на поле боя с вероятностью @LootDropChance*100@% появляется добыча.",
+    "effects": {
+      "{2cda9606}": 0.4000000059604645,
+      "{ac7ef35a}": 0.4000000059604645
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Spoils-Of-War-Legend-III.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Трофеи III",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Legend_DravenSpoilsOfWar3",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Когда ваша команда убивает вражеского бойца, на поле боя с вероятностью @LootDropChance*100@% появляется добыча.",
+    "effects": {
+      "{2cda9606}": 0.4000000059604645,
+      "{ac7ef35a}": 0.4000000059604645
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Spoils-Of-War-Legend-III.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Трофеи III",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_ACutAboveHR",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете Клинок смерти. Когда чемпионы с Клинком смерти убивают врага, вы с @ProcChance*100@% вероятностью получаете @Gold@ золота.",
+    "effects": {
+      "Gold": 2,
+      "{b4a90a5d}": 0.5
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/A-Cut-Above-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Убийственная выгода",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_ACutAbove",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете Клинок смерти. Когда чемпионы с Клинком смерти убивают врага, вы с @ProcChance*100@% вероятностью получаете @Gold@ золота.",
+    "effects": {
+      "Gold": 1,
+      "{b4a90a5d}": 0.33000001311302185
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/A-Cut-Above-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Убийственная выгода",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Commander_Amplify1",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Критический урон ваших бойцов увеличивается на @CritDamage@%.",
+    "effects": {
+      "CritDamage": 10
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Missing-T1.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Убойность I",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Commander_Amplify2",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Критический урон ваших бойцов увеличивается на @CritDamage@%.",
+    "effects": {
+      "CritDamage": 20
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Missing-T2.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Убойность II",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Commander_Amplify3",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Критический урон ваших бойцов увеличивается на @CritDamage@%.",
+    "effects": {
+      "CritDamage": 30
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Missing-T3.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Убойность III",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_FortuneFavorsTheBold",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Побеждая других игроков, вы получаете дополнительные сферы. Чем дольше вы не получали сферу, тем ценнее будет награда.",
+    "effects": {},
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Golden-Gifts-II.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Удача любит смелых",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_VoidRapidIncubation",
+    "associatedTraits": [
+      "Set9_Void"
+    ],
+    "composition": [],
+    "desc": "Ваши бойцы из Бездны получают @bonushealth@ здоровья, @BonusStats@% силы атаки и силы умений за каждую их звезду. Вы получаете 3 бойцов из Бездны.",
+    "effects": {
+      "BonusHealth": 60,
+      "{83e12d6f}": 6
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Voidling-Invasion-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Управляемая эволюция",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_BastionMorningLight",
+    "associatedTraits": [
+      "Set9_Bastion"
+    ],
+    "composition": [],
+    "desc": "Когда у ваших несокрушимых остается менее @HealthThreshold*100@% здоровья, они восстанавливают себе @HealRatio*100@% от максимального запаса здоровья в течение @Duration@ сек. Также вы получаете 2 несокрушимых.",
+    "effects": {
+      "Duration": 4,
+      "HealRatio": 0.4000000059604645,
+      "HealthThreshold": 0.5
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Morninig-Light-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Утренний свет",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_ItPaysToLearn",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете @XP@ ед. опыта и @Gold@ золота. ",
+    "effects": {
+      "Gold": 10,
+      "{516374d5}": 10
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/It-Pays-To-Learn-I.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Финансовая грамотность",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_ItPaysToLearnII",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете @XP@ ед. опыта и @Gold@ золота. ",
+    "effects": {
+      "Gold": 16,
+      "{516374d5}": 16
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/It-Pays-To-Learn-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Финансовая грамотность II",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_ItPaysToLearnIII",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете @XP@ ед. опыта и @Gold@ золота. ",
+    "effects": {
+      "Gold": 20,
+      "{516374d5}": 20
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/It-Pays-To-Learn-III.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Финансовая грамотность III",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_AllNatural",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Ваши чемпионы без предметов получают @health@ здоровья и ежесекундно восстанавливают себе @Healing*100@% от максимального запаса здоровья.",
+    "effects": {
+      "Healing": 0.009999999776482582,
+      "Health": 120
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/All-Natural-I.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Фора I",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_AllNatural2",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Ваши чемпионы без предметов получают @health@ здоровья и ежесекундно восстанавливают себе @Healing*100@% от максимального запаса здоровья.",
+    "effects": {
+      "Healing": 0.019999999552965164,
+      "Health": 150
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/All-Natural-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Фора II",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_AllNatural3",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Ваши чемпионы без предметов получают @health@ здоровья и ежесекундно восстанавливают себе @Healing*100@% от максимального запаса здоровья.",
+    "effects": {
+      "Healing": 0.09000000357627869,
+      "Health": 250
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Missing-T3.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Фора III",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_ZaunChemicallyEnhancedBulk",
+    "associatedTraits": [
+      "Set9_Zaun"
+    ],
+    "composition": [],
+    "desc": "Ваши бойцы, усиленные химтековыми модификациями Зауна, получают @BonusHP@ здоровья. Союзники, которые примыкают к ним в начале боя, получают @SharedHP@ здоровья. Также вы получаете 2 бойцов из Зауна.",
+    "effects": {
+      "BonusHP": 500,
+      "{fc0d18cc}": 100
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Chemically-Enhanced-Bulk-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Химтековые усиления",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Commander_MediumForgePlus",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете Наковальню полноценных предметов и Наковальню компонентов.",
+    "effects": {
+      "Gold": 3
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Job_s-Done-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Хорошая работа",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_PiltoverShimmeringInventors",
+    "associatedTraits": [
+      "Set9_Piltover"
+    ],
+    "composition": [],
+    "desc": "Ваши бойцы из Пилтовера получают @BonusAS*100@% скорости атаки за каждые @GoldThreshold@ золота, что у вас есть (максимум: @ASCap*100@%), и с вероятностью @GoldChance*100@% могут дать вам @Gold@ золота в начале раунда. Также вы получаете Экко.",
+    "effects": {
+      "BonusAS": 0.07999999821186066,
+      "Gold": 1,
+      "{2dd33743}": 0.33000001311302185,
+      "{b5a4f01e}": 10,
+      "{fb0d5533}": 0.4000000059604645
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Shimmering-Inventors-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Ценные технологии",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_PiltoverShimmeringInventorsHR",
+    "associatedTraits": [
+      "Set9_Piltover"
+    ],
+    "composition": [],
+    "desc": "Ваши бойцы из Пилтовера получают @BonusAS*100@% скорости атаки за каждые @GoldThreshold@ золота, что у вас есть (максимум: @ASCap*100@%), и с вероятностью @GoldChance*100@% могут дать вам @Gold@ золота в начале раунда. Также вы получаете Экко.",
+    "effects": {
+      "BonusAS": 0.05000000074505806,
+      "Gold": 2,
+      "{2dd33743}": 0.33000001311302185,
+      "{b5a4f01e}": 3,
+      "{fb0d5533}": 0.5
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Shimmering-Inventors-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Ценные технологии",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Commander_PartialAscension",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Спустя @Delay@ сек. боя ваши бойцы начинают наносить на @DamageAmp@% больше урона.",
+    "effects": {
+      "DamageAmp": 30,
+      "{4ed1f1d8}": 15
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Ascension1.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Частичное вознесение",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_KnowledgeIsPower",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы получаете Книгу особенностей и Наковальню компонентов.",
+    "effects": {
+      "{a8bbf652}": 1,
+      "{e3d58c55}": 1
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Knowledge-is-Power-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Читательский билет",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_WhatDoesntKillYou",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "После каждого проигранного раунда вы получаете @Gold@ золота. После каждых @RoundsPerComponent@ проигранных раундов вы получаете случайный компонент.<br><br><tftitemrules>Поражения до следующего компонента: @TFTUnitProperty.item:TFT9_Augment_WhatDoesntKillYou_Counter@</tftitemrules>",
+    "effects": {
+      "Gold": 2,
+      "{7b93f84a}": 5
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/What-Doesn_t-Kill-You-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Что не убивает тебя...",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_KassadinCarry",
+    "associatedTraits": [
+      "Set9_Preserver",
+      "Set9_Void"
+    ],
+    "composition": [],
+    "desc": "Вы получаете Кассадина. Перед применением умения ваш сильнейший Кассадин получает @AP@ силы умений и телепортируется к самому дальнему врагу в пределах @HexRadius@ яч., но его умение больше не обезоруживает и не дает щит. Затраты маны уменьшены на @ManaReduction@.",
+    "effects": {
+      "AP": 35,
+      "{5cc52ba8}": 3,
+      "{7ccd3647}": 30
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Riftwalker-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Шаг в Бездну",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_SentinelsShield",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Боец с самой высокой скоростью атаки получает щит прочностью @Shield@ на @Duration@ сек., который дает @AttackSpeed*100@% скорости атаки (прибавка суммируется). Когда щит разрушается или перестает действовать, он накладывается на союзника с самым низким уровнем здоровья и обновляется.",
+    "effects": {
+      "AttackSpeed": 0.4000000059604645,
+      "Duration": 3,
+      "Shield": 400
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Missing-T2.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Щит Стража",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_MediumEndShopping",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Уровень чемпионов в первых @NumLeveledUpShops@ ячейках магазина становится на 1 выше вашего. Также вы получаете @Gold@ золота.",
+    "effects": {
+      "Gold": 1,
+      "{0e9c8fc0}": 3
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/HighEnd1.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Элитный шоппинг I",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Legend_PumpingUp",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Ваши бойцы получают @BaseAS@% скорости атаки. В каждом раунде эта прибавка увеличивается на @IncreasePerRound@%. (Текущая скорость атаки: @TFTUnitProperty.item:TFT9_PumpingUpRounds@%)",
+    "effects": {
+      "{2acb3e58}": 8,
+      "{e3c478bc}": 0.5
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Pumping-Up-I.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Энтузиазм I",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_PumpingUp",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Ваши бойцы получают @BaseAS@% скорости атаки. В каждом раунде эта прибавка увеличивается на @IncreasePerRound@%. (Текущая скорость атаки: @TFTUnitProperty.item:TFT9_PumpingUpRounds@%)",
+    "effects": {
+      "{2acb3e58}": 8,
+      "{e3c478bc}": 0.5
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Pumping-Up-I.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Энтузиазм I",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_PumpingUpHR",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Ваши бойцы получают @BaseAS@% скорости атаки. В каждом раунде эта прибавка увеличивается на @IncreasePerRound@%. (Текущая скорость атаки: @TFTUnitProperty.item:TFT9_PumpingUpRounds@%)",
+    "effects": {
+      "{2acb3e58}": 5,
+      "{e3c478bc}": 1
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Pumping-Up-I.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Энтузиазм I",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Legend_PumpingUp2",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Ваши бойцы получают @BaseAS@% скорости атаки. В каждом раунде эта прибавка увеличивается на @IncreasePerRound@%. (Текущая скорость атаки: @TFTUnitProperty.item:TFT9_PumpingUp2Rounds@%)",
+    "effects": {
+      "{2acb3e58}": 10,
+      "{e3c478bc}": 1
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Pumping-Up-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Энтузиазм II",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_PumpingUp2HR",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Ваши бойцы получают @BaseAS@% скорости атаки. В каждом раунде эта прибавка увеличивается на @IncreasePerRound@%. (Текущая скорость атаки: @TFTUnitProperty.item:TFT9_PumpingUp2Rounds@%)",
+    "effects": {
+      "{2acb3e58}": 5,
+      "{e3c478bc}": 2
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Pumping-Up-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Энтузиазм II",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_PumpingUp2",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Ваши бойцы получают @BaseAS@% скорости атаки. В каждом раунде эта прибавка увеличивается на @IncreasePerRound@%. (Текущая скорость атаки: @TFTUnitProperty.item:TFT9_PumpingUp2Rounds@%)",
+    "effects": {
+      "{2acb3e58}": 10,
+      "{e3c478bc}": 1
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Pumping-Up-II.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Энтузиазм II",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_Legend_PumpingUp3",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Ваши бойцы получают @BaseAS@% скорости атаки. В каждом раунде эта прибавка увеличивается на @IncreasePerRound@%. (Текущая скорость атаки: @TFTUnitProperty.item:TFT9_PumpingUp3Rounds@%)",
+    "effects": {
+      "{2acb3e58}": 10,
+      "{e3c478bc}": 2
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Pumping-Up-III.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Энтузиазм III",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_PumpingUp3",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Ваши бойцы получают @BaseAS@% скорости атаки. В каждом раунде эта прибавка увеличивается на @IncreasePerRound@%. (Текущая скорость атаки: @TFTUnitProperty.item:TFT9_PumpingUp3Rounds@%)",
+    "effects": {
+      "{2acb3e58}": 10,
+      "{e3c478bc}": 2
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Pumping-Up-III.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Энтузиазм III",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_PumpingUp3HR",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Ваши бойцы получают @BaseAS@% скорости атаки. В каждом раунде эта прибавка увеличивается на @IncreasePerRound@%. (Текущая скорость атаки: @TFTUnitProperty.item:TFT9_PumpingUp3Rounds@%)",
+    "effects": {
+      "{2acb3e58}": 10,
+      "{e3c478bc}": 4
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Pumping-Up-III.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Энтузиазм III",
+    "unique": false
+  },
+  {
+    "apiName": "TFT9_Augment_YoungAndWildAndFree",
+    "associatedTraits": [],
+    "composition": [],
+    "desc": "Вы всегда можете свободно передвигаться во время раундов с каруселями. Также вы получаете случайные компоненты предметов (@NumComponents@).",
+    "effects": {
+      "{5cc08b27}": 1
+    },
+    "from": null,
+    "icon": "ASSETS/Maps/TFT/Icons/Augments/Hexcore/Young-and-wild-and-free-I.TFT_Set9.tex",
+    "id": null,
+    "incompatibleTraits": [],
+    "name": "Юный, дикий и свободный",
+    "unique": false
+  }
+]

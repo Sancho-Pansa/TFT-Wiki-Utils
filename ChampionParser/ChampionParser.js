@@ -229,7 +229,11 @@ function main() {
     .then(json => extrudeCDragonData(json, setMutator))
     .then(processTftChampions)
     .then(convertToLua)
-    .then((luaText) => writeLua(`${setMutator}.lua`, luaText))
+    .then((luaText) => {
+      const __filename = fileURLToPath(import.meta.url);
+      const __dirname = dirname(__filename);
+      writeLua(`${__dirname}/../out/${setMutator}.lua`, luaText);
+    })
     .catch(console.error);
 }
 
