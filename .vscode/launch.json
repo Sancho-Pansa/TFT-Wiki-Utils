@@ -5,6 +5,16 @@
   "version": "1.0.0",
   "configurations": [
     {
+      "name": "Set 10 Traits",
+      "program": "${workspaceFolder}/TraitParser/TraitParser.js",
+      "request": "launch",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "type": "node",
+      "args": ["TFTSet10", "pbe"]
+    },
+    {
       "type": "node",
       "request": "launch",
       "name": "Test Set 10",
