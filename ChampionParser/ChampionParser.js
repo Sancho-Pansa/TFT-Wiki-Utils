@@ -63,9 +63,7 @@ function processTftChampions(jsonArray) {
       value.traits.length === 0, // Если нет особенностей - это не чемпион
       false
     )
-  })
-    .sort((a, b) => a.name > b.name ? 1 : -1);
-
+  });
   return Promise.all(championArray);
 
   /**
@@ -252,6 +250,7 @@ function roundVariable(abilityVar, isPercent) {
  * @param {TftChampion[]} championArray
  */
 function convertToLua(championArray) {
+  championArray.sort((a, b) => a.name > b.name ? 1 : -1);
   let preparedObject = {};
   let counter = 0;
   for(let champion of championArray) {
