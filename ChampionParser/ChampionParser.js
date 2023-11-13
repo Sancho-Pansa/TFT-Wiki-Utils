@@ -110,6 +110,8 @@ function processTftChampions(jsonArray) {
           case "R":
             abilityIcon = `${name} ${spells[3].name}.png`;
             break;
+          default:
+            abilityIcon = `Q.png`;
         }
       }
     }
