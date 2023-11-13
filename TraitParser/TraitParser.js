@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import "./TFTTrait.js";
-import {fetchTftData} from "../TFTDataFetcher.js";
+import { fetchTftData } from "../TFTDataFetcher.js";
+import hash from "fnv1a";
 import { fileURLToPath } from "node:url";
 import { dirname } from "node:path";
 
@@ -25,62 +26,96 @@ function extrudeCDragonData(json, setMutator) {
   return [];
 }
 
-function convertJson(json) {
-  const result = JSON.parse(json);
-  return result;
+function processTraits(traits) {
+  let traitList = traits.map((t) => {
+    let engname = "Void";
+    let icon = "Scrap TFT icon.svg";
+    let levels = [];
+    if(typeof t.apiName === "string") {
+      engname = t.apiName.replace(/Set\d+?_/gm, "");
+      let setNumber = t.apiName.match(/Set(\d+?)/)[1] ?? "";
+      icon = `${engname} TFT${setNumber} icon.svg`;
+    }
+    let [rawSynergy, rawCombo, ...auxInfo] = t.desc.split("<br><br>");
+    generateTraitSynergy(rawSynergy, t.effects);
+
+  });
+  return traitList;
 }
 
-function processTraits(traits) {
-  let traitList = [];
-  for(let t of traits) {
-    let engname = t.apiName.slice(5);
-    let prismaticLevel = false;
+/**
+ * Принимает на вход первоначальную строку описания комбинации и объект с переменными,
+ * после чего формирует описание эффекта в разметке MediaWiki и массив из двух элементов: числа
+ * бойцов для активации комбинации и бонуса этого уровня комбинации.
+ * @param {String} rawDescription Строка из данных CDragon
+ * @param {{maxUnits: Number, minUnits: Number, style: Number, variables: any}[]} variables Объект с переменными эффекта комбинации
+ * @returns {{synergyText: String, effects: [Number, String]}}
+ */
+function generateTraitData(rawDescription, variables) {
+  const regexBreaks = new RegExp(/<br>/gm);
+  const regexRules = new RegExp(/(?:<rules>.*<\/rules>|<tftitemrules>.*<\/tftitemrules>)/gm);
+  const regexTemplateRow = new RegExp(/<expandRow>(.*?)<\/expandRow>/gm); // Одна шаблонная строка на описание
+  const regexRepeatableRow = new RegExp(/<row>(.*?)<\/row>/gm); // Несколько строк с изменяющимся описанием эффекта
+  const regexTags = new RegExp("(<.*?>)", "gm");
+  const regexGenerics = new RegExp("@.*?@", "gm");
+  const regexScales = new RegExp("%i:(.*?)%", "gm");
 
-    const regexBreaks = new RegExp("<br>", "gm");
-    const regexRules = new RegExp("<rules>.*</rules>", "gm");
-    const regexTags = new RegExp("(<.*?>)", "gm");
-    const regexGenerics = new RegExp("@.*?@", "gm");
-    const regexScales = new RegExp("%i:(.*?)%", "gm");
-    const scales = {
-      scaleHealth: "зависит от здоровья",
-      scaleAP: "зависит от здоровья",
-      scaleAD: "зависит от здоровья",
-      scaleAS: "зависит от здоровья",
-      scaleArmor: "зависит от здоровья",
-      scaleMR: "зависит от здоровья",
-      scaleMana: "зависит от здоровья",
-    }
+  let combo = [];
 
-    let synergyText = t.desc;
-    synergyText = synergyText
-      .replace(regexBreaks, "\n")
-      .replace(regexRules, "\n")
-      .replace(regexTags, "")
-      .replace(regexGenerics, "<N>")
-      .replace(regexScales, (text, match) => {
-        return `(${scales[match] ?? "неизвестный множитель"})`;
-      });
+  let preflightText = rawDescription.replace(regexBreaks, "\n").replace(regexRules, "");
+  if(preflightText.match(regexTemplateRow)) {
+    preflightText.replace(regexTemplateRow, function(text, match) {
 
-    console.log(synergyText);
-    let effects = t.effects;
-    let levels = new Array();
-    for(let e of effects) {
-      levels.push({ units: e.minUnits, bonus: "<N>" });
-      if(e.style == 5) prismaticLevel = true;
-    }
-
-    traitList.push(new Trait(
-      t.name,
-      engname,
-      synergyText,
-      levels,
-      prismaticLevel
-    ));
-    traitList.sort((a, b) => {
-      return a.name > b.name ? 1 : -1;
-    })
+    });
   }
-  return traitList;
+
+  /*    .replace(regexTags, "")
+      .replace(regexGenerics, "")
+      .replace(regexScales, (text, match) => {
+        const scales = {
+          scaleHealth: "здоровья",
+          scaleAP: "силы умений",
+          scaleAD: "силы атаки",
+          scaleAS: "скорости атаки",
+          scaleArmor: "брони",
+          scaleMR: "сопротивления магии",
+          scaleMana: "маны",
+        };
+        return `(${scales[match] ?? "неизвестный множитель"})`;
+      });*/
+}
+
+
+/**
+ * Принимает на вход первоначальную строку описания комбинации и объект с переменными,
+ * после чего формирует описание эффекта в разметке MediaWiki и массив из двух элементов: числа
+ * бойцов для активации комбинации и бонуса этого уровня комбинации.
+ * @param {String} rawDescription Строка из данных CDragon
+ * @param {{maxUnits: Number, minUnits: Number, style: Number, variables: any}[]} variables Объект с переменными эффекта комбинации
+ * @returns {String}
+ */
+function generateTraitSynergy(rawDescription, effects) {
+  const regexBreaks = new RegExp(/<br>/gm);
+  const regexRules = new RegExp(/(?:<rules>.*<\/rules>|<tftitemrules>.*<\/tftitemrules>)/gm);
+  const regexTags = new RegExp("(<.*?>)", "gm");
+  const regexGenerics = new RegExp("@(.*?)@", "gm");
+  const regexScales = new RegExp("%i:(.*?)%", "gm");
+  rawDescription.replace(regexBreaks, "").replace(regexRules, "").replace(regexTags, "");
+  rawDescription.replace(regexGenerics, (text, match) => {
+    let result = "''Неопознанная переменная''";
+    let effectSample = effects[0];
+    if(effectSample) {
+      for(let [key, value] of Object.entries(effectSample.variables)) {
+        if(key === match || key === hash(match.toLowerCase())) {
+          result = value;
+          break;
+        }
+      }
+    }
+    return result;
+  });
+  console.log(rawDescription);
+  return rawDescription;
 }
 
 async function printNewTraits(traitList) {
@@ -97,11 +132,7 @@ function main() {
   let patchVersion = args[3] ?? "latest";
   fetchTftData(patchVersion)
     .then((json) => extrudeCDragonData(json, setMutator))
-    .then((json) => {
-      const __filename = fileURLToPath(import.meta.url);
-      const __dirname = dirname(__filename);
-      fs.promises.writeFile(`${__dirname}/../out/Traits-10.json`, JSON.stringify(json, null, 2));
-    });
+    .then(processTraits);
 
   /*getJson()
     .then(convertJson)
