@@ -7,7 +7,7 @@
  * @param {String} defaultIndent Символ отступа по умолчанию
  * @returns {String} таблица Lua в виде текстовой строки
  */
-export default function jsonToLua(json, replacer = {}, exclude = [], flat = true, defaultIndent = "\t") {
+export default function jsonToLua(json, replacer = {}, exclude = [], flat, defaultIndent = "\t") {
   let indentation = 0;
   let nestingLevel = 0;
 
@@ -23,7 +23,7 @@ export default function jsonToLua(json, replacer = {}, exclude = [], flat = true
 
   function convertObject(obj) {
     nestingLevel++;
-    if(flat && nestingLevel < 3) {
+    if(!flat || nestingLevel < 3) {
       indentation++;
     }
     let str = [];
@@ -33,7 +33,8 @@ export default function jsonToLua(json, replacer = {}, exclude = [], flat = true
       }
       str.push(convertPair(key, value));
     };
-    if(flat && nestingLevel < 3) {
+    // Логическая оптимизация
+    if(!flat || nestingLevel < 3) {
       indentation--;
     }
     nestingLevel--;

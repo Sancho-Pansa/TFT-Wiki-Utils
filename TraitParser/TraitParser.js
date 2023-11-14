@@ -1,9 +1,10 @@
 import fs from "node:fs";
-import "./TFTTrait.js";
 import { fetchTftData } from "../TFTDataFetcher.js";
 import hash from "fnv1a";
 import { fileURLToPath } from "node:url";
 import { dirname } from "node:path";
+import Trait from "./TFTTrait.js";
+import jsonToLua from "../JsonToLua.js";
 
 /**
  * Вычленяет из общего объекта данных из Community Dragon только тот, что соответствует запрошенному сезону.
@@ -26,63 +27,27 @@ function extrudeCDragonData(json, setMutator) {
   return [];
 }
 
+/**
+ *
+ * @param {Array} traits
+ * @returns {Trait[]}
+ */
 function processTraits(traits) {
   let traitList = traits.map((t) => {
     let engname = "Void";
     let icon = "Scrap TFT icon.svg";
-    let levels = [];
     if(typeof t.apiName === "string") {
-      engname = t.apiName.replace(/Set\d+?_/gm, "");
-      let setNumber = t.apiName.match(/Set(\d+?)/)[1] ?? "";
+      engname = t.apiName.replace(/Set\d+_/gm, "");
+      let setNumber = t.apiName.match(/Set(\d+)/)[1] ?? "";
       icon = `${engname} TFT${setNumber} icon.svg`;
     }
     let [rawSynergy, rawCombo, ...auxInfo] = t.desc.split("<br><br>");
-    generateTraitSynergy(rawSynergy, t.effects);
-
+    let synergyText = generateTraitSynergy(rawSynergy, t.effects);
+    let combo = generateComboTemplate(rawCombo, t.effects);
+    let isPrismatic = t.effects.length > 3;
+    return new Trait(t.name, engname, "", "", icon, synergyText, combo, isPrismatic);
   });
   return traitList;
-}
-
-/**
- * Принимает на вход первоначальную строку описания комбинации и объект с переменными,
- * после чего формирует описание эффекта в разметке MediaWiki и массив из двух элементов: числа
- * бойцов для активации комбинации и бонуса этого уровня комбинации.
- * @param {String} rawDescription Строка из данных CDragon
- * @param {{maxUnits: Number, minUnits: Number, style: Number, variables: any}[]} variables Объект с переменными эффекта комбинации
- * @returns {{synergyText: String, effects: [Number, String]}}
- */
-function generateTraitData(rawDescription, variables) {
-  const regexBreaks = new RegExp(/<br>/gm);
-  const regexRules = new RegExp(/(?:<rules>.*<\/rules>|<tftitemrules>.*<\/tftitemrules>)/gm);
-  const regexTemplateRow = new RegExp(/<expandRow>(.*?)<\/expandRow>/gm); // Одна шаблонная строка на описание
-  const regexRepeatableRow = new RegExp(/<row>(.*?)<\/row>/gm); // Несколько строк с изменяющимся описанием эффекта
-  const regexTags = new RegExp("(<.*?>)", "gm");
-  const regexGenerics = new RegExp("@.*?@", "gm");
-  const regexScales = new RegExp("%i:(.*?)%", "gm");
-
-  let combo = [];
-
-  let preflightText = rawDescription.replace(regexBreaks, "\n").replace(regexRules, "");
-  if(preflightText.match(regexTemplateRow)) {
-    preflightText.replace(regexTemplateRow, function(text, match) {
-
-    });
-  }
-
-  /*    .replace(regexTags, "")
-      .replace(regexGenerics, "")
-      .replace(regexScales, (text, match) => {
-        const scales = {
-          scaleHealth: "здоровья",
-          scaleAP: "силы умений",
-          scaleAD: "силы атаки",
-          scaleAS: "скорости атаки",
-          scaleArmor: "брони",
-          scaleMR: "сопротивления магии",
-          scaleMana: "маны",
-        };
-        return `(${scales[match] ?? "неизвестный множитель"})`;
-      });*/
 }
 
 
@@ -98,29 +63,58 @@ function generateTraitSynergy(rawDescription, effects) {
   const regexBreaks = new RegExp(/<br>/gm);
   const regexRules = new RegExp(/(?:<rules>.*<\/rules>|<tftitemrules>.*<\/tftitemrules>)/gm);
   const regexTags = new RegExp("(<.*?>)", "gm");
-  const regexGenerics = new RegExp("@(.*?)@", "gm");
+  const regexGenerics = new RegExp(/@(.*?)(?:\*100)?@/gm);
   const regexScales = new RegExp("%i:(.*?)%", "gm");
-  rawDescription.replace(regexBreaks, "").replace(regexRules, "").replace(regexTags, "");
-  rawDescription.replace(regexGenerics, (text, match) => {
-    let result = "''Неопознанная переменная''";
-    let effectSample = effects[0];
-    if(effectSample) {
-      for(let [key, value] of Object.entries(effectSample.variables)) {
-        if(key === match || key === hash(match.toLowerCase())) {
-          result = value;
-          break;
+
+  let formattedDescription = rawDescription
+    .replace(regexBreaks, "")
+    .replace(regexRules, "").replace(regexTags, "")
+    .replace(regexGenerics, (text, match) => {
+      let result = "''N/A''";
+      let effectSample = effects[0];
+      if(effectSample) {
+        for(let [key, value] of Object.entries(effectSample.variables)) {
+          if(key === match || key === hash(match.toLowerCase())) {
+            result = roundVariable(value);
+            break;
+          }
         }
       }
-    }
-    return result;
-  });
-  console.log(rawDescription);
-  return rawDescription;
+      return result;
+    });
+  return formattedDescription;
 }
 
-async function printNewTraits(traitList) {
+function generateComboTemplate(rawCombo, effects) {
+  let combo = [];
+  for(let effect of effects) {
+    combo.push([effect.minUnits, "N/A"]);
+  }
+  return combo;
+}
+
+function roundVariable(abilityVar, isPercent) {
+  let roundedValue = Math.round(abilityVar * 100);
+  return isPercent ? roundedValue : (roundedValue / 100);
+}
+
+/**
+ *
+ * @param {Trait[]} traitArray
+ */
+function convertToLua(traitArray) {
+  traitArray.sort((a, b) => a.name > b.name ? 1 : -1);
+  let preparedObject = {};
+  for(let trait of traitArray) {
+    let { name: name, ...rest } = trait;
+    preparedObject[trait.name] = rest;
+  }
+  return jsonToLua(preparedObject);
+}
+
+async function writeLua(filepath, lua) {
   try {
-    return await fs.promises.writeFile("Traits-9-Wiki.json", JSON.stringify(traitList, null, 2));
+    await fs.promises.writeFile(filepath, lua);
   } catch(err) {
     console.error(err);
   }
@@ -132,12 +126,14 @@ function main() {
   let patchVersion = args[3] ?? "latest";
   fetchTftData(patchVersion)
     .then((json) => extrudeCDragonData(json, setMutator))
-    .then(processTraits);
-
-  /*getJson()
-    .then(convertJson)
     .then(processTraits)
-    .then(printNewTraits);*/
+    .then(convertToLua)
+    .then((luaText) => {
+      const __filename = fileURLToPath(import.meta.url);
+      const __dirname = dirname(__filename);
+      return writeLua(`${__dirname}/../out/${setMutator}-Traits.lua`, luaText);
+    })
+    .catch(console.error);
 }
 
 main();
