@@ -45,7 +45,7 @@ export default function jsonToLua(json, replacer = {}, exclude = [], flat, defau
     let k = replacer[key] ?? key
     if(typeof value === "object") {
       if(Array.isArray(value)) {
-        return `${defaultIndent.repeat(indentation)}["${k}"] = {${convertArray(value)}}`;
+        return `${defaultIndent.repeat(indentation)}["${k}"] = ${convertArray(value)}`;
       } else if(value === null) {
         return `${defaultIndent.repeat(indentation)}["${k}"] = ${convertPrimitive(value)}`;
       } else {
@@ -73,7 +73,7 @@ export default function jsonToLua(json, replacer = {}, exclude = [], flat, defau
         luaArray.push(convertPrimitive(c));
       }
     }
-    return luaArray.join(", ");
+    return `{${luaArray.join(", ")}}`;
   }
 
   function convertPrimitive(prim) {
