@@ -12,7 +12,7 @@
         "<node_internals>/**"
       ],
       "type": "node",
-      "args": ["TFTSet10", "pbe"]
+      "args": ["TFTSet11", "latest"]
     },
     {
       "type": "node",

@@ -37,8 +37,8 @@ function processTraits(traits) {
     let engname = "Void";
     let icon = "Scrap TFT icon.svg";
     if(typeof t.apiName === "string") {
-      engname = t.apiName.replace(/Set\d+_/gm, "");
-      let setNumber = t.apiName.match(/Set(\d+)/)[1] ?? "";
+      engname = t.apiName.replace(/TFT\d+_/gm, "");
+      let setNumber = t.apiName.match(/TFT(\d+)/)[1] ?? "";
       icon = `${engname} TFT${setNumber} icon.svg`;
     }
     let [rawSynergy, rawCombo, ...auxInfo] = t.desc.split("<br><br>");
